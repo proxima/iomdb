@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100718213956) do
+ActiveRecord::Schema.define(:version => 20100720033229) do
 
   create_table "admin_users", :force => true do |t|
     t.string   "login"
@@ -112,6 +112,8 @@ ActiveRecord::Schema.define(:version => 20100718213956) do
     t.integer  "version",     :limit => 11
   end
 
+  add_index "equipment_monsters", ["id", "name"], :name => "index_equipment_monsters_on_id_and_name"
+
   create_table "equipment_piece_versions", :force => true do |t|
     t.integer  "equipment_piece_id",   :limit => 11
     t.integer  "version",              :limit => 11
@@ -138,6 +140,8 @@ ActiveRecord::Schema.define(:version => 20100718213956) do
     t.integer  "tp_value",             :limit => 11
     t.integer  "version",              :limit => 11
   end
+
+  add_index "equipment_pieces", ["id", "name"], :name => "index_equipment_pieces_on_id_and_name"
 
   create_table "guild_type_versions", :force => true do |t|
     t.integer  "guild_type_id", :limit => 11

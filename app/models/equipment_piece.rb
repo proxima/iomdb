@@ -1,5 +1,8 @@
 class EquipmentPiece < ActiveRecord::Base
 
+  cattr_reader :per_page
+  @@per_page = 30
+
   acts_as_versioned
 
   belongs_to :equipment_monster

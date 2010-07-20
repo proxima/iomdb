@@ -8,8 +8,11 @@ tp_regex = Regexp.new(/<\/span>\s*([\d?\*]*)\s*<span class="eqb">/)
 mob_regex = Regexp.new(/<\/span>\s*([a-zA-Z -?]*)\s*<span class="eqb">#<\/span>/)
 stats_regex = Regexp.new(/<\/span>\s*([a-zA-Z0-9 (,)_;.'\/:?\-~&+]*)\s*<span class="eqb">/)
 wc_regex = Regexp.new(/<\/span>\s*([\d?*-]*)\s*<span class="eqb">/)
+stat_piece_regex = Regexp.new(/(\d+)(\w+)/)
 
 cur_slot = ""
+
+dtypes = { "holy_res" => "Holy", "acid_res" => "Acid", "poi_res" => "Poison", "phys_res" => "Physical", "asphyx_res" => "Asphyxiation", "unh_res" => "Unholy", "psi_res" => "Psionic", "mag_res" => "Magic", "elec_res" => "Electric", "fire_res" => "Fire", "cold_res" => "Cold" }
 
 def string_to_slots(slot_str)
   if slot_str == "head"
@@ -133,7 +136,6 @@ for line in @lines
   if item_name and slots
     eq = EquipmentPiece.new
     eq.name = item_name
-    eq.special = special
     eq.tp_value = tp_value
 
     monster = EquipmentMonster.find_by_name(mob)
@@ -154,13 +156,71 @@ for line in @lines
     eq.weight = 0 if eq.weight.nil?
  
     eq.save
+
     for slot in slots
       sa = SlotAffect.new
       sa.equipment_piece_id = eq.id
       sa.slot_id = slot
       sa.save
     end
-  end  
 
-#  puts "#{item_name}|#{wc}|#{special}|#{tp_value}|#{mob}" if item_name and slots
+    if special
+      pieces = special.split(';')
+      if pieces.size == 0
+      elsif pieces.size >= 1
+        stat_pieces = pieces[0].split(' ')
+        for stat in stat_pieces
+          stat_piece_match = stat_piece_regex.match stat
+          if stat_piece_match
+            amount = stat_piece_match[1].to_i
+            attr = stat_piece_match[2]
+
+            skill_in_db = Skill.find_by_name(attr.humanize)
+            if skill_in_db
+              sa = SkillAffect.new
+              sa.equipment_piece_id = eq.id
+              sa.skill_id = skill_in_db.id
+              sa.value = amount
+              sa.save
+            end
+
+            spell_in_db = Spell.find_by_name(attr.humanize)
+            if spell_in_db
+              sa = SpellAffect.new
+              sa.equipment_piece_id = eq.id
+              sa.spell_id = spell_in_db.id
+              sa.value = amount
+              sa.save
+            end
+
+            stat_in_db = Stat.find_by_abbreviation(attr)
+            if stat_in_db
+              sa = StatAffect.new
+              sa.equipment_piece_id = eq.id
+              sa.stat_id = stat_in_db.id
+              sa.value = amount
+              sa.save
+            end
+
+            res_in_db = nil
+            res_in_db = dtypes[attr] if dtypes.has_key?(attr) == true
+            if res_in_db
+              res_in_db = DamageType.find_by_name(res_in_db)
+              ra = ResistanceAffect.new
+              ra.equipment_piece_id = eq.id
+              ra.damage_type_id = res_in_db.id
+              ra.value = amount
+              ra.save
+            end
+          end
+        end
+     
+        if pieces.size > 1
+          sp = pieces[1..-1].join(';').strip!
+          eq.special = sp
+          eq.save
+        end
+      end
+    end
+  end  
 end

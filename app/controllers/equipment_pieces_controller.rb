@@ -3,7 +3,7 @@ class EquipmentPiecesController < ApplicationController
   # GET /equipment_pieces.xml
   # GET /equipment_pieces.json
   def index
-    @equipment_pieces = EquipmentPiece.find(:all)
+    @equipment_pieces = EquipmentPiece.paginate :page => params[:page], :order => 'name ASC'
 
     respond_to do |format|
       format.html # index.html.erb
