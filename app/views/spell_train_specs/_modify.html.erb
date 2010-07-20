@@ -1,0 +1,29 @@
+<% form_for(modify) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :spell_id %><br />
+    <%= f.select :spell_id, local_assigns[:spells].map{|c| [c.name, c.id]} %>
+  </p>
+
+  <p>
+    <%= f.label :guild_id %><br />
+    <%= f.select :guild_id, local_assigns[:guilds].map{|c| [c.name, c.id]} %>
+  </p>
+
+  <p>
+    <%= f.label :level %><br />
+    <%= f.text_field :level %>
+  </p>
+
+  <p>
+    <%= f.label :max %><br />
+    <%= f.text_field :max %>
+  </p>
+
+  <p>
+    <%= f.submit "Done" %>
+  </p>
+
+<% end %>
+

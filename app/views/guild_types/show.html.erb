@@ -1,0 +1,13 @@
+<p>
+  <b>Name:</b>
+  <%=h @guild_type.name %>
+</p>
+
+<p>
+  <b>Level:</b>
+  <%=h @guild_type.level %>
+</p>
+
+
+<%= link_to 'Edit', edit_guild_type_path(@guild_type) %> |
+<%= link_to 'Back', guild_types_path %>

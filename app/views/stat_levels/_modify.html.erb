@@ -1,0 +1,19 @@
+<% form_for(modify) do |f| %>
+
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :level %><br>
+    <%= f.text_field :level %>
+  </p>
+
+  <p>
+    <%= f.submit "Done" %>
+  </p>
+
+<% end %>

@@ -1,0 +1,2 @@
+module HungerLevelsHelper
+end

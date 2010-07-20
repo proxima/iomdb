@@ -1,0 +1,14 @@
+<table>
+  <% for armor_class_level in @armor_class_levels %>
+  <tr>
+    <td><%= render :partial => "view", :object => armor_class_level %></td>
+    <td><%= link_to 'Show', armor_class_level %></td>
+    <td><%= link_to 'Edit', edit_armor_class_level_path(armor_class_level) %></td>
+    <td><%= link_to 'Destroy', armor_class_level, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+  <% end %>
+</table>
+
+<br>
+
+<%= link_to 'New', new_armor_class_level_path %>

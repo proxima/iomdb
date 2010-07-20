@@ -1,0 +1,4470 @@
+Guild Name: tiger master
+ Skill: double claw attack
+  Base cost: 1796
+  Min Level: 5
+ Skill: tiger aggression
+  Base cost: 1412
+  Min Level: 7
+ Skill: focus tiger claw
+  Base cost: 1633
+  Min Level: 8
+ Skill: pounce attack
+  Base cost: 1479
+ Skill: soul of the tiger
+  Base cost: 1633
+  Min Level: 1
+ Skill: style preference
+  Base cost: 720
+  Min Level: 1
+ Skill: tiger claw
+  Base cost: 1057
+  Min Level: 2
+ Skill: endowment of the gods
+  Base cost: 1633
+  Min Level: 5
+ Guild Level: bravo
+ Base Guilds: 
+  martial artist
+Guild Name: stygian sorcerer
+ Skill: mind power
+  Base cost: 5717
+  Min Level: 1
+ Skill: high energy focus
+  Base cost: 1541
+  Min Level: 7
+ Spell: energy field
+  Base cost: 3380
+  Min Level: 3
+ Spell: animate wraith
+  Base cost: 1690
+  Min Level: 5
+ Spell: mind blast
+  Base cost: 1098
+  Min Level: 6
+ Guild Level: bravo
+ Base Guilds: 
+  necromancer
+Guild Name: knight
+ Skill: multiweapons
+  Base cost: 940
+  Min Level: 5
+ Skill: enhance striking
+  Base cost: 1084
+  Min Level: 9
+ Skill: counter dodge
+  Base cost: 940
+  Min Level: 8
+ Skill: biofeedback
+  Base cost: 739
+  Min Level: 2
+ Skill: weaponmaster
+  Base cost: 1176
+  Min Level: 10
+ Skill: strike
+  Base cost: 960
+  Min Level: 4
+ Skill: whirlwind attack
+  Base cost: 940
+  Min Level: 6
+ Guild Level: gamma
+ Base Guilds: 
+  warrior
+Guild Name: voodooist
+ Skill: voodooism
+  Base cost: 2284
+  Min Level: 10
+ Skill: minion control
+  Base cost: 1142
+  Min Level: 1
+ Spell: combine corpses
+  Base cost: 603
+  Min Level: 6
+ Spell: mind surge
+  Base cost: 603
+  Min Level: 1
+ Spell: voodoo curse
+  Base cost: 814
+  Min Level: 7
+ Spell: strengthen immunity
+  Base cost: 2321
+  Min Level: 7
+ Spell: summon carrion crawlers
+  Base cost: 693
+  Min Level: 2
+ Spell: vampiric touch
+  Base cost: 603
+  Min Level: 9
+ Spell: rotting limbs
+  Base cost: 693
+  Min Level: 4
+ Spell: animate zombie
+  Base cost: 603
+  Min Level: 9
+ Spell: minion information
+  Base cost: 603
+  Min Level: 5
+ Spell: circle of protection
+  Base cost: 603
+  Min Level: 1
+ Guild Level: gamma
+ Base Guilds: 
+  necromancer
+Guild Name: elemental
+ Skill: magical economy
+  Base cost: 557
+  Min Level: 8
+ Skill: determine effectiveness
+  Base cost: 1142
+  Min Level: 14
+ Skill: casting
+  Base cost: 1428
+  Min Level: 17
+ Skill: essence eye
+  Base cost: 557
+  Min Level: 5
+ Skill: ceremony
+  Base cost: 328
+  Min Level: 3
+ Skill: honor of the gods
+  Base cost: 557
+  Min Level: 9
+ Spell: cold flesh
+  Base cost: 521
+  Min Level: 16
+ Spell: magic dart
+  Base cost: 308
+  Min Level: 2
+ Spell: light
+  Base cost: 277
+  Min Level: 1
+ Spell: magic blast
+  Base cost: 462
+  Min Level: 10
+ Spell: stone rain
+  Base cost: 474
+  Min Level: 18
+ Spell: darkness
+  Base cost: 261
+  Min Level: 1
+ Spell: stun shield
+  Base cost: 1326
+  Min Level: 20
+ Spell: mind sponge
+  Base cost: 614
+  Min Level: 4
+ Spell: floating disc
+  Base cost: 603
+  Min Level: 15
+ Spell: stone fist
+  Base cost: 431
+  Min Level: 11
+ Spell: spectral push
+  Base cost: 369
+  Min Level: 6
+ Spell: flame tongue
+  Base cost: 431
+  Min Level: 13
+ Guild Level: alpha
+ Base Guilds: 
+  elemental
+Guild Name: air mage
+ Skill: quick chant
+  Base cost: 1655
+  Min Level: 4
+ Skill: high energy focus
+  Base cost: 1541
+  Min Level: 7
+ Skill: mastery of air
+  Base cost: 1713
+  Min Level: 9
+ Spell: body of air
+  Base cost: 1688
+  Min Level: 10
+ Spell: asphyxiate
+  Base cost: 844
+  Min Level: 7
+ Spell: aura of air
+  Base cost: 1084
+  Min Level: 1
+ Spell: air shield
+  Base cost: 603
+  Min Level: 3
+ Spell: revert form
+  Base cost: 542
+  Min Level: 10
+ Spell: tornado
+  Base cost: 723
+  Min Level: 2
+ Guild Level: gamma
+ Base Guilds: 
+  elemental
+Guild Name: magical torturer
+ Skill: quick chant
+  Base cost: 1655
+  Min Level: 3
+ Skill: rack
+  Base cost: 1622
+  Min Level: 6
+ Skill: thumb screws
+  Base cost: 961
+  Min Level: 4
+ Skill: interrogation
+  Base cost: 1633
+  Min Level: 9
+ Spell: peel flesh
+  Base cost: 603
+  Min Level: 7
+ Spell: magical brand
+  Base cost: 663
+  Min Level: 1
+ Spell: images of torture
+  Base cost: 603
+  Min Level: 10
+ Spell: create magical rack
+  Base cost: 603
+  Min Level: 5
+ Guild Level: gamma
+ Base Guilds: 
+  unraveller
+Guild Name: earth conjuror
+ Skill: earth racial lore
+  Base cost: 1256
+  Min Level: 1
+ Skill: earth planar lore
+  Base cost: 1142
+  Min Level: 1
+ Guild Level: gamma
+ Base Guilds: 
+  summoner
+Guild Name: evoker of magic
+ Skill: magic evocation
+  Base cost: 2286
+  Min Level: 1
+ Skill: magical focus
+  Base cost: 1729
+  Min Level: 2
+ Spell: mana storm
+  Base cost: 1470
+  Min Level: 3
+ Spell: magical fury
+  Base cost: 2788
+  Min Level: 4
+ Spell: breath of magic
+  Base cost: 2112
+  Min Level: 1
+ Guild Level: bravo
+ Base Guilds: 
+  evoker
+Guild Name: warrior
+ Skill: dodge
+  Base cost: 1316
+  Min Level: 17
+ Skill: flesh of stone
+  Base cost: 708
+  Min Level: 3
+ Skill: unarmed combat
+  Base cost: 1370
+  Min Level: 20
+ Skill: weapon skill slashing
+  Base cost: 504
+  Min Level: 8
+ Skill: weapon skill piercing
+  Base cost: 504
+  Min Level: 5
+ Skill: kick
+  Base cost: 940
+  Min Level: 20
+ Skill: doublehit
+  Base cost: 940
+  Min Level: 14
+ Skill: weapon skill blunt
+  Base cost: 504
+  Min Level: 2
+ Skill: stun
+  Base cost: 940
+  Min Level: 19
+ Skill: weapon skill whipping
+  Base cost: 504
+  Min Level: 10
+ Skill: attack
+  Base cost: 459
+  Min Level: 1
+ Skill: forearm bash
+  Base cost: 739
+  Min Level: 11
+ Skill: punch
+  Base cost: 426
+  Min Level: 6
+ Skill: honor of the gods
+  Base cost: 557
+  Min Level: 4
+ Guild Level: alpha
+ Base Guilds: 
+  warrior
+Guild Name: lurker
+ Skill: limber up
+  Base cost: 1339
+  Min Level: 11
+ Skill: flight
+  Base cost: 1034
+  Min Level: 7
+ Skill: acrobat stance
+  Base cost: 1773
+  Min Level: 12
+ Skill: stealth
+  Base cost: 974
+  Min Level: 9
+ Skill: weapon skill slashing
+  Base cost: 504
+  Min Level: 2
+ Skill: weapon skill piercing
+  Base cost: 504
+  Min Level: 2
+ Skill: kick
+  Base cost: 940
+  Min Level: 8
+ Skill: sleight of hand
+  Base cost: 328
+  Min Level: 18
+ Skill: double stab
+  Base cost: 1370
+  Min Level: 20
+ Skill: tumbling
+  Base cost: 1222
+  Min Level: 16
+ Skill: attack
+  Base cost: 459
+  Min Level: 1
+ Skill: stab
+  Base cost: 1505
+  Min Level: 4
+ Skill: honor of the gods
+  Base cost: 557
+  Min Level: 6
+ Skill: punch
+  Base cost: 426
+  Min Level: 3
+ Spell: light
+  Base cost: 277
+  Min Level: 5
+ Spell: darkness
+  Base cost: 261
+  Min Level: 5
+ Guild Level: alpha
+ Base Guilds: 
+  lurker
+Guild Name: master abjurer
+ Skill: enhance abjuration
+  Base cost: 2368
+  Min Level: 4
+ Skill: determine effectiveness
+  Base cost: 1142
+  Min Level: 3
+ Skill: find weakness
+  Base cost: 1537
+  Min Level: 1
+ Skill: lengthen abjuration
+  Base cost: 2286
+  Min Level: 6
+ Skill: mastery of reflection
+  Base cost: 2123
+  Min Level: 2
+ Skill: strengthen abjuration
+  Base cost: 2123
+  Min Level: 8
+ Spell: lesser holy shield
+  Base cost: 1352
+  Min Level: 5
+ Spell: lesser unholy shield
+  Base cost: 1352
+  Min Level: 6
+ Spell: chameleon energy blast
+  Base cost: 1183
+  Min Level: 2
+ Spell: remove shields
+  Base cost: 929
+  Min Level: 3
+ Guild Level: bravo
+ Base Guilds: 
+  abjurer
+Guild Name: evoker of acid
+ Skill: acid evocation
+  Base cost: 2286
+  Min Level: 1
+ Skill: acid focus
+  Base cost: 1729
+  Min Level: 2
+ Spell: dissolving spray
+  Base cost: 2788
+  Min Level: 4
+ Spell: acidic ray
+  Base cost: 2112
+  Min Level: 1
+ Spell: corrosive cloud
+  Base cost: 1470
+  Min Level: 3
+ Guild Level: bravo
+ Base Guilds: 
+  evoker
+Guild Name: bard
+ Skill: hymn of honor
+  Base cost: 604
+  Min Level: 9
+ Skill: hymn to mitra
+  Base cost: 604
+  Min Level: 5
+ Skill: recent performances
+  Base cost: 604
+  Min Level: 9
+ Skill: song of sinbad
+  Base cost: 604
+  Min Level: 5
+ Skill: eye of the beholder
+  Base cost: 604
+  Min Level: 1
+ Skill: mithrens warsong
+  Base cost: 604
+  Min Level: 6
+ Skill: song of the streets
+  Base cost: 604
+  Min Level: 2
+ Skill: storytelling
+  Base cost: 1142
+  Min Level: 1
+ Skill: epic of endowment
+  Base cost: 604
+  Min Level: 7
+ Skill: history
+  Base cost: 739
+  Min Level: 10
+ Skill: legend of arabidopsis
+  Base cost: 604
+  Min Level: 3
+ Skill: song of spirit
+  Base cost: 604
+  Min Level: 8
+ Skill: grithmals chant
+  Base cost: 604
+  Min Level: 4
+ Guild Level: gamma
+ Base Guilds: 
+  acrobat
+Guild Name: druid
+ Skill: magical economy
+  Base cost: 557
+  Min Level: 11
+ Skill: herb gathering
+  Base cost: 873
+  Min Level: 9
+ Skill: determine effectiveness
+  Base cost: 1142
+  Min Level: 12
+ Skill: scavenge wood
+  Base cost: 571
+  Min Level: 5
+ Skill: herb preservation
+  Base cost: 501
+  Min Level: 10
+ Skill: fire building
+  Base cost: 604
+  Min Level: 6
+ Skill: weapon skill blunt
+  Base cost: 504
+  Min Level: 3
+ Skill: casting
+  Base cost: 1428
+  Min Level: 13
+ Skill: essence eye
+  Base cost: 557
+  Min Level: 11
+ Skill: spirit blessing
+  Base cost: 1033
+  Min Level: 8
+ Skill: commune with nature
+  Base cost: 1142
+  Min Level: 18
+ Skill: attack
+  Base cost: 459
+  Min Level: 1
+ Skill: honor of the gods
+  Base cost: 557
+  Min Level: 4
+ Spell: poison dart
+  Base cost: 431
+  Min Level: 12
+ Spell: harmony of nature
+  Base cost: 689
+  Min Level: 13
+ Spell: magical growth
+  Base cost: 292
+  Min Level: 6
+ Spell: thorn cloud
+  Base cost: 431
+  Min Level: 15
+ Spell: call for dryad
+  Base cost: 431
+  Min Level: 17
+ Spell: spirit wind
+  Base cost: 308
+  Min Level: 4
+ Spell: gaian touch
+  Base cost: 366
+  Min Level: 11
+ Spell: rock rain
+  Base cost: 350
+  Min Level: 9
+ Spell: embrace of gaia
+  Base cost: 768
+  Min Level: 19
+ Guild Level: alpha
+ Base Guilds: 
+  druid
+Guild Name: shield master
+ Skill: defenders warcry
+  Base cost: 1201
+  Min Level: 8
+ Skill: weapon parry
+  Base cost: 1412
+  Min Level: 5
+ Skill: advanced parry
+  Base cost: 1748
+  Min Level: 6
+ Skill: enhanced deflection
+  Base cost: 1815
+  Min Level: 6
+ Skill: double bash
+  Base cost: 1547
+  Min Level: 7
+ Skill: fighting instinct
+  Base cost: 1878
+  Min Level: 2
+ Skill: shield fighting
+  Base cost: 1345
+  Min Level: 8
+ Skill: endowment of the gods
+  Base cost: 1633
+  Min Level: 3
+ Skill: willpower
+  Base cost: 1598
+  Min Level: 1
+ Guild Level: bravo
+ Base Guilds: 
+  warrior
+Guild Name: evoker of flames
+ Skill: fire evocation
+  Base cost: 2286
+  Min Level: 1
+ Skill: fire focus
+  Base cost: 1729
+  Min Level: 2
+ Spell: fire wave
+  Base cost: 1470
+  Min Level: 3
+ Spell: flame strike
+  Base cost: 2112
+  Min Level: 1
+ Spell: immolate
+  Base cost: 2788
+  Min Level: 4
+ Guild Level: bravo
+ Base Guilds: 
+  evoker
+Guild Name: woodsman
+ Skill: prepare healing poultice
+  Base cost: 739
+  Min Level: 18
+ Skill: dodge
+  Base cost: 1316
+  Min Level: 19
+ Skill: herb gathering
+  Base cost: 873
+  Min Level: 9
+ Skill: scavenge wood
+  Base cost: 571
+  Min Level: 5
+ Skill: herb preservation
+  Base cost: 501
+  Min Level: 10
+ Skill: weapon skill slashing
+  Base cost: 504
+  Min Level: 11
+ Skill: doublehit
+  Base cost: 940
+  Min Level: 14
+ Skill: fire building
+  Base cost: 604
+  Min Level: 6
+ Skill: camping
+  Base cost: 705
+  Min Level: 19
+ Skill: weapon skill blunt
+  Base cost: 504
+  Min Level: 3
+ Skill: build campfire
+  Base cost: 705
+  Min Level: 15
+ Skill: spirit blessing
+  Base cost: 1033
+  Min Level: 8
+ Skill: attack
+  Base cost: 459
+  Min Level: 1
+ Skill: prepare nourishing soup
+  Base cost: 739
+  Min Level: 16
+ Skill: hunting
+  Base cost: 705
+  Min Level: 13
+ Skill: whirlwind attack
+  Base cost: 940
+  Min Level: 16
+ Skill: honor of the gods
+  Base cost: 557
+  Min Level: 4
+ Spell: magical growth
+  Base cost: 292
+  Min Level: 6
+ Spell: spirit wind
+  Base cost: 308
+  Min Level: 4
+ Spell: rock rain
+  Base cost: 350
+  Min Level: 9
+ Guild Level: alpha
+ Base Guilds: 
+  woodsman
+Guild Name: scourge
+ Skill: repair undead
+  Base cost: 961
+  Min Level: 1
+ Skill: mould body
+  Base cost: 961
+  Min Level: 2
+ Skill: bond preference
+  Base cost: 961
+  Min Level: 5
+ Spell: roro
+  Base cost: 845
+  Min Level: 8
+ Spell: tumatarau
+  Base cost: 2661
+  Min Level: 8
+ Spell: kaha o tinana
+  Base cost: 2661
+  Min Level: 7
+ Spell: pupuhi
+  Base cost: 845
+  Min Level: 6
+ Spell: torokaha
+  Base cost: 845
+  Min Level: 2
+ Spell: tauoranga
+  Base cost: 2661
+  Min Level: 6
+ Spell: ethereal bonding
+  Base cost: 971
+  Min Level: 5
+ Spell: parenga
+  Base cost: 845
+  Min Level: 4
+ Guild Level: bravo
+ Base Guilds: 
+  necromancer
+Guild Name: exorcist
+ Skill: quick chant
+  Base cost: 1655
+  Min Level: 3
+ Skill: exorcism
+  Base cost: 2123
+  Min Level: 1
+ Skill: high energy focus
+  Base cost: 1541
+  Min Level: 10
+ Spell: hand of god
+  Base cost: 1773
+  Min Level: 9
+ Spell: white flame
+  Base cost: 1056
+  Min Level: 1
+ Spell: wrath of the righteous
+  Base cost: 1056
+  Min Level: 4
+ Spell: holy prayer
+  Base cost: 1216
+  Min Level: 5
+ Spell: turn undead
+  Base cost: 1521
+  Min Level: 6
+ Spell: banish demon
+  Base cost: 1690
+  Min Level: 8
+ Guild Level: bravo
+ Base Guilds: 
+  weaver
+Guild Name: weather watcher
+ Skill: quick chant
+  Base cost: 1655
+  Min Level: 3
+ Skill: weather sense
+  Base cost: 1256
+  Min Level: 8
+ Skill: high energy focus
+  Base cost: 1541
+  Min Level: 4
+ Spell: clear clouds
+  Base cost: 482
+  Min Level: 7
+ Spell: call clouds
+  Base cost: 572
+  Min Level: 1
+ Spell: call lightning
+  Base cost: 822
+  Min Level: 1
+ Spell: sunbeam
+  Base cost: 928
+  Min Level: 7
+ Spell: living lightningrod
+  Base cost: 976
+  Min Level: 4
+ Spell: wind call
+  Base cost: 904
+  Min Level: 9
+ Spell: moonray
+  Base cost: 861
+  Min Level: 8
+ Spell: purifying drizzle
+  Base cost: 572
+  Min Level: 5
+ Guild Level: gamma
+ Base Guilds: 
+  druid
+Guild Name: disciple of shadow
+ Skill: stretch shadow
+  Base cost: 806
+  Min Level: 6
+ Skill: shadow manipulation
+  Base cost: 2449
+  Min Level: 6
+ Skill: shadow lore
+  Base cost: 1084
+  Min Level: 2
+ Skill: shape shadow
+  Base cost: 912
+  Min Level: 7
+ Skill: shadow control
+  Base cost: 1142
+  Min Level: 4
+ Spell: split shadow
+  Base cost: 603
+  Min Level: 9
+ Spell: touch of darkness
+  Base cost: 845
+  Min Level: 1
+ Spell: tendrils of darkness
+  Base cost: 844
+  Min Level: 10
+ Spell: awaken shadow
+  Base cost: 603
+  Min Level: 1
+ Spell: impaling shadow
+  Base cost: 1085
+  Min Level: 7
+ Spell: dark arrow
+  Base cost: 819
+  Min Level: 3
+ Spell: shaded ally
+  Base cost: 693
+  Min Level: 8
+ Spell: fluttering wall
+  Base cost: 572
+  Min Level: 5
+ Guild Level: bravo
+ Base Guilds: 
+  lurker
+Guild Name: servant of lloth
+ Skill: worship of lloth
+  Base cost: 1960
+  Min Level: 1
+ Spell: spider bite
+  Base cost: 845
+  Min Level: 6
+ Spell: sacrifice to lloth
+  Base cost: 718
+  Min Level: 7
+ Spell: summon spiders
+  Base cost: 845
+  Min Level: 2
+ Spell: appoint acolyte of lloth
+  Base cost: 1014
+  Min Level: 8
+ Spell: evil heart
+  Base cost: 845
+  Min Level: 3
+ Spell: feel web
+  Base cost: 676
+  Min Level: 9
+ Spell: spin web
+  Base cost: 971
+  Min Level: 4
+ Spell: avatar of lloth
+  Base cost: 1267
+  Min Level: 10
+ Spell: silken parachute
+  Base cost: 1056
+  Min Level: 5
+ Spell: talk to varya
+  Base cost: 591
+  Min Level: 1
+ Guild Level: bravo
+ Base Guilds: 
+  unraveller
+Guild Name: dragon master
+ Skill: nature of the beast
+  Base cost: 2268
+  Min Level: 6
+ Skill: dragon reflexes
+  Base cost: 2213
+  Min Level: 6
+ Skill: soul of the dragon
+  Base cost: 2337
+  Min Level: 1
+ Skill: poison claw
+  Base cost: 2102
+  Min Level: 10
+ Skill: dragon strength
+  Base cost: 2501
+  Min Level: 1
+ Skill: scaled hide
+  Base cost: 2570
+  Min Level: 11
+ Skill: sharpen claw
+  Base cost: 2570
+  Min Level: 2
+ Skill: dragon possession
+  Base cost: 3093
+  Min Level: 11
+ Skill: dragon tail sweep
+  Base cost: 2116
+  Min Level: 4
+ Guild Level: omicron
+ Base Guilds: 
+  martial artist
+Guild Name: evoker of poison
+ Skill: poison evocation
+  Base cost: 2286
+  Min Level: 1
+ Skill: poison focus
+  Base cost: 1729
+  Min Level: 2
+ Spell: killing plague
+  Base cost: 1470
+  Min Level: 3
+ Spell: virulent strike
+  Base cost: 2788
+  Min Level: 4
+ Spell: venomous bite
+  Base cost: 2112
+  Min Level: 1
+ Guild Level: bravo
+ Base Guilds: 
+  evoker
+Guild Name: mystic warriors
+ Skill: split essence
+  Base cost: 672
+  Min Level: 8
+ Skill: fists of legend
+  Base cost: 940
+  Min Level: 9
+ Skill: motion control
+  Base cost: 1428
+  Min Level: 4
+ Skill: inner peace
+  Base cost: 1075
+  Min Level: 3
+ Skill: restore self
+  Base cost: 1176
+  Min Level: 5
+ Skill: mastery of chi
+  Base cost: 1713
+  Min Level: 5
+ Skill: force of will
+  Base cost: 775
+  Min Level: 6
+ Spell: chi bolt
+  Base cost: 603
+  Min Level: 1
+ Guild Level: gamma
+ Base Guilds: 
+  martial artist
+Guild Name: primate of lloth
+ Skill: ritual circle lore
+  Base cost: 3037
+  Min Level: 2
+ Skill: inflict harm
+  Base cost: 1142
+  Min Level: 9
+ Skill: true belief in lloth
+  Base cost: 3037
+  Min Level: 1
+ Skill: draw ritual circle
+  Base cost: 1375
+  Min Level: 7
+ Skill: philosophy
+  Base cost: 1718
+  Min Level: 5
+ Spell: will of the gods
+  Base cost: 1656
+  Min Level: 15
+ Spell: ritual of protection
+  Base cost: 1656
+  Min Level: 3
+ Spell: coming of age
+  Base cost: 2011
+  Min Level: 10
+ Spell: ritual of death
+  Base cost: 2366
+  Min Level: 4
+ Spell: ritual of draining
+  Base cost: 1656
+  Min Level: 11
+ Spell: ritual of binding
+  Base cost: 1656
+  Min Level: 12
+ Spell: ritual of torture
+  Base cost: 1656
+  Min Level: 6
+ Spell: ritual of incarnation
+  Base cost: 1537
+  Min Level: 13
+ Guild Level: omicron
+ Base Guilds: 
+  unraveller
+Guild Name: poison brewer
+ Skill: mastery of poisons
+  Base cost: 1142
+  Min Level: 2
+ Skill: brew numbing poison
+  Base cost: 672
+  Min Level: 3
+ Skill: brew paralyzing poison
+  Base cost: 672
+  Min Level: 5
+ Skill: brew lethal poison
+  Base cost: 672
+  Min Level: 7
+ Skill: brew confusing poison
+  Base cost: 672
+  Min Level: 1
+ Skill: brew stunning poison
+  Base cost: 672
+  Min Level: 9
+ Skill: apply poison
+  Base cost: 873
+  Min Level: 2
+ Guild Level: gamma
+ Base Guilds: 
+  lurker
+Guild Name: sylvan protector
+ Skill: shield parry
+  Base cost: 1316
+  Min Level: 6
+ Skill: motion control
+  Base cost: 1428
+  Min Level: 5
+ Skill: weapon skill shield
+  Base cost: 940
+  Min Level: 3
+ Skill: pathfinding
+  Base cost: 1201
+  Min Level: 2
+ Skill: spiritual transfer
+  Base cost: 2694
+ Skill: hide tracks
+  Base cost: 1201
+  Min Level: 4
+ Skill: memorize location
+  Base cost: 1009
+  Min Level: 1
+ Skill: shield deflection
+  Base cost: 1457
+  Min Level: 4
+ Skill: willow roots
+  Base cost: 1945
+  Min Level: 1
+ Skill: endowment of the gods
+  Base cost: 1633
+  Min Level: 7
+ Spell: acid warding
+  Base cost: 1207
+  Min Level: 3
+ Spell: lightning warding
+  Base cost: 1393
+  Min Level: 7
+ Spell: release spirits
+  Base cost: 929
+  Min Level: 1
+ Spell: poison warding
+  Base cost: 1300
+  Min Level: 5
+ Guild Level: bravo
+ Base Guilds: 
+  woodsman
+Guild Name: street brawler
+ Skill: mighty blow
+  Base cost: 1256
+  Min Level: 7
+ Skill: dodge
+  Base cost: 1316
+  Min Level: 4
+ Skill: street brawling
+  Base cost: 1312
+  Min Level: 10
+ Skill: doublehit
+  Base cost: 940
+  Min Level: 2
+ Skill: tackle
+  Base cost: 672
+  Min Level: 8
+ Skill: dirty kick
+  Base cost: 1108
+  Min Level: 5
+ Guild Level: gamma
+ Base Guilds: 
+  lurker
+  acrobat
+Guild Name: dreadlord
+ Skill: anatomy
+  Base cost: 5717
+  Min Level: 1
+ Spell: animate abomination
+  Base cost: 1690
+  Min Level: 3
+ Guild Level: bravo
+ Base Guilds: 
+  necromancer
+Guild Name: high priest
+ Skill: benediction
+  Base cost: 1960
+  Min Level: 4
+ Skill: consecrate ground
+  Base cost: 1375
+  Min Level: 6
+ Skill: healing efficiency
+  Base cost: 3037
+  Min Level: 3
+ Skill: exorcism
+  Base cost: 2123
+  Min Level: 5
+ Skill: dedication
+  Base cost: 2041
+  Min Level: 6
+ Skill: sincerity of prayers
+  Base cost: 1870
+  Min Level: 1
+ Skill: high priest rites
+  Base cost: 2687
+  Min Level: 8
+ Skill: martyr strength
+  Base cost: 2570
+  Min Level: 2
+ Spell: chant of the high priest
+  Base cost: 1183
+  Min Level: 9
+ Spell: return to sanctuary
+  Base cost: 1360
+  Min Level: 3
+ Spell: spray holy water
+  Base cost: 1986
+  Min Level: 10
+ Spell: revive companions
+  Base cost: 1892
+  Min Level: 12
+ Spell: summon holy bottle
+  Base cost: 1183
+  Min Level: 4
+ Spell: death ritual
+  Base cost: 3382
+  Min Level: 7
+ Spell: aura of healing
+  Base cost: 2980
+  Min Level: 8
+ Spell: create holy water
+  Base cost: 1478
+  Min Level: 5
+ Guild Level: omicron
+ Base Guilds: 
+  weaver
+Guild Name: abjurer
+ Skill: magical economy
+  Base cost: 557
+  Min Level: 8
+ Skill: protection ritual
+  Base cost: 1142
+  Min Level: 19
+ Skill: casting
+  Base cost: 1428
+  Min Level: 14
+ Skill: essence eye
+  Base cost: 557
+  Min Level: 5
+ Skill: ceremony
+  Base cost: 328
+  Min Level: 3
+ Skill: honor of the gods
+  Base cost: 557
+  Min Level: 9
+ Spell: lesser acid shield
+  Base cost: 431
+  Min Level: 17
+ Spell: lesser fire shield
+  Base cost: 431
+  Min Level: 13
+ Spell: magic dart
+  Base cost: 308
+  Min Level: 2
+ Spell: light
+  Base cost: 277
+  Min Level: 1
+ Spell: lesser asphyxiation shield
+  Base cost: 431
+  Min Level: 18
+ Spell: magic blast
+  Base cost: 462
+  Min Level: 10
+ Spell: lesser poison shield
+  Base cost: 431
+  Min Level: 14
+ Spell: darkness
+  Base cost: 261
+  Min Level: 1
+ Spell: lesser electric shield
+  Base cost: 431
+  Min Level: 19
+ Spell: lesser cold shield
+  Base cost: 431
+  Min Level: 15
+ Spell: mind sponge
+  Base cost: 614
+  Min Level: 4
+ Spell: iron will
+  Base cost: 1185
+  Min Level: 15
+ Spell: lesser physical shield
+  Base cost: 431
+  Min Level: 20
+ Spell: aura of force
+  Base cost: 757
+  Min Level: 11
+ Spell: lesser psionic shield
+  Base cost: 431
+  Min Level: 16
+ Spell: spectral push
+  Base cost: 369
+  Min Level: 6
+ Spell: lesser magical shield
+  Base cost: 431
+  Min Level: 12
+ Guild Level: alpha
+ Base Guilds: 
+  abjurer
+Guild Name: barbarian
+ Skill: whirlwind strike
+  Base cost: 1249
+  Min Level: 7
+ Skill: blunt weapons mastery
+  Base cost: 1345
+  Min Level: 8
+ Skill: bloodlust
+  Base cost: 1960
+  Min Level: 6
+ Skill: devastating attack
+  Base cost: 1748
+  Min Level: 4
+ Skill: cry of the berserker
+  Base cost: 1201
+  Min Level: 8
+ Skill: advanced whirlwind attack
+  Base cost: 1479
+  Min Level: 5
+ Skill: deathblow
+  Base cost: 1498
+  Min Level: 2
+ Skill: stunning blow
+  Base cost: 2084
+  Min Level: 6
+ Skill: endowment of the gods
+  Base cost: 1633
+  Min Level: 3
+ Guild Level: bravo
+ Base Guilds: 
+  warrior
+Guild Name: cauldron magic
+ Skill: brewing lore
+  Base cost: 1878
+  Min Level: 4
+ Spell: stir magical mixture
+  Base cost: 1123
+  Min Level: 8
+ Spell: fill cauldron
+  Base cost: 845
+  Min Level: 1
+ Spell: stir corrosive mixture
+  Base cost: 1183
+  Min Level: 9
+ Spell: stir mixture of tremors
+  Base cost: 789
+  Min Level: 3
+ Spell: stir explosive mixture
+  Base cost: 882
+  Min Level: 4
+ Spell: stir poisonous mixture
+  Base cost: 933
+  Min Level: 6
+ Spell: summon cauldron
+  Base cost: 845
+  Min Level: 1
+ Guild Level: bravo
+ Base Guilds: 
+  psychics
+Guild Name: martial artist
+ Skill: flesh of stone
+  Base cost: 708
+  Min Level: 3
+ Skill: defensive maneuvers
+  Base cost: 940
+  Min Level: 15
+ Skill: power kick
+  Base cost: 1142
+  Min Level: 17
+ Skill: meditation
+  Base cost: 672
+  Min Level: 12
+ Skill: fists of fury
+  Base cost: 940
+  Min Level: 20
+ Skill: stun
+  Base cost: 940
+  Min Level: 19
+ Skill: attack
+  Base cost: 459
+  Min Level: 18
+ Skill: off hand attack
+  Base cost: 940
+ Skill: martial arts
+  Base cost: 940
+  Min Level: 8
+ Skill: punch
+  Base cost: 426
+  Min Level: 6
+ Skill: honor of the gods
+  Base cost: 557
+  Min Level: 4
+ Guild Level: alpha
+ Base Guilds: 
+  martial artist
+Guild Name: harmer
+ Skill: inflict harm
+  Base cost: 1142
+  Min Level: 1
+ Skill: quick chant
+  Base cost: 1655
+  Min Level: 3
+ Skill: high energy focus
+  Base cost: 1541
+  Min Level: 6
+ Spell: protection from good
+  Base cost: 1084
+  Min Level: 5
+ Spell: unholy shield
+  Base cost: 1166
+  Min Level: 8
+ Spell: mana drain
+  Base cost: 603
+  Min Level: 9
+ Spell: harm good
+  Base cost: 723
+  Min Level: 10
+ Spell: unholy prayer
+  Base cost: 1097
+  Min Level: 2
+ Spell: harm body
+  Base cost: 603
+  Min Level: 4
+ Guild Level: gamma
+ Base Guilds: 
+  unraveller
+Guild Name: high summoner
+ Skill: ogre racial lore
+  Base cost: 3037
+  Min Level: 8
+ Skill: major creature knowledge
+  Base cost: 3037
+  Min Level: 10
+ Skill: serpentine racial lore
+  Base cost: 3272
+  Min Level: 2
+ Skill: draconic racial lore
+  Base cost: 3505
+  Min Level: 4
+ Skill: giant racial lore
+  Base cost: 3037
+  Min Level: 6
+ Guild Level: omicron
+ Base Guilds: 
+  summoner
+Guild Name: evoker of vacuum
+ Skill: vacuum evocation
+  Base cost: 2286
+  Min Level: 1
+ Skill: asphyxiation focus
+  Base cost: 1729
+  Min Level: 2
+ Spell: void vortex
+  Base cost: 1470
+  Min Level: 3
+ Spell: choking strike
+  Base cost: 2788
+  Min Level: 4
+ Spell: suffocating force
+  Base cost: 2112
+  Min Level: 1
+ Guild Level: bravo
+ Base Guilds: 
+  evoker
+Guild Name: chanter of deep earth
+ Skill: electric attunement
+  Base cost: 2920
+  Min Level: 12
+ Skill: physical attunement
+  Base cost: 2570
+  Min Level: 4
+ Skill: fire attunement
+  Base cost: 2453
+ Skill: magical attunement
+  Base cost: 2687
+  Min Level: 6
+ Skill: crystal efficiency
+  Base cost: 2857
+ Skill: focus crystal energy
+  Base cost: 2612
+  Min Level: 1
+ Skill: mastery of attunement
+  Base cost: 3505
+  Min Level: 7
+ Skill: ritual of creation
+  Base cost: 3855
+  Min Level: 1
+ Skill: acid attunement
+  Base cost: 2805
+  Min Level: 8
+ Skill: cold attunement
+  Base cost: 2453
+  Min Level: 2
+ Skill: poison attunement
+  Base cost: 2687
+  Min Level: 10
+ Skill: asphyxiation attunement
+  Base cost: 2570
+  Min Level: 3
+ Spell: crystal attunement
+  Base cost: 1656
+  Min Level: 1
+ Guild Level: omicron
+ Base Guilds: 
+  druid
+Guild Name: defender of the crown
+ Skill: shield parry
+  Base cost: 1316
+  Min Level: 4
+ Skill: unbalancing blow
+  Base cost: 974
+  Min Level: 3
+ Skill: motion control
+  Base cost: 1428
+  Min Level: 5
+ Skill: weapon skill shield
+  Base cost: 940
+  Min Level: 1
+ Skill: defensive stance
+  Base cost: 739
+  Min Level: 10
+ Skill: riposte
+  Base cost: 1176
+  Min Level: 6
+ Skill: shield deflection
+  Base cost: 1457
+  Min Level: 10
+ Skill: willpower
+  Base cost: 1598
+  Min Level: 7
+ Guild Level: gamma
+ Base Guilds: 
+  warrior
+Guild Name: sylvan guard
+ Skill: multiweapons
+  Base cost: 940
+  Min Level: 6
+ Skill: drumming limbs
+  Base cost: 1075
+  Min Level: 3
+ Skill: wrath of mother earth
+  Base cost: 1478
+  Min Level: 9
+ Skill: natures rage
+  Base cost: 1370
+  Min Level: 4
+ Skill: whittle rootstaff
+  Base cost: 940
+ Skill: natural weapon lore
+  Base cost: 1827
+ Skill: carve leafblade
+  Base cost: 907
+  Min Level: 1
+ Skill: spiritual power
+  Base cost: 2612
+  Min Level: 6
+ Skill: whirlwind attack
+  Base cost: 940
+ Skill: whirling branches
+  Base cost: 1075
+  Min Level: 3
+ Spell: infuse strength
+  Base cost: 1012
+  Min Level: 8
+ Spell: infuse fire power
+  Base cost: 1048
+  Min Level: 6
+ Guild Level: gamma
+ Base Guilds: 
+  woodsman
+Guild Name: servant of shirija
+ Skill: worship of shirija
+  Base cost: 1878
+  Min Level: 1
+ Spell: imprison soul
+  Base cost: 845
+  Min Level: 3
+ Spell: corpse speech
+  Base cost: 802
+  Min Level: 9
+ Spell: soul drain
+  Base cost: 845
+  Min Level: 4
+ Spell: avatar of shirija
+  Base cost: 1267
+  Min Level: 10
+ Spell: sacrifice to shirija
+  Base cost: 718
+  Min Level: 5
+ Spell: stench of death
+  Base cost: 845
+  Min Level: 6
+ Spell: exchange soul
+  Base cost: 1056
+  Min Level: 7
+ Spell: summon undead
+  Base cost: 845
+  Min Level: 2
+ Spell: appoint acolyte of shirija
+  Base cost: 1014
+  Min Level: 8
+ Guild Level: bravo
+ Base Guilds: 
+  unraveller
+Guild Name: bestial seccedaneum
+ Skill: bite attack
+  Base cost: 1269
+  Min Level: 4
+ Skill: ursine lore
+  Base cost: 1428
+  Min Level: 2
+ Skill: fang and claw
+  Base cost: 1128
+  Min Level: 6
+ Skill: avian lore
+  Base cost: 1428
+  Min Level: 1
+ Skill: hug attack
+  Base cost: 886
+  Min Level: 10
+ Skill: stun
+  Base cost: 940
+  Min Level: 5
+ Skill: feline lore
+  Base cost: 1428
+  Min Level: 2
+ Skill: call of nature
+  Base cost: 1312
+  Min Level: 1
+ Skill: canine lore
+  Base cost: 1428
+ Spell: reverse transformation
+  Base cost: 663
+  Min Level: 3
+ Guild Level: gamma
+ Base Guilds: 
+  shapeshifter
+Guild Name: servant of mordulak
+ Skill: worship of mordulak
+  Base cost: 1878
+  Min Level: 1
+ Skill: intimidation
+  Base cost: 1633
+  Min Level: 7
+ Spell: cloud of blood
+  Base cost: 845
+  Min Level: 6
+ Spell: summon leech
+  Base cost: 845
+  Min Level: 2
+ Spell: appoint acolyte of mordulak
+  Base cost: 1014
+  Min Level: 8
+ Spell: sacrifice to mordulak
+  Base cost: 1056
+  Min Level: 3
+ Spell: willing convert
+  Base cost: 845
+  Min Level: 9
+ Spell: blood fire
+  Base cost: 845
+  Min Level: 4
+ Spell: avatar of mordulak
+  Base cost: 1267
+  Min Level: 10
+ Spell: massive scab
+  Base cost: 1710
+  Min Level: 5
+ Guild Level: bravo
+ Base Guilds: 
+  unraveller
+Guild Name: berserker
+ Skill: body control
+  Base cost: 1312
+  Min Level: 4
+ Skill: enhance striking
+  Base cost: 1084
+  Min Level: 9
+ Skill: biofeedback
+  Base cost: 739
+  Min Level: 2
+ Skill: fevered strength
+  Base cost: 772
+  Min Level: 6
+ Skill: strike
+  Base cost: 960
+  Min Level: 4
+ Skill: ignore pain
+  Base cost: 940
+  Min Level: 7
+ Skill: resist pain
+  Base cost: 739
+  Min Level: 1
+ Skill: berserker rage
+  Base cost: 1034
+  Min Level: 10
+ Skill: berserker stance
+  Base cost: 739
+  Min Level: 10
+ Guild Level: gamma
+ Base Guilds: 
+  warrior
+Guild Name: sorcerer
+ Skill: mastery of evocation
+  Base cost: 3740
+  Min Level: 1
+ Skill: mind peace
+  Base cost: 3272
+  Min Level: 8
+ Skill: casting efficiency
+  Base cost: 4090
+  Min Level: 4
+ Skill: estimate efficiency
+  Base cost: 3505
+  Min Level: 6
+ Spell: dampen magic
+  Base cost: 1774
+  Min Level: 8
+ Spell: amplify magic
+  Base cost: 1774
+  Min Level: 8
+ Spell: condition orbit
+  Base cost: 1014
+  Min Level: 3
+ Spell: store spell
+  Base cost: 1242
+  Min Level: 10
+ Spell: prismatic spray
+  Base cost: 1537
+  Min Level: 6
+ Guild Level: omicron
+ Base Guilds: 
+  evoker
+Guild Name: toad master
+ Skill: flying kick
+  Base cost: 1479
+ Skill: toad armor
+  Base cost: 1057
+  Min Level: 2
+ Skill: bouncing toad
+  Base cost: 961
+  Min Level: 4
+ Skill: toad leg power
+  Base cost: 912
+  Min Level: 6
+ Skill: mind over body
+  Base cost: 1550
+  Min Level: 7
+ Skill: style preference
+  Base cost: 720
+  Min Level: 1
+ Skill: forged ego
+  Base cost: 1057
+  Min Level: 8
+ Skill: endowment of the gods
+  Base cost: 1633
+  Min Level: 5
+ Skill: soul of the toad
+  Base cost: 1633
+  Min Level: 1
+ Guild Level: bravo
+ Base Guilds: 
+  martial artist
+Guild Name: telekinetics
+ Skill: quick chant
+  Base cost: 1655
+  Min Level: 5
+ Skill: mastery of the mind
+  Base cost: 1370
+  Min Level: 10
+ Spell: mental eye
+  Base cost: 603
+  Min Level: 7
+ Spell: clairvoyance
+  Base cost: 971
+  Min Level: 3
+ Spell: psychic gaze
+  Base cost: 603
+  Min Level: 1
+ Spell: levitate
+  Base cost: 1206
+  Min Level: 9
+ Spell: assess person
+  Base cost: 452
+  Min Level: 6
+ Guild Level: gamma
+ Base Guilds: 
+  psychics
+Guild Name: evoker of ether
+ Skill: quick chant
+  Base cost: 1655
+  Min Level: 6
+ Skill: focused mind
+  Base cost: 1310
+  Min Level: 9
+ Skill: high energy focus
+  Base cost: 1541
+  Min Level: 10
+ Spell: poison arrow
+  Base cost: 844
+  Min Level: 5
+ Spell: magical arrow
+  Base cost: 874
+  Min Level: 7
+ Spell: dispel magic
+  Base cost: 603
+  Min Level: 8
+ Spell: acid arrow
+  Base cost: 783
+  Min Level: 1
+ Spell: lightning arrow
+  Base cost: 814
+  Min Level: 3
+ Guild Level: gamma
+ Base Guilds: 
+  evoker
+Guild Name: shields of faith
+ Skill: benediction
+  Base cost: 1960
+  Min Level: 1
+ Skill: dedication
+  Base cost: 2041
+  Min Level: 6
+ Spell: sacrifice spirit
+  Base cost: 929
+  Min Level: 10
+ Spell: prayer of the martyr
+  Base cost: 1427
+  Min Level: 4
+ Spell: firm belief
+  Base cost: 1622
+  Min Level: 5
+ Spell: holy shield
+  Base cost: 1166
+  Min Level: 6
+ Spell: armor of life
+  Base cost: 887
+  Min Level: 8
+ Spell: protection from evil
+  Base cost: 1098
+  Min Level: 9
+ Spell: pilgrims protection
+  Base cost: 887
+  Min Level: 2
+ Guild Level: bravo
+ Base Guilds: 
+  weaver
+Guild Name: flogger
+ Skill: devastating attack
+  Base cost: 1748
+  Min Level: 3
+ Skill: entangle
+  Base cost: 1297
+  Min Level: 10
+ Skill: cry of the berserker
+  Base cost: 1201
+  Min Level: 8
+ Skill: advanced whirlwind attack
+  Base cost: 1479
+  Min Level: 6
+ Skill: whipping weapons mastery
+  Base cost: 1950
+  Min Level: 5
+ Skill: lacerate
+  Base cost: 1441
+  Min Level: 1
+ Skill: lightning whip
+  Base cost: 1345
+  Min Level: 8
+ Skill: immobilize
+  Base cost: 1153
+  Min Level: 2
+ Skill: endowment of the gods
+  Base cost: 1633
+  Min Level: 4
+ Guild Level: bravo
+ Base Guilds: 
+  warrior
+Guild Name: assassin
+ Skill: multiweapons
+  Base cost: 940
+  Min Level: 7
+ Skill: bleed
+  Base cost: 2204
+  Min Level: 9
+ Skill: counter dodge
+  Base cost: 940
+  Min Level: 5
+ Skill: motion control
+  Base cost: 1428
+  Min Level: 8
+ Skill: armor piercing
+  Base cost: 940
+  Min Level: 3
+ Skill: backstab
+  Base cost: 1786
+  Min Level: 1
+ Skill: knowledge of pressure points
+  Base cost: 1484
+  Min Level: 7
+ Skill: stun
+  Base cost: 940
+  Min Level: 6
+ Skill: triple stab
+  Base cost: 1655
+  Min Level: 10
+ Skill: track
+  Base cost: 1105
+  Min Level: 6
+ Guild Level: gamma
+ Base Guilds: 
+  lurker
+Guild Name: watchers of the night
+ Skill: lore of the watchers
+  Base cost: 1960
+  Min Level: 3
+ Spell: nightmare of vertigo
+  Base cost: 760
+  Min Level: 5
+ Spell: nightmare of lucifer
+  Base cost: 760
+  Min Level: 6
+ Spell: nightmare of oedipus
+  Base cost: 971
+  Min Level: 7
+ Spell: nightmare of medusa
+  Base cost: 929
+  Min Level: 1
+ Spell: recurring nightmare
+  Base cost: 971
+  Min Level: 9
+ Spell: nightmare of hemophilia
+  Base cost: 971
+  Min Level: 4
+ Guild Level: bravo
+ Base Guilds: 
+  psychics
+Guild Name: adept of the stones
+ Skill: crystal binding
+  Base cost: 2286
+  Min Level: 2
+ Skill: crystal efficiency
+  Base cost: 2857
+  Min Level: 6
+ Skill: focus crystal energy
+  Base cost: 2612
+  Min Level: 5
+ Spell: gem flash
+  Base cost: 1756
+  Min Level: 8
+ Spell: merge power crystals
+  Base cost: 1605
+ Spell: drain power crystal
+  Base cost: 1605
+ Spell: create power crystal
+  Base cost: 1352
+  Min Level: 1
+ Spell: gem blast
+  Base cost: 2163
+  Min Level: 1
+ Guild Level: bravo
+ Base Guilds: 
+  druid
+Guild Name: confessor
+ Skill: pious words
+  Base cost: 1598
+  Min Level: 1
+ Spell: prayer for replenishment
+  Base cost: 783
+  Min Level: 8
+ Spell: prayer for the crusader
+  Base cost: 1247
+  Min Level: 9
+ Spell: prayer for refreshment
+  Base cost: 723
+  Min Level: 3
+ Spell: prayer for protection
+  Base cost: 693
+  Min Level: 4
+ Spell: prayer for sanctuary
+  Base cost: 603
+  Min Level: 6
+ Spell: prayer for mankind
+  Base cost: 814
+  Min Level: 7
+ Spell: prayer for healing
+  Base cost: 603
+  Min Level: 1
+ Guild Level: gamma
+ Base Guilds: 
+  weaver
+Guild Name: dragon lord
+ Skill: dragon weapons
+  Base cost: 2570
+  Min Level: 2
+ Skill: legendary prowess
+  Base cost: 5258
+  Min Level: 2
+ Skill: dragon breath
+  Base cost: 2687
+  Min Level: 6
+ Skill: animal harmony
+  Base cost: 3505
+  Min Level: 12
+ Skill: dragon hide
+  Base cost: 2453
+  Min Level: 1
+ Skill: migrate
+  Base cost: 1512
+  Min Level: 3
+ Skill: draconian lore
+  Base cost: 2805
+  Min Level: 1
+ Spell: draconian halitosis
+  Base cost: 5441
+  Min Level: 9
+ Spell: caustic cyclone
+  Base cost: 5441
+  Min Level: 10
+ Spell: voltaic venting
+  Base cost: 5441
+  Min Level: 11
+ Spell: niveous puff
+  Base cost: 5441
+  Min Level: 7
+ Spell: incandescent issue
+  Base cost: 5441
+  Min Level: 8
+ Guild Level: omicron
+ Base Guilds: 
+  shapeshifter
+Guild Name: master of disruption
+ Skill: disruption lore
+  Base cost: 3388
+  Min Level: 6
+ Spell: magical weakness
+  Base cost: 1419
+  Min Level: 5
+ Spell: holy mind
+  Base cost: 1419
+  Min Level: 10
+ Spell: emaciated blood
+  Base cost: 1419
+  Min Level: 6
+ Spell: burning skin
+  Base cost: 1419
+  Min Level: 11
+ Spell: freezing blood
+  Base cost: 1419
+  Min Level: 12
+ Spell: constricted throat
+  Base cost: 1419
+  Min Level: 1
+ Spell: weaken willpower
+  Base cost: 1656
+  Min Level: 7
+ Spell: brittle limbs
+  Base cost: 1419
+  Min Level: 13
+ Spell: crushed brains
+  Base cost: 1419
+  Min Level: 2
+ Spell: corroded body
+  Base cost: 1419
+  Min Level: 8
+ Spell: metallic skin
+  Base cost: 1419
+  Min Level: 4
+ Spell: unholy spirit
+  Base cost: 1419
+  Min Level: 9
+ Guild Level: omicron
+ Base Guilds: 
+  abjurer
+Guild Name: crane master
+ Skill: cranes gait
+  Base cost: 1412
+  Min Level: 4
+ Skill: chi of yin
+  Base cost: 1009
+  Min Level: 6
+ Skill: martial parry
+  Base cost: 1412
+  Min Level: 6
+ Skill: soul of the crane
+  Base cost: 1633
+  Min Level: 1
+ Skill: chi of yang
+  Base cost: 1305
+  Min Level: 8
+ Skill: style preference
+  Base cost: 720
+  Min Level: 1
+ Skill: nerve strike
+  Base cost: 1479
+ Skill: endowment of the gods
+  Base cost: 1633
+  Min Level: 5
+ Skill: pluck the thorn
+  Base cost: 961
+  Min Level: 2
+ Guild Level: bravo
+ Base Guilds: 
+  martial artist
+Guild Name: evoker of ice
+ Skill: cold evocation
+  Base cost: 2286
+  Min Level: 1
+ Skill: cold focus
+  Base cost: 1729
+  Min Level: 2
+ Spell: hypothermia
+  Base cost: 2112
+  Min Level: 1
+ Spell: cone of cold
+  Base cost: 1470
+  Min Level: 3
+ Spell: freezing sphere
+  Base cost: 2788
+  Min Level: 4
+ Guild Level: bravo
+ Base Guilds: 
+  evoker
+Guild Name: acrobat
+ Skill: trick punch
+  Base cost: 1313
+  Min Level: 19
+ Skill: limber up
+  Base cost: 1339
+  Min Level: 17
+ Skill: stealth
+  Base cost: 974
+  Min Level: 15
+ Skill: acrobat stance
+  Base cost: 1773
+  Min Level: 13
+ Skill: weapon skill piercing
+  Base cost: 504
+  Min Level: 6
+ Skill: sleight of hand
+  Base cost: 328
+  Min Level: 3
+ Skill: tumbling
+  Base cost: 1222
+  Min Level: 20
+ Skill: attack
+  Base cost: 459
+  Min Level: 1
+ Skill: leaping attack
+  Base cost: 1075
+  Min Level: 11
+ Skill: honor of the gods
+  Base cost: 557
+  Min Level: 8
+ Skill: punch
+  Base cost: 426
+  Min Level: 4
+ Spell: light
+  Base cost: 277
+  Min Level: 1
+ Spell: darkness
+  Base cost: 261
+  Min Level: 2
+ Guild Level: alpha
+ Base Guilds: 
+  acrobat
+Guild Name: silent hand
+ Skill: uncanny dodge
+  Base cost: 3368
+  Min Level: 8
+ Skill: art of assassination
+  Base cost: 2920
+  Min Level: 10
+ Skill: uncanny stabbing
+  Base cost: 3155
+  Min Level: 1
+ Skill: honed perception
+  Base cost: 1306
+  Min Level: 3
+ Skill: advanced whirlwind attack
+  Base cost: 1479
+  Min Level: 2
+ Skill: unbelievable stealth
+  Base cost: 3175
+  Min Level: 5
+ Skill: inflict pain
+  Base cost: 1925
+  Min Level: 7
+ Guild Level: omicron
+ Base Guilds: 
+  lurker
+Guild Name: warrior of Mitra
+ Skill: multiweapons
+  Base cost: 940
+  Min Level: 6
+ Skill: counter dodge
+  Base cost: 940
+  Min Level: 9
+ Skill: motion control
+  Base cost: 1428
+  Min Level: 5
+ Skill: weaponmaster
+  Base cost: 1176
+  Min Level: 8
+ Skill: stun
+  Base cost: 940
+  Min Level: 1
+ Skill: righteous blasting
+  Base cost: 672
+  Min Level: 4
+ Skill: whirlwind attack
+  Base cost: 940
+  Min Level: 2
+ Guild Level: gamma
+ Base Guilds: 
+  paladin
+Guild Name: defender of Mitra
+ Skill: shield parry
+  Base cost: 1316
+  Min Level: 9
+ Skill: motion control
+  Base cost: 1428
+  Min Level: 4
+ Skill: weapon skill shield
+  Base cost: 940
+  Min Level: 1
+ Skill: divine intervention
+  Base cost: 1128
+  Min Level: 3
+ Skill: riposte
+  Base cost: 1176
+  Min Level: 7
+ Skill: shield deflection
+  Base cost: 1457
+  Min Level: 10
+ Skill: willpower
+  Base cost: 1598
+  Min Level: 5
+ Guild Level: gamma
+ Base Guilds: 
+  paladin
+Guild Name: trickster
+ Skill: disarm
+  Base cost: 961
+  Min Level: 10
+ Skill: art of deception
+  Base cost: 1084
+  Min Level: 1
+ Skill: confuse opponent
+  Base cost: 672
+  Min Level: 2
+ Skill: anger opponent
+  Base cost: 739
+  Min Level: 3
+ Skill: false alliance
+  Base cost: 638
+  Min Level: 8
+ Skill: pickpocket
+  Base cost: 705
+  Min Level: 7
+ Skill: intimidate opponent
+  Base cost: 672
+  Min Level: 4
+ Skill: hide
+  Base cost: 772
+  Min Level: 7
+ Skill: fast talk
+  Base cost: 672
+  Min Level: 5
+ Skill: conceal skill
+  Base cost: 2041
+  Min Level: 6
+ Guild Level: gamma
+ Base Guilds: 
+  lurker
+Guild Name: brotherhood of bolts
+ Skill: lightning racial lore
+  Base cost: 1256
+  Min Level: 1
+ Skill: lightning planar lore
+  Base cost: 1142
+  Min Level: 1
+ Guild Level: gamma
+ Base Guilds: 
+  summoner
+Guild Name: avatar
+ Skill: soul of the avatar
+  Base cost: 2123
+  Min Level: 6
+ Skill: quick chant
+  Base cost: 1655
+  Min Level: 4
+ Spell: cleanse soul
+  Base cost: 845
+  Min Level: 1
+ Spell: resurrect companions
+  Base cost: 1056
+  Min Level: 7
+ Spell: revive dead
+  Base cost: 1098
+  Min Level: 9
+ Spell: feed companions
+  Base cost: 845
+  Min Level: 3
+ Spell: avatar regeneration
+  Base cost: 2331
+  Min Level: 10
+ Spell: heal body
+  Base cost: 1262
+  Min Level: 5
+ Spell: redemption
+  Base cost: 845
+  Min Level: 2
+ Spell: encourage regeneration
+  Base cost: 2129
+  Min Level: 6
+ Guild Level: bravo
+ Base Guilds: 
+  weaver
+Guild Name: psionists
+ Skill: hypnotic gaze
+  Base cost: 1550
+  Min Level: 6
+ Skill: mind orbit
+  Base cost: 1960
+  Min Level: 1
+ Skill: memory lapse
+  Base cost: 1387
+  Min Level: 3
+ Skill: mental tide
+  Base cost: 1960
+  Min Level: 1
+ Spell: mind shout
+  Base cost: 1318
+  Min Level: 10
+ Spell: cytokinesis
+  Base cost: 1014
+  Min Level: 9
+ Spell: power leak
+  Base cost: 971
+  Min Level: 6
+ Spell: pierce thought
+  Base cost: 929
+  Min Level: 1
+ Spell: arc impulse
+  Base cost: 1318
+  Min Level: 7
+ Spell: shock
+  Base cost: 1014
+  Min Level: 4
+ Guild Level: bravo
+ Base Guilds: 
+  psychics
+Guild Name: brother of fire
+ Skill: fire planar lore
+  Base cost: 1142
+  Min Level: 1
+ Skill: fire racial lore
+  Base cost: 1256
+  Min Level: 1
+ Spell: fire arrow
+  Base cost: 603
+  Min Level: 3
+ Guild Level: gamma
+ Base Guilds: 
+  summoner
+Guild Name: talisman magic
+ Skill: hypnotic gaze
+  Base cost: 1550
+  Min Level: 1
+ Skill: talisman ceremonies
+  Base cost: 2805
+  Min Level: 8
+ Skill: charge talisman
+  Base cost: 1718
+  Min Level: 2
+ Spell: etheral shield
+  Base cost: 1631
+  Min Level: 7
+ Spell: mind vortex
+  Base cost: 1183
+  Min Level: 11
+ Spell: astral projection
+  Base cost: 1183
+  Min Level: 4
+ Spell: soul steal
+  Base cost: 1951
+  Min Level: 13
+ Spell: augment
+  Base cost: 1987
+  Min Level: 9
+ Spell: spontaneous combustion
+  Base cost: 1715
+  Min Level: 6
+ Spell: synergy
+  Base cost: 1301
+  Min Level: 3
+ Spell: create etheral talisman
+  Base cost: 1183
+  Min Level: 1
+ Guild Level: omicron
+ Base Guilds: 
+  psychics
+Guild Name: bone mage
+ Skill: quick chant
+  Base cost: 1655
+  Min Level: 9
+ Skill: minion control
+  Base cost: 1142
+  Min Level: 1
+ Skill: osteology
+  Base cost: 1142
+  Min Level: 1
+ Spell: summon vultures
+  Base cost: 603
+  Min Level: 6
+ Spell: regeneration pile
+  Base cost: 603
+  Min Level: 7
+ Spell: disjoint bones
+  Base cost: 693
+  Min Level: 8
+ Spell: animate skeletal warrior
+  Base cost: 603
+  Min Level: 2
+ Spell: animate skeletal mage
+  Base cost: 603
+  Min Level: 4
+ Spell: circle of protection
+  Base cost: 603
+  Min Level: 1
+ Guild Level: gamma
+ Base Guilds: 
+  necromancer
+Guild Name: thruster
+ Skill: devastating attack
+  Base cost: 1748
+  Min Level: 3
+ Skill: cry of the berserker
+  Base cost: 1201
+  Min Level: 8
+ Skill: piercing weapons mastery
+  Base cost: 1345
+  Min Level: 7
+ Skill: spot weak point
+  Base cost: 1878
+  Min Level: 8
+ Skill: advanced whirlwind attack
+  Base cost: 1479
+  Min Level: 6
+ Skill: wrist flick
+  Base cost: 2286
+  Min Level: 10
+ Skill: impale
+  Base cost: 1441
+  Min Level: 2
+ Skill: sharpen weapon
+  Base cost: 1345
+  Min Level: 5
+ Skill: endowment of the gods
+  Base cost: 1633
+  Min Level: 4
+ Guild Level: bravo
+ Base Guilds: 
+  warrior
+Guild Name: champion of the crown
+ Skill: champion lore
+  Base cost: 2570
+  Min Level: 6
+ Skill: crippling blow
+  Base cost: 2405
+  Min Level: 2
+ Skill: champion trance
+  Base cost: 2640
+  Min Level: 8
+ Skill: charge
+  Base cost: 3656
+  Min Level: 6
+ Skill: strike weakness
+  Base cost: 2213
+  Min Level: 3
+ Skill: weapon maneuvers
+  Base cost: 3740
+  Min Level: 4
+ Skill: stun resistance
+  Base cost: 2501
+  Min Level: 5
+ Guild Level: omicron
+ Base Guilds: 
+  warrior
+Guild Name: shaman of soil
+ Skill: soil staff bash
+  Base cost: 2334
+  Min Level: 3
+ Skill: lore of the soil shamans
+  Base cost: 2286
+  Min Level: 1
+ Skill: drain soil energy
+  Base cost: 1537
+  Min Level: 1
+ Spell: regrowth
+  Base cost: 1140
+  Min Level: 7
+ Spell: hurl rock
+  Base cost: 1056
+  Min Level: 4
+ Spell: root travel
+  Base cost: 1098
+  Min Level: 9
+ Spell: root transit
+  Base cost: 971
+  Min Level: 5
+ Spell: soil storm
+  Base cost: 1318
+  Min Level: 10
+ Spell: homecoming
+  Base cost: 845
+  Min Level: 8
+ Spell: root rise
+  Base cost: 1014
+  Min Level: 1
+ Spell: soil shield
+  Base cost: 929
+  Min Level: 6
+ Spell: grow personal tree
+  Base cost: 1183
+  Min Level: 8
+ Guild Level: bravo
+ Base Guilds: 
+  druid
+Guild Name: beast lord
+ Skill: call of the wild
+  Base cost: 1960
+  Min Level: 8
+ Skill: ursine lore
+  Base cost: 1428
+  Min Level: 2
+ Skill: unnatural brutality
+  Base cost: 1479
+  Min Level: 8
+ Skill: unnatural toughness
+  Base cost: 1633
+  Min Level: 4
+ Skill: avian lore
+  Base cost: 1428
+  Min Level: 1
+ Skill: batter attack
+  Base cost: 1201
+  Min Level: 5
+ Skill: unnatural coordination
+  Base cost: 1209
+  Min Level: 6
+ Skill: feline lore
+  Base cost: 1428
+  Min Level: 2
+ Skill: bestial speed
+  Base cost: 1345
+  Min Level: 7
+ Skill: canine lore
+  Base cost: 1428
+  Min Level: 1
+ Guild Level: bravo
+ Base Guilds: 
+  shapeshifter
+Guild Name: necroscope
+ Skill: dead speak
+  Base cost: 2284
+  Min Level: 1
+ Spell: recall minion
+  Base cost: 603
+ Spell: lethargy of shirija
+  Base cost: 603
+  Min Level: 5
+ Spell: return to limbo
+  Base cost: 693
+  Min Level: 5
+ Spell: speak with priest
+  Base cost: 1582
+  Min Level: 6
+ Spell: speak with magi
+  Base cost: 1582
+  Min Level: 8
+ Spell: speak with rogue
+  Base cost: 1582
+  Min Level: 2
+ Spell: hands of the dead
+  Base cost: 663
+  Min Level: 9
+ Spell: speak with warrior
+  Base cost: 1582
+  Min Level: 4
+ Guild Level: gamma
+ Base Guilds: 
+  necromancer
+Guild Name: lords of undeath
+ Skill: anatomy
+  Base cost: 5717
+  Min Level: 2
+ Skill: lich status
+  Base cost: 2406
+  Min Level: 10
+ Skill: mind power
+  Base cost: 5717
+  Min Level: 2
+ Skill: mastery of mummification
+  Base cost: 5717
+ Spell: consume muscle tissue
+  Base cost: 2070
+  Min Level: 6
+ Spell: lich transformation
+  Base cost: 2366
+  Min Level: 10
+ Spell: bone fusion
+  Base cost: 2070
+  Min Level: 1
+ Spell: consume brain
+  Base cost: 2070
+  Min Level: 4
+ Spell: consume flesh
+  Base cost: 2070
+ Spell: mind fusion
+  Base cost: 2070
+  Min Level: 6
+ Guild Level: omicron
+ Base Guilds: 
+  necromancer
+Guild Name: dragonfist fighter
+ Skill: focus chi
+  Base cost: 986
+  Min Level: 3
+ Skill: dragonfist
+  Base cost: 940
+  Min Level: 9
+ Skill: counter dodge
+  Base cost: 940
+  Min Level: 7
+ Skill: defensive prowess
+  Base cost: 940
+  Min Level: 4
+ Skill: resist pain
+  Base cost: 739
+  Min Level: 5
+ Skill: empower will
+  Base cost: 1008
+  Min Level: 8
+ Skill: deliver criticals
+  Base cost: 940
+  Min Level: 2
+ Guild Level: gamma
+ Base Guilds: 
+  martial artist
+Guild Name: water mage
+ Skill: mastery of water
+  Base cost: 1713
+  Min Level: 9
+ Skill: quick chant
+  Base cost: 1655
+  Min Level: 4
+ Skill: high energy focus
+  Base cost: 1541
+  Min Level: 7
+ Spell: wall of water
+  Base cost: 723
+  Min Level: 8
+ Spell: ice pick
+  Base cost: 603
+  Min Level: 3
+ Spell: freeze
+  Base cost: 603
+  Min Level: 9
+ Spell: call for storm
+  Base cost: 783
+  Min Level: 10
+ Spell: body of water
+  Base cost: 1688
+  Min Level: 6
+ Spell: revert form
+  Base cost: 542
+  Min Level: 7
+ Spell: wild flood
+  Base cost: 844
+  Min Level: 1
+ Spell: lightning bolt
+  Base cost: 603
+  Min Level: 2
+ Guild Level: gamma
+ Base Guilds: 
+  elemental
+Guild Name: earth mage
+ Skill: mastery of earth
+  Base cost: 1713
+  Min Level: 9
+ Skill: quick chant
+  Base cost: 1655
+  Min Level: 4
+ Skill: high energy focus
+  Base cost: 1541
+  Min Level: 7
+ Spell: earth quake
+  Base cost: 603
+  Min Level: 7
+ Spell: earthstaff
+  Base cost: 603
+  Min Level: 3
+ Spell: body of stone
+  Base cost: 1688
+  Min Level: 10
+ Spell: revert form
+  Base cost: 542
+  Min Level: 10
+ Spell: sand storm
+  Base cost: 603
+  Min Level: 2
+ Spell: stoneskin
+  Base cost: 693
+  Min Level: 1
+ Spell: petrify
+  Base cost: 1025
+ Guild Level: gamma
+ Base Guilds: 
+  elemental
+Guild Name: masters of energy
+ Skill: quick chant
+  Base cost: 1655
+  Min Level: 5
+ Spell: greater psionic shield
+  Base cost: 603
+  Min Level: 6
+ Spell: greater asphyxiation shield
+  Base cost: 603
+  Min Level: 8
+ Spell: greater magical shield
+  Base cost: 603
+  Min Level: 2
+ Spell: greater electric shield
+  Base cost: 603
+  Min Level: 10
+ Spell: magical drain
+  Base cost: 603
+  Min Level: 4
+ Spell: greater poison shield
+  Base cost: 603
+  Min Level: 4
+ Spell: identify
+  Base cost: 474
+  Min Level: 9
+ Spell: feather weight
+  Base cost: 753
+  Min Level: 5
+ Guild Level: gamma
+ Base Guilds: 
+  abjurer
+Guild Name: gleeman
+ Skill: song of destruction
+  Base cost: 1306
+  Min Level: 6
+ Skill: speed throwing
+  Base cost: 2805
+  Min Level: 3
+ Skill: fast as the wind
+  Base cost: 1650
+  Min Level: 9
+ Skill: lasting memory
+  Base cost: 3272
+  Min Level: 4
+ Skill: song of resilience
+  Base cost: 1443
+  Min Level: 10
+ Skill: knowledge of pressure points
+  Base cost: 1484
+  Min Level: 5
+ Skill: deadly accuracy
+  Base cost: 3272
+  Min Level: 1
+ Skill: soothing melodies
+  Base cost: 1512
+  Min Level: 5
+ Skill: peripatetic entertainment
+  Base cost: 1635
+  Min Level: 2
+ Skill: voice of strength
+  Base cost: 3037
+  Min Level: 6
+ Skill: funeral march
+  Base cost: 1306
+  Min Level: 2
+ Guild Level: omicron
+ Base Guilds: 
+  acrobat
+Guild Name: evoker
+ Skill: magical economy
+  Base cost: 557
+  Min Level: 8
+ Skill: determine effectiveness
+  Base cost: 1142
+  Min Level: 13
+ Skill: channel energy
+  Base cost: 672
+  Min Level: 19
+ Skill: evocation
+  Base cost: 1142
+  Min Level: 16
+ Skill: casting
+  Base cost: 1428
+  Min Level: 16
+ Skill: essence eye
+  Base cost: 557
+  Min Level: 5
+ Skill: ceremony
+  Base cost: 328
+  Min Level: 3
+ Skill: honor of the gods
+  Base cost: 557
+  Min Level: 9
+ Spell: magic dart
+  Base cost: 308
+  Min Level: 2
+ Spell: light
+  Base cost: 277
+  Min Level: 1
+ Spell: magic blast
+  Base cost: 462
+  Min Level: 10
+ Spell: magic wind
+  Base cost: 517
+  Min Level: 17
+ Spell: darkness
+  Base cost: 261
+  Min Level: 1
+ Spell: mind sponge
+  Base cost: 614
+  Min Level: 4
+ Spell: floating disc
+  Base cost: 603
+  Min Level: 16
+ Spell: fire dart
+  Base cost: 474
+  Min Level: 11
+ Spell: spectral push
+  Base cost: 369
+  Min Level: 6
+ Spell: ice dart
+  Base cost: 588
+  Min Level: 14
+ Guild Level: alpha
+ Base Guilds: 
+  evoker
+Guild Name: guardians
+ Spell: party lesser shield
+  Base cost: 2661
+  Min Level: 4
+ Spell: party greater shield
+  Base cost: 3253
+  Min Level: 5
+ Spell: greater holy shield
+  Base cost: 1774
+  Min Level: 1
+ Spell: greater unholy shield
+  Base cost: 1774
+  Min Level: 2
+ Spell: wall of force
+  Base cost: 1301
+  Min Level: 3
+ Guild Level: omicron
+ Base Guilds: 
+  abjurer
+Guild Name: shapeshifter
+ Skill: shapeshifting lore
+  Base cost: 1256
+ Skill: dodge
+  Base cost: 1316
+  Min Level: 15
+ Skill: herb gathering
+  Base cost: 873
+  Min Level: 9
+ Skill: scavenge wood
+  Base cost: 571
+  Min Level: 5
+ Skill: ursine lore
+  Base cost: 1428
+ Skill: herb preservation
+  Base cost: 501
+  Min Level: 10
+ Skill: claw attack
+  Base cost: 829
+  Min Level: 13
+ Skill: avian lore
+  Base cost: 1428
+ Skill: tooth and nail
+  Base cost: 1080
+  Min Level: 14
+ Skill: doublehit
+  Base cost: 940
+  Min Level: 13
+ Skill: fire building
+  Base cost: 604
+  Min Level: 6
+ Skill: form preference
+  Base cost: 336
+  Min Level: 11
+ Skill: weapon skill blunt
+  Base cost: 504
+  Min Level: 3
+ Skill: spirit blessing
+  Base cost: 1033
+  Min Level: 8
+ Skill: feline lore
+  Base cost: 1428
+  Min Level: 12
+ Skill: attack
+  Base cost: 459
+  Min Level: 1
+ Skill: natural coordination
+  Base cost: 845
+  Min Level: 17
+ Skill: canine lore
+  Base cost: 1428
+  Min Level: 12
+ Skill: honor of the gods
+  Base cost: 557
+  Min Level: 4
+ Spell: magical growth
+  Base cost: 292
+  Min Level: 6
+ Spell: shape shift
+  Base cost: 754
+  Min Level: 11
+ Spell: spirit wind
+  Base cost: 308
+  Min Level: 4
+ Spell: rock rain
+  Base cost: 350
+  Min Level: 9
+ Guild Level: alpha
+ Base Guilds: 
+  shapeshifter
+Guild Name: evoker of elements
+ Skill: quick chant
+  Base cost: 1655
+  Min Level: 6
+ Skill: regeneration trance
+  Base cost: 940
+  Min Level: 9
+ Skill: high energy focus
+  Base cost: 1541
+  Min Level: 10
+ Spell: ice bolt
+  Base cost: 814
+  Min Level: 3
+ Spell: power bolt
+  Base cost: 844
+  Min Level: 5
+ Spell: vacuum bolt
+  Base cost: 874
+  Min Level: 8
+ Spell: fire bolt
+  Base cost: 783
+  Min Level: 1
+ Guild Level: gamma
+ Base Guilds: 
+  evoker
+Guild Name: embalmer
+ Skill: mastery of mummification
+  Base cost: 5717
+  Min Level: 1
+ Spell: animate mummy
+  Base cost: 1690
+  Min Level: 3
+ Guild Level: bravo
+ Base Guilds: 
+  necromancer
+Guild Name: herbalist
+ Skill: mixing lore
+  Base cost: 1198
+  Min Level: 8
+ Skill: find herbs
+  Base cost: 571
+  Min Level: 1
+ Skill: herb lore
+  Base cost: 1198
+  Min Level: 6
+ Spell: mix potion of the warrior
+  Base cost: 482
+  Min Level: 3
+ Spell: mix waking salts
+  Base cost: 572
+  Min Level: 4
+ Spell: mix balm of protection
+  Base cost: 572
+  Min Level: 9
+ Spell: mix potion of the priest
+  Base cost: 512
+  Min Level: 5
+ Spell: mix healing balm
+  Base cost: 572
+  Min Level: 1
+ Spell: mix potion of the rogue
+  Base cost: 482
+  Min Level: 6
+ Spell: mix antidote
+  Base cost: 693
+  Min Level: 2
+ Spell: mix potion of the mage
+  Base cost: 512
+  Min Level: 8
+ Guild Level: gamma
+ Base Guilds: 
+  druid
+  woodsman
+Guild Name: juggler
+ Skill: upper body anatomy
+  Base cost: 1198
+  Min Level: 6
+ Skill: throw knife
+  Base cost: 1075
+  Min Level: 1
+ Skill: motion control
+  Base cost: 1428
+  Min Level: 8
+ Skill: head throw
+  Base cost: 1370
+  Min Level: 7
+ Skill: armor piercing
+  Base cost: 940
+  Min Level: 2
+ Skill: heart throw
+  Base cost: 1541
+  Min Level: 10
+ Skill: target preference
+  Base cost: 1008
+  Min Level: 3
+ Skill: throwing art
+  Base cost: 1428
+  Min Level: 4
+ Skill: lower body anatomy
+  Base cost: 1084
+  Min Level: 5
+ Guild Level: gamma
+ Base Guilds: 
+  acrobat
+Guild Name: animal healer
+ Skill: unnatural calm
+  Base cost: 1715
+  Min Level: 6
+ Skill: animal anatomy
+  Base cost: 1796
+  Min Level: 1
+ Skill: diagnose animal
+  Base cost: 961
+  Min Level: 8
+ Skill: unnatural agility
+  Base cost: 1305
+  Min Level: 3
+ Skill: groom
+  Base cost: 961
+  Min Level: 7
+ Skill: animal magnetism
+  Base cost: 816
+  Min Level: 10
+ Skill: unnatural instincts
+  Base cost: 1960
+  Min Level: 5
+ Skill: endowment of the gods
+  Base cost: 1633
+  Min Level: 2
+ Spell: balsamic bestial bath
+  Base cost: 1478
+  Min Level: 9
+ Spell: mend beast
+  Base cost: 1267
+  Min Level: 4
+ Guild Level: bravo
+ Base Guilds: 
+  shapeshifter
+Guild Name: sylvan woodlord
+ Skill: shield parry
+  Base cost: 1316
+  Min Level: 6
+ Skill: observe opponent
+  Base cost: 1306
+  Min Level: 3
+ Skill: prepare weapon
+  Base cost: 1718
+ Skill: blunt weapons mastery
+  Base cost: 1345
+ Skill: fast mixing
+  Base cost: 1167
+  Min Level: 4
+ Skill: harmony with nature
+  Base cost: 3505
+ Skill: weaponmaster
+  Base cost: 1176
+ Skill: deadly preparations
+  Base cost: 2020
+  Min Level: 6
+ Skill: spiritual transfer
+  Base cost: 2694
+  Min Level: 2
+ Skill: neutralize weapon
+  Base cost: 687
+ Skill: shield deflection
+  Base cost: 1457
+  Min Level: 5
+ Skill: stun
+  Base cost: 940
+  Min Level: 3
+ Skill: slashing weapons mastery
+  Base cost: 1345
+ Skill: spiritual power
+  Base cost: 2612
+  Min Level: 2
+ Skill: animal friendship
+  Base cost: 3505
+  Min Level: 1
+ Skill: prepare shield
+  Base cost: 1718
+ Spell: vengeance of gaia
+  Base cost: 1419
+  Min Level: 7
+ Spell: womb of gaia
+  Base cost: 1242
+  Min Level: 12
+ Guild Level: omicron
+ Base Guilds: 
+  woodsman
+Guild Name: lava mage
+ Skill: mastery of molding
+  Base cost: 1633
+  Min Level: 10
+ Skill: mold lava
+  Base cost: 1153
+  Min Level: 6
+ Spell: create raw lava
+  Base cost: 845
+  Min Level: 4
+ Spell: wall of lava
+  Base cost: 1225
+  Min Level: 7
+ Spell: eruption
+  Base cost: 1478
+  Min Level: 5
+ Spell: summon molding gloves
+  Base cost: 845
+  Min Level: 1
+ Spell: body of lava
+  Base cost: 2163
+  Min Level: 9
+ Spell: magma boulder
+  Base cost: 1098
+  Min Level: 2
+ Guild Level: bravo
+ Base Guilds: 
+  elemental
+Guild Name: oneiromancers
+ Skill: sleep trance
+  Base cost: 1960
+  Min Level: 5
+ Skill: dreamweaving lore
+  Base cost: 1960
+  Min Level: 5
+ Spell: dream of wellsprings
+  Base cost: 845
+  Min Level: 4
+ Spell: dream of anticipation
+  Base cost: 845
+  Min Level: 6
+ Spell: dream of delaeus
+  Base cost: 845
+  Min Level: 7
+ Spell: dream of titans
+  Base cost: 845
+  Min Level: 1
+ Spell: dream of faeries
+  Base cost: 845
+  Min Level: 9
+ Guild Level: bravo
+ Base Guilds: 
+  psychics
+Guild Name: summoner
+ Skill: magical economy
+  Base cost: 557
+  Min Level: 7
+ Skill: determine effectiveness
+  Base cost: 1142
+  Min Level: 16
+ Skill: lesser creature knowledge
+  Base cost: 1312
+  Min Level: 2
+ Skill: weapon skill blunt
+  Base cost: 504
+  Min Level: 20
+ Skill: ceremony
+  Base cost: 328
+  Min Level: 15
+ Skill: essence eye
+  Base cost: 557
+  Min Level: 13
+ Skill: attack
+  Base cost: 459
+  Min Level: 11
+ Skill: goblinoid racial lore
+  Base cost: 418
+  Min Level: 5
+ Skill: honor of the gods
+  Base cost: 557
+  Min Level: 18
+ Spell: light
+  Base cost: 277
+  Min Level: 9
+ Spell: summon creature
+  Base cost: 308
+  Min Level: 1
+ Spell: darkness
+  Base cost: 261
+  Min Level: 10
+ Spell: recall creatures
+  Base cost: 308
+  Min Level: 4
+ Spell: floating disc
+  Base cost: 603
+  Min Level: 19
+ Spell: crystal creation
+  Base cost: 308
+  Min Level: 17
+ Guild Level: alpha
+ Base Guilds: 
+  summoner
+Guild Name: blade dancer
+ Skill: bladed fury
+  Base cost: 1561
+  Min Level: 1
+ Skill: blade dance
+  Base cost: 1057
+  Min Level: 6
+ Skill: devastating attack
+  Base cost: 1748
+  Min Level: 3
+ Skill: cry of the berserker
+  Base cost: 1201
+  Min Level: 8
+ Skill: master of the dance
+  Base cost: 1715
+  Min Level: 6
+ Skill: advanced whirlwind attack
+  Base cost: 1479
+  Min Level: 5
+ Skill: singing blade
+  Base cost: 1657
+  Min Level: 7
+ Skill: slashing weapons mastery
+  Base cost: 1345
+  Min Level: 8
+ Skill: endowment of the gods
+  Base cost: 1633
+  Min Level: 4
+ Guild Level: bravo
+ Base Guilds: 
+  warrior
+Guild Name: covenant of eve
+ Skill: plant racial lore
+  Base cost: 1256
+  Min Level: 1
+ Skill: plant planar lore
+  Base cost: 1142
+  Min Level: 1
+ Spell: magical growth
+  Base cost: 292
+  Min Level: 2
+ Guild Level: gamma
+ Base Guilds: 
+  summoner
+Guild Name: necromancer
+ Skill: magical economy
+  Base cost: 557
+  Min Level: 8
+ Skill: determine effectiveness
+  Base cost: 1142
+  Min Level: 14
+ Skill: minion control
+  Base cost: 1142
+  Min Level: 20
+ Skill: death rites
+  Base cost: 672
+  Min Level: 11
+ Skill: weapon skill blunt
+  Base cost: 504
+  Min Level: 11
+ Skill: casting
+  Base cost: 1428
+  Min Level: 18
+ Skill: essence eye
+  Base cost: 557
+  Min Level: 5
+ Skill: ceremony
+  Base cost: 328
+  Min Level: 3
+ Skill: honor of the gods
+  Base cost: 557
+  Min Level: 9
+ Spell: corpse explosion
+  Base cost: 862
+  Min Level: 6
+ Spell: magic dart
+  Base cost: 308
+  Min Level: 2
+ Spell: light
+  Base cost: 277
+  Min Level: 1
+ Spell: release undead
+  Base cost: 431
+  Min Level: 10
+ Spell: magic blast
+  Base cost: 462
+  Min Level: 10
+ Spell: darkness
+  Base cost: 261
+ Spell: mind sponge
+  Base cost: 614
+  Min Level: 4
+ Spell: animate dead
+  Base cost: 431
+  Min Level: 1
+ Spell: spectral push
+  Base cost: 369
+  Min Level: 6
+ Spell: blister skin
+  Base cost: 474
+  Min Level: 4
+ Guild Level: alpha
+ Base Guilds: 
+  necromancer
+Guild Name: evoker of lightning
+ Skill: electric focus
+  Base cost: 1729
+  Min Level: 2
+ Skill: lightning evocation
+  Base cost: 2286
+  Min Level: 1
+ Spell: electrocution
+  Base cost: 2112
+  Min Level: 1
+ Spell: chain lightning
+  Base cost: 1470
+  Min Level: 3
+ Spell: static discharge
+  Base cost: 2788
+  Min Level: 4
+ Guild Level: bravo
+ Base Guilds: 
+  evoker
+Guild Name: savager
+ Skill: natural instincts
+  Base cost: 1370
+  Min Level: 9
+ Skill: natural toughness
+  Base cost: 1142
+  Min Level: 3
+ Skill: calm beasts
+  Base cost: 912
+  Min Level: 10
+ Skill: motion control
+  Base cost: 1428
+  Min Level: 4
+ Skill: natural calm
+  Base cost: 1198
+  Min Level: 10
+ Skill: natural agility
+  Base cost: 912
+  Min Level: 7
+ Skill: natural brutality
+  Base cost: 1034
+  Min Level: 8
+ Skill: contest of wills
+  Base cost: 672
+  Min Level: 9
+ Skill: whirlwind attack
+  Base cost: 940
+  Min Level: 2
+ Guild Level: gamma
+ Base Guilds: 
+  shapeshifter
+Guild Name: snake master
+ Skill: viper strike
+  Base cost: 1479
+ Skill: soul of the snake
+  Base cost: 1633
+  Min Level: 1
+ Skill: armor piercing
+  Base cost: 940
+  Min Level: 5
+ Skill: enhance criticals
+  Base cost: 1479
+  Min Level: 2
+ Skill: fury of the snake
+  Base cost: 1547
+  Min Level: 6
+ Skill: lightning strike
+  Base cost: 1084
+  Min Level: 7
+ Skill: style preference
+  Base cost: 720
+  Min Level: 1
+ Skill: snake gaze
+  Base cost: 1153
+  Min Level: 9
+ Skill: endowment of the gods
+  Base cost: 1633
+  Min Level: 5
+ Guild Level: bravo
+ Base Guilds: 
+  martial artist
+Guild Name: martyr
+ Skill: holy cause
+  Base cost: 1598
+  Min Level: 1
+ Spell: share suffering
+  Base cost: 693
+  Min Level: 8
+ Spell: sacrifice health
+  Base cost: 693
+  Min Level: 4
+ Spell: sacrifice life force
+  Base cost: 1573
+  Min Level: 9
+ Spell: martyric presence
+  Base cost: 753
+  Min Level: 5
+ Spell: restore companions
+  Base cost: 1012
+  Min Level: 6
+ Spell: heal companions
+  Base cost: 663
+  Min Level: 1
+ Spell: life link
+  Base cost: 783
+  Min Level: 6
+ Spell: invigorate companions
+  Base cost: 1055
+  Min Level: 7
+ Spell: refresh companions
+  Base cost: 663
+  Min Level: 3
+ Guild Level: gamma
+ Base Guilds: 
+  weaver
+Guild Name: priest of Mitra
+ Skill: faith of the paladin
+  Base cost: 2570
+  Min Level: 1
+ Skill: divine speed
+  Base cost: 1142
+  Min Level: 1
+ Spell: armor of mitra
+  Base cost: 603
+  Min Level: 2
+ Spell: undying faith
+  Base cost: 862
+  Min Level: 3
+ Spell: prepare soul
+  Base cost: 753
+  Min Level: 5
+ Spell: reverent meditation
+  Base cost: 603
+  Min Level: 8
+ Spell: share faith
+  Base cost: 1025
+  Min Level: 9
+ Guild Level: gamma
+ Base Guilds: 
+  paladin
+Guild Name: sylvan scout
+ Skill: multiweapons
+  Base cost: 940
+  Min Level: 3
+ Skill: blunt weapons mastery
+  Base cost: 1345
+ Skill: furious bashing
+  Base cost: 1153
+  Min Level: 8
+ Skill: natures rage
+  Base cost: 1370
+  Min Level: 4
+ Skill: search tracks
+  Base cost: 1009
+  Min Level: 4
+ Skill: weaponmaster
+  Base cost: 1176
+  Min Level: 7
+ Skill: survival lore
+  Base cost: 1878
+  Min Level: 5
+ Skill: stun
+  Base cost: 940
+  Min Level: 6
+ Skill: gauge opponent
+  Base cost: 1249
+  Min Level: 1
+ Skill: slashing weapons mastery
+  Base cost: 1345
+ Skill: avenging fury
+  Base cost: 1249
+  Min Level: 6
+ Skill: spiritual power
+  Base cost: 2612
+  Min Level: 1
+ Skill: endowment of the gods
+  Base cost: 1633
+  Min Level: 7
+ Skill: track
+  Base cost: 1105
+  Min Level: 5
+ Spell: infuse lightning power
+  Base cost: 1470
+  Min Level: 7
+ Spell: infuse acid power
+  Base cost: 1161
+  Min Level: 3
+ Spell: nightvision
+  Base cost: 1352
+  Min Level: 2
+ Spell: infuse poison power
+  Base cost: 1254
+  Min Level: 5
+ Guild Level: bravo
+ Base Guilds: 
+  woodsman
+Guild Name: evoker of force
+ Skill: force evocation
+  Base cost: 2286
+  Min Level: 1
+ Skill: physical focus
+  Base cost: 1729
+  Min Level: 2
+ Spell: hammering blow
+  Base cost: 2112
+  Min Level: 1
+ Spell: hail of stones
+  Base cost: 1470
+  Min Level: 3
+ Spell: concussive force
+  Base cost: 2788
+  Min Level: 4
+ Guild Level: bravo
+ Base Guilds: 
+  evoker
+Guild Name: fire mage
+ Skill: quick chant
+  Base cost: 1655
+  Min Level: 4
+ Skill: mastery of fire
+  Base cost: 1713
+  Min Level: 9
+ Skill: high energy focus
+  Base cost: 1541
+  Min Level: 7
+ Spell: armor of flame
+  Base cost: 1097
+  Min Level: 1
+ Spell: flame blade
+  Base cost: 603
+  Min Level: 4
+ Spell: incinerate
+  Base cost: 904
+ Spell: immunity to fire
+  Base cost: 723
+  Min Level: 7
+ Spell: fireball
+  Base cost: 603
+  Min Level: 3
+ Spell: revert form
+  Base cost: 542
+  Min Level: 10
+ Spell: body of fire
+  Base cost: 1688
+  Min Level: 10
+ Guild Level: gamma
+ Base Guilds: 
+  elemental
+Guild Name: harbinger of anguish
+ Skill: master of vulnerability
+  Base cost: 1633
+  Min Level: 10
+ Spell: weakened body
+  Base cost: 1056
+  Min Level: 10
+ Spell: epidermal peel
+  Base cost: 1056
+  Min Level: 6
+ Spell: lungs of lead
+  Base cost: 1056
+  Min Level: 1
+ Spell: soul of the sinner
+  Base cost: 1056
+  Min Level: 7
+ Spell: brain warp
+  Base cost: 1056
+  Min Level: 2
+ Spell: soul of the saint
+  Base cost: 1056
+  Min Level: 7
+ Spell: collapsed synapses
+  Base cost: 1056
+  Min Level: 3
+ Spell: boiling blood
+  Base cost: 1056
+  Min Level: 8
+ Spell: dulled senses
+  Base cost: 1056
+  Min Level: 4
+ Spell: veins of ice
+  Base cost: 1056
+  Min Level: 9
+ Spell: poisoned heart
+  Base cost: 1056
+  Min Level: 5
+ Guild Level: bravo
+ Base Guilds: 
+  abjurer
+Guild Name: mystics
+ Skill: mastery of the realm
+  Base cost: 1370
+  Min Level: 3
+ Skill: quick chant
+  Base cost: 1655
+  Min Level: 5
+ Spell: diffuse magic
+  Base cost: 783
+  Min Level: 5
+ Spell: astral walk
+  Base cost: 603
+  Min Level: 7
+ Spell: psychic manipulation
+  Base cost: 783
+  Min Level: 10
+ Spell: mind lash
+  Base cost: 814
+  Min Level: 2
+ Spell: deflect
+  Base cost: 1259
+  Min Level: 9
+ Guild Level: gamma
+ Base Guilds: 
+  psychics
+Guild Name: elder of mordulak
+ Skill: ritual circle lore
+  Base cost: 3037
+  Min Level: 2
+ Skill: inflict harm
+  Base cost: 1142
+  Min Level: 9
+ Skill: true belief in mordulak
+  Base cost: 3037
+  Min Level: 1
+ Skill: draw ritual circle
+  Base cost: 1375
+  Min Level: 7
+ Skill: philosophy
+  Base cost: 1718
+  Min Level: 5
+ Spell: will of the gods
+  Base cost: 1656
+  Min Level: 15
+ Spell: ritual of protection
+  Base cost: 1656
+  Min Level: 3
+ Spell: coming of age
+  Base cost: 2011
+  Min Level: 10
+ Spell: ritual of death
+  Base cost: 2366
+  Min Level: 4
+ Spell: ritual of draining
+  Base cost: 1656
+  Min Level: 11
+ Spell: ritual of binding
+  Base cost: 1656
+  Min Level: 12
+ Spell: ritual of torture
+  Base cost: 1656
+  Min Level: 6
+ Spell: ritual of incarnation
+  Base cost: 1537
+  Min Level: 13
+ Guild Level: omicron
+ Base Guilds: 
+  unraveller
+Guild Name: templar
+ Skill: templar rituals
+  Base cost: 2286
+ Skill: shield parry
+  Base cost: 1316
+  Min Level: 6
+ Skill: lay hands
+  Base cost: 1201
+  Min Level: 4
+ Skill: weapon skill slashing
+  Base cost: 504
+  Min Level: 3
+ Skill: consecrate weapon
+  Base cost: 1546
+  Min Level: 6
+ Skill: doublehit
+  Base cost: 940
+  Min Level: 5
+ Skill: weapon skill blunt
+  Base cost: 504
+  Min Level: 1
+ Skill: consecrate shield
+  Base cost: 1801
+  Min Level: 8
+ Skill: attack
+  Base cost: 459
+  Min Level: 1
+ Skill: faith of the crusader
+  Base cost: 1690
+  Min Level: 10
+ Guild Level: bravo
+ Base Guilds: 
+  weaver
+Guild Name: troubadour
+ Skill: power singing
+  Base cost: 2920
+  Min Level: 2
+ Skill: bannerman hymn
+  Base cost: 3437
+  Min Level: 3
+ Skill: rondel
+  Base cost: 2612
+  Min Level: 2
+ Skill: minstrel rhythms
+  Base cost: 3437
+  Min Level: 4
+ Skill: chant of smaug
+  Base cost: 2337
+  Min Level: 1
+ Skill: voice control
+  Base cost: 3972
+  Min Level: 1
+ Guild Level: omicron
+ Base Guilds: 
+  acrobat
+Guild Name: irrifletta
+ Skill: quccata
+  Base cost: 1713
+  Min Level: 10
+ Spell: nohexeqekor
+  Base cost: 663
+  Min Level: 3
+ Spell: loghob
+  Base cost: 603
+  Min Level: 9
+ Spell: xeraq
+  Base cost: 603
+  Min Level: 4
+ Spell: orpo
+  Base cost: 783
+  Min Level: 10
+ Spell: velenu
+  Base cost: 603
+  Min Level: 5
+ Spell: qares
+  Base cost: 603
+  Min Level: 6
+ Spell: hsieb
+  Base cost: 603
+  Min Level: 1
+ Spell: seher
+  Base cost: 603
+  Min Level: 7
+ Spell: berqa
+  Base cost: 603
+  Min Level: 2
+ Spell: kiesah
+  Base cost: 603
+  Min Level: 8
+ Guild Level: gamma
+ Base Guilds: 
+  abjurer
+Guild Name: nether mage
+ Skill: mastery of elements
+  Base cost: 3388
+  Min Level: 8
+ Skill: estimate elemental abundance
+  Base cost: 1375
+  Min Level: 1
+ Skill: elemental strand weaving
+  Base cost: 3037
+  Min Level: 5
+ Spell: control elemental energy
+  Base cost: 2040
+ Spell: body of nether
+  Base cost: 3075
+  Min Level: 1
+ Spell: dispel nether energy
+  Base cost: 1360
+ Spell: project energy blast
+  Base cost: 2614
+  Min Level: 1
+ Spell: elemental attunement
+  Base cost: 1419
+  Min Level: 9
+ Spell: summon elemental matter
+  Base cost: 1419
+ Spell: absorb elemental energy
+  Base cost: 1360
+  Min Level: 11
+ Spell: nether body harmony
+  Base cost: 1419
+  Min Level: 11
+ Spell: wall of elemental energy
+  Base cost: 1537
+  Min Level: 6
+ Spell: chain elemental bolts
+  Base cost: 2483
+  Min Level: 13
+ Spell: elemental wave blast
+  Base cost: 1886
+  Min Level: 8
+ Guild Level: omicron
+ Base Guilds: 
+  elemental
+Guild Name: ice disciple
+ Skill: ice planar lore
+  Base cost: 1142
+  Min Level: 1
+ Skill: ice racial lore
+  Base cost: 1256
+  Min Level: 1
+ Guild Level: gamma
+ Base Guilds: 
+  summoner
+Guild Name: paladin
+ Skill: faith of the paladin
+  Base cost: 2570
+  Min Level: 20
+ Skill: dodge
+  Base cost: 1316
+  Min Level: 18
+ Skill: weapon skill slashing
+  Base cost: 504
+  Min Level: 7
+ Skill: doublehit
+  Base cost: 940
+  Min Level: 16
+ Skill: weapon skill blunt
+  Base cost: 504
+  Min Level: 7
+ Skill: attack
+  Base cost: 459
+  Min Level: 1
+ Skill: honor of the gods
+  Base cost: 557
+  Min Level: 3
+ Spell: light
+  Base cost: 277
+  Min Level: 1
+ Spell: holy light
+  Base cost: 581
+  Min Level: 13
+ Spell: holy touch
+  Base cost: 431
+  Min Level: 15
+ Spell: divination
+  Base cost: 354
+  Min Level: 10
+ Spell: know alignment
+  Base cost: 261
+  Min Level: 8
+ Guild Level: alpha
+ Base Guilds: 
+  paladin
+Guild Name: servant of talakh
+ Skill: blunt weapons mastery
+  Base cost: 1345
+  Min Level: 8
+ Skill: weaponmaster
+  Base cost: 1176
+  Min Level: 9
+ Skill: weapon skill blunt
+  Base cost: 504
+  Min Level: 7
+ Skill: sacrifice to talakh
+  Base cost: 1153
+  Min Level: 6
+ Skill: taunt
+  Base cost: 1009
+  Min Level: 3
+ Skill: attack
+  Base cost: 459
+  Min Level: 5
+ Skill: berserk
+  Base cost: 1009
+  Min Level: 4
+ Skill: worship of talakh
+  Base cost: 1796
+  Min Level: 1
+ Spell: summon lizard
+  Base cost: 845
+  Min Level: 2
+ Spell: appoint acolyte of talakh
+  Base cost: 1014
+  Min Level: 9
+ Spell: avatar of talakh
+  Base cost: 1267
+  Min Level: 10
+ Spell: plague of stones
+  Base cost: 845
+  Min Level: 7
+ Spell: fist of talakh
+  Base cost: 887
+  Min Level: 8
+ Guild Level: bravo
+ Base Guilds: 
+  unraveller
+Guild Name: mist mage
+ Skill: mist lore
+  Base cost: 2449
+  Min Level: 4
+ Spell: yellow mist
+  Base cost: 1056
+  Min Level: 1
+ Spell: mist form
+  Base cost: 1900
+  Min Level: 9
+ Spell: blue mist
+  Base cost: 1056
+  Min Level: 2
+ Spell: black mist
+  Base cost: 1056
+  Min Level: 4
+ Spell: solidify
+  Base cost: 760
+  Min Level: 10
+ Spell: green mist
+  Base cost: 1317
+  Min Level: 6
+ Spell: wall of mist
+  Base cost: 1098
+  Min Level: 8
+ Guild Level: bravo
+ Base Guilds: 
+  elemental
+Guild Name: protector of the earth
+ Skill: quick chant
+  Base cost: 1655
+  Min Level: 5
+ Spell: greater acid shield
+  Base cost: 603
+  Min Level: 6
+ Spell: greater physical shield
+  Base cost: 603
+  Min Level: 8
+ Spell: greater fire shield
+  Base cost: 603
+  Min Level: 2
+ Spell: aura detection
+  Base cost: 633
+  Min Level: 3
+ Spell: greater cold shield
+  Base cost: 603
+  Min Level: 4
+ Spell: shelter
+  Base cost: 814
+  Min Level: 10
+ Spell: acid spray
+  Base cost: 603
+  Min Level: 5
+ Guild Level: gamma
+ Base Guilds: 
+  abjurer
+Guild Name: adept of water
+ Skill: water racial lore
+  Base cost: 1256
+  Min Level: 1
+ Skill: water planar lore
+  Base cost: 1142
+  Min Level: 1
+ Guild Level: gamma
+ Base Guilds: 
+  summoner
+Guild Name: abysmal lord
+ Skill: abysmal racial lore
+  Base cost: 2449
+  Min Level: 1
+ Skill: abysmal planar lore
+  Base cost: 2041
+  Min Level: 1
+ Spell: noxious spawn
+  Base cost: 845
+  Min Level: 3
+ Guild Level: bravo
+ Base Guilds: 
+  summoner
+Guild Name: minstrel
+ Skill: please audience
+  Base cost: 1633
+  Min Level: 1
+ Skill: allegory of athol
+  Base cost: 1105
+  Min Level: 2
+ Skill: trip
+  Base cost: 961
+  Min Level: 1
+ Skill: tale of achman
+  Base cost: 1201
+  Min Level: 3
+ Skill: psalm of protection
+  Base cost: 1681
+  Min Level: 4
+ Guild Level: bravo
+ Base Guilds: 
+  acrobat
+Guild Name: sacrificer
+ Skill: quick chant
+  Base cost: 1655
+  Min Level: 3
+ Skill: offer blood
+  Base cost: 772
+  Min Level: 2
+ Skill: dark ritual
+  Base cost: 1256
+  Min Level: 4
+ Skill: bloodletting
+  Base cost: 604
+  Min Level: 10
+ Spell: blood brotherhood
+  Base cost: 663
+  Min Level: 7
+ Spell: summon ritual dagger
+  Base cost: 482
+  Min Level: 1
+ Spell: blood healing
+  Base cost: 1039
+  Min Level: 8
+ Spell: summon vessel
+  Base cost: 603
+  Min Level: 2
+ Spell: energy drain
+  Base cost: 603
+  Min Level: 9
+ Spell: life drain
+  Base cost: 603
+  Min Level: 5
+ Guild Level: gamma
+ Base Guilds: 
+  unraveller
+Guild Name: bannerman
+ Skill: ode to ona
+  Base cost: 1551
+  Min Level: 5
+ Skill: legend of secs
+  Base cost: 1551
+  Min Level: 6
+ Skill: piercing weapons mastery
+  Base cost: 1345
+  Min Level: 7
+ Skill: glory of kreativ
+  Base cost: 1633
+  Min Level: 7
+ Skill: epic of aurvex
+  Base cost: 1124
+  Min Level: 8
+ Skill: hymn of rawknrhol
+  Base cost: 864
+  Min Level: 1
+ Skill: legend of sear
+  Base cost: 1124
+  Min Level: 9
+ Skill: hymn of enlightenment
+  Base cost: 1009
+  Min Level: 2
+ Skill: battle singing
+  Base cost: 1633
+ Skill: endowment of the gods
+  Base cost: 1633
+ Skill: whirlwind attack
+  Base cost: 940
+  Min Level: 5
+ Guild Level: bravo
+ Base Guilds: 
+  acrobat
+Guild Name: witch
+ Skill: quick chant
+  Base cost: 1655
+  Min Level: 5
+ Skill: lore of the elders
+  Base cost: 1142
+  Min Level: 8
+ Skill: high energy focus
+  Base cost: 1541
+  Min Level: 10
+ Spell: evil eye
+  Base cost: 795
+  Min Level: 1
+ Spell: charge broom
+  Base cost: 603
+  Min Level: 3
+ Spell: wrath of the covenant
+  Base cost: 1206
+  Min Level: 5
+ Spell: nerves of fire
+  Base cost: 1012
+  Min Level: 7
+ Spell: recall to covenant
+  Base cost: 603
+  Min Level: 9
+ Guild Level: gamma
+ Base Guilds: 
+  psychics
+Guild Name: weaver
+ Skill: magical economy
+  Base cost: 557
+  Min Level: 9
+ Skill: determine effectiveness
+  Base cost: 1142
+  Min Level: 15
+ Skill: holy essence
+  Base cost: 1198
+  Min Level: 11
+ Skill: weapon skill blunt
+  Base cost: 504
+  Min Level: 5
+ Skill: casting
+  Base cost: 1428
+  Min Level: 18
+ Skill: ceremony
+  Base cost: 328
+  Min Level: 8
+ Skill: essence eye
+  Base cost: 557
+  Min Level: 4
+ Skill: attack
+  Base cost: 459
+  Min Level: 3
+ Skill: honor of the gods
+  Base cost: 557
+  Min Level: 6
+ Spell: infravision
+  Base cost: 777
+  Min Level: 17
+ Spell: create food
+  Base cost: 431
+  Min Level: 16
+ Spell: hand of balance
+  Base cost: 308
+  Min Level: 2
+ Spell: light
+  Base cost: 277
+  Min Level: 1
+ Spell: cure serious wounds
+  Base cost: 431
+  Min Level: 13
+ Spell: darkness
+  Base cost: 261
+  Min Level: 1
+ Spell: cure light wounds
+  Base cost: 308
+  Min Level: 4
+ Spell: minor refresh
+  Base cost: 431
+  Min Level: 14
+ Spell: minor cleric staff
+  Base cost: 308
+  Min Level: 6
+ Spell: arrow of light
+  Base cost: 338
+  Min Level: 7
+ Spell: armor of faith
+  Base cost: 847
+  Min Level: 10
+ Spell: cure critical wounds
+  Base cost: 646
+  Min Level: 19
+ Spell: remove scar
+  Base cost: 431
+  Min Level: 11
+ Spell: know alignment
+  Base cost: 261
+  Min Level: 2
+ Guild Level: alpha
+ Base Guilds: 
+  weaver
+Guild Name: healer
+ Skill: enhance healing
+  Base cost: 1827
+  Min Level: 5
+ Skill: mastery of healing
+  Base cost: 1598
+  Min Level: 1
+ Spell: remove poison
+  Base cost: 603
+  Min Level: 2
+ Spell: heal
+  Base cost: 844
+  Min Level: 1
+ Spell: estimate worth
+  Base cost: 542
+  Min Level: 8
+ Spell: body restoration
+  Base cost: 723
+  Min Level: 4
+ Spell: renew
+  Base cost: 663
+  Min Level: 7
+ Spell: cure disease
+  Base cost: 603
+  Min Level: 5
+ Spell: resurrect
+  Base cost: 753
+  Min Level: 3
+ Spell: reincarnate
+  Base cost: 723
+  Min Level: 9
+ Spell: major refresh
+  Base cost: 603
+  Min Level: 6
+ Guild Level: gamma
+ Base Guilds: 
+  weaver
+Guild Name: blood brother
+ Skill: hematology
+  Base cost: 8180
+  Min Level: 1
+ Spell: animate vampire
+  Base cost: 2366
+  Min Level: 1
+ Guild Level: omicron
+ Base Guilds: 
+  necromancer
+Guild Name: psychics
+ Skill: magical economy
+  Base cost: 557
+  Min Level: 8
+ Skill: determine effectiveness
+  Base cost: 1142
+  Min Level: 14
+ Skill: casting
+  Base cost: 1428
+  Min Level: 14
+ Skill: essence eye
+  Base cost: 557
+  Min Level: 5
+ Skill: ceremony
+  Base cost: 328
+  Min Level: 3
+ Skill: honor of the gods
+  Base cost: 557
+  Min Level: 9
+ Spell: distant sell
+  Base cost: 409
+  Min Level: 20
+ Spell: magic dart
+  Base cost: 308
+  Min Level: 2
+ Spell: light
+  Base cost: 277
+  Min Level: 1
+ Spell: magic blast
+  Base cost: 462
+  Min Level: 10
+ Spell: meditate
+  Base cost: 930
+  Min Level: 14
+ Spell: darkness
+  Base cost: 261
+  Min Level: 1
+ Spell: psychic fury
+  Base cost: 431
+  Min Level: 11
+ Spell: mind sponge
+  Base cost: 614
+  Min Level: 4
+ Spell: transfer object
+  Base cost: 474
+  Min Level: 13
+ Spell: floating disc
+  Base cost: 603
+  Min Level: 16
+ Spell: create psychic container
+  Base cost: 431
+  Min Level: 13
+ Spell: psychic transfer
+  Base cost: 929
+  Min Level: 17
+ Spell: identify
+  Base cost: 474
+  Min Level: 15
+ Spell: spectral push
+  Base cost: 369
+  Min Level: 6
+ Guild Level: alpha
+ Base Guilds: 
+  psychics
+Guild Name: heavenly seer
+ Skill: heavenly racial lore
+  Base cost: 2449
+  Min Level: 1
+ Skill: heavenly planar lore
+  Base cost: 2041
+  Min Level: 1
+ Spell: touch of heaven
+  Base cost: 845
+  Min Level: 3
+ Guild Level: bravo
+ Base Guilds: 
+  summoner
+Guild Name: wind whisperer
+ Skill: water racial lore
+  Base cost: 1256
+  Min Level: 1
+ Skill: water planar lore
+  Base cost: 1142
+  Min Level: 1
+ Guild Level: gamma
+ Base Guilds: 
+  summoner
+Guild Name: master assassin
+ Skill: art of concealment
+  Base cost: 2570
+  Min Level: 1
+ Skill: piercing weapons mastery
+  Base cost: 1345
+  Min Level: 3
+ Skill: strangle
+  Base cost: 1345
+  Min Level: 9
+ Skill: psychotic stabbing
+  Base cost: 2041
+  Min Level: 4
+ Skill: sharpen weapon
+  Base cost: 1345
+  Min Level: 6
+ Skill: fatal strike
+  Base cost: 2041
+  Min Level: 8
+ Skill: endowment of the gods
+  Base cost: 1633
+  Min Level: 8
+ Skill: whirlwind attack
+  Base cost: 940
+  Min Level: 5
+ Guild Level: bravo
+ Base Guilds: 
+  lurker
+Guild Name: sword of talakh
+ Skill: ritual circle lore
+  Base cost: 3037
+  Min Level: 2
+ Skill: inflict harm
+  Base cost: 1142
+  Min Level: 9
+ Skill: true belief in talakh
+  Base cost: 2570
+  Min Level: 1
+ Skill: draw ritual circle
+  Base cost: 1375
+  Min Level: 7
+ Skill: philosophy
+  Base cost: 1718
+  Min Level: 5
+ Spell: will of the gods
+  Base cost: 1656
+  Min Level: 15
+ Spell: ritual of protection
+  Base cost: 1656
+  Min Level: 3
+ Spell: coming of age
+  Base cost: 2011
+  Min Level: 10
+ Spell: ritual of death
+  Base cost: 2366
+  Min Level: 4
+ Spell: ritual of draining
+  Base cost: 1656
+  Min Level: 11
+ Spell: ritual of binding
+  Base cost: 1656
+  Min Level: 12
+ Spell: ritual of torture
+  Base cost: 1656
+  Min Level: 6
+ Spell: ritual of incarnation
+  Base cost: 1537
+  Min Level: 13
+ Guild Level: omicron
+ Base Guilds: 
+  unraveller
+Guild Name: star searcher
+ Skill: astral racial lore
+  Base cost: 2368
+  Min Level: 1
+ Skill: astral planar lore
+  Base cost: 2041
+  Min Level: 1
+ Spell: night walk
+  Base cost: 845
+  Min Level: 3
+ Guild Level: bravo
+ Base Guilds: 
+  summoner
+Guild Name: bartender
+ Skill: hearty feast
+  Base cost: 961
+  Min Level: 4
+ Skill: appraisal
+  Base cost: 768
+  Min Level: 1
+ Skill: bartering
+  Base cost: 1468
+  Min Level: 8
+ Skill: putrid drink
+  Base cost: 1057
+  Min Level: 5
+ Skill: bartending
+  Base cost: 1633
+  Min Level: 10
+ Skill: drink of motivation
+  Base cost: 1009
+  Min Level: 6
+ Skill: foul drink
+  Base cost: 1057
+  Min Level: 7
+ Skill: drink of inspiration
+  Base cost: 1009
+  Min Level: 3
+ Guild Level: bravo
+ Base Guilds: 
+  acrobat
+  lurker
+Guild Name: unraveller
+ Skill: magical economy
+  Base cost: 557
+  Min Level: 9
+ Skill: determine effectiveness
+  Base cost: 1142
+  Min Level: 12
+ Skill: weapon skill blunt
+  Base cost: 504
+  Min Level: 5
+ Skill: casting
+  Base cost: 1428
+  Min Level: 15
+ Skill: ceremony
+  Base cost: 328
+  Min Level: 8
+ Skill: essence eye
+  Base cost: 557
+  Min Level: 4
+ Skill: unholy essence
+  Base cost: 1142
+  Min Level: 19
+ Skill: attack
+  Base cost: 459
+  Min Level: 3
+ Skill: honor of the gods
+  Base cost: 557
+  Min Level: 6
+ Spell: create food
+  Base cost: 431
+  Min Level: 12
+ Spell: hand of balance
+  Base cost: 308
+  Min Level: 2
+ Spell: light
+  Base cost: 277
+  Min Level: 1
+ Spell: darkflame
+  Base cost: 560
+  Min Level: 20
+ Spell: cause light wounds
+  Base cost: 308
+  Min Level: 4
+ Spell: darkness
+  Base cost: 261
+  Min Level: 1
+ Spell: burning aura
+  Base cost: 387
+  Min Level: 15
+ Spell: minor cleric staff
+  Base cost: 308
+  Min Level: 6
+ Spell: diagnose
+  Base cost: 344
+  Min Level: 13
+ Spell: arrow of darkness
+  Base cost: 338
+  Min Level: 7
+ Spell: armor of scorn
+  Base cost: 847
+  Min Level: 10
+ Spell: scar
+  Base cost: 431
+  Min Level: 17
+ Spell: know alignment
+  Base cost: 261
+  Min Level: 2
+ Guild Level: alpha
+ Base Guilds: 
+  unraveller
+Guild Name: grand summoner
+ Skill: mastery of energy conversion
+  Base cost: 2286
+  Min Level: 7
+ Skill: insect racial lore
+  Base cost: 1960
+  Min Level: 1
+ Skill: minor creature knowledge
+  Base cost: 2041
+  Min Level: 10
+ Skill: quick chant
+  Base cost: 1655
+  Min Level: 8
+ Skill: reptilian racial lore
+  Base cost: 1878
+  Min Level: 2
+ Skill: arachnid racial lore
+  Base cost: 2041
+  Min Level: 4
+ Skill: golem racial lore
+  Base cost: 2123
+  Min Level: 5
+ Spell: convert energy
+  Base cost: 845
+  Min Level: 3
+ Guild Level: bravo
+ Base Guilds: 
+  summoner
+Guild Name: sylvan ward
+ Skill: weave twigshield
+  Base cost: 806
+  Min Level: 1
+ Skill: weapon skill shield
+  Base cost: 940
+  Min Level: 5
+ Skill: inner walls
+  Base cost: 1175
+  Min Level: 1
+ Skill: spiritual transfer
+  Base cost: 2694
+  Min Level: 8
+ Skill: survival reflexes
+  Base cost: 1428
+  Min Level: 3
+ Skill: natural weapon lore
+  Base cost: 1827
+  Min Level: 6
+ Skill: intuitive awareness
+  Base cost: 907
+  Min Level: 4
+ Spell: power warding
+  Base cost: 1048
+  Min Level: 8
+ Spell: fire warding
+  Base cost: 1084
+  Min Level: 6
+ Guild Level: gamma
+ Base Guilds: 
+  woodsman
+Guild Name: patriarch of shirija
+ Skill: ritual circle lore
+  Base cost: 3037
+  Min Level: 2
+ Skill: inflict harm
+  Base cost: 1142
+  Min Level: 9
+ Skill: true belief in shirija
+  Base cost: 2920
+  Min Level: 1
+ Skill: draw ritual circle
+  Base cost: 1375
+  Min Level: 7
+ Skill: philosophy
+  Base cost: 1718
+  Min Level: 5
+ Spell: will of the gods
+  Base cost: 1656
+  Min Level: 15
+ Spell: ritual of protection
+  Base cost: 1656
+  Min Level: 3
+ Spell: coming of age
+  Base cost: 2011
+  Min Level: 10
+ Spell: ritual of death
+  Base cost: 2366
+  Min Level: 4
+ Spell: ritual of draining
+  Base cost: 1656
+  Min Level: 11
+ Spell: ritual of binding
+  Base cost: 1656
+  Min Level: 12
+ Spell: ritual of torture
+  Base cost: 1656
+  Min Level: 6
+ Spell: ritual of incarnation
+  Base cost: 1537
+  Min Level: 13
+ Guild Level: omicron
+ Base Guilds: 
+  unraveller

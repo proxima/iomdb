@@ -1,0 +1,20 @@
+<% form_for(modify) do |f| %>
+
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :equipment_piece_id %><br />
+    <%= f.select :equipment_piece_id, local_assigns[:eq_pieces].map{|c| [c.name, c.id] } %>
+  </p>
+
+  <p>
+    <%= f.label :slot_id %><br>
+    <%= f.select :slot_id, local_assigns[:slots].map{|c| [c.name, c.id]} %>
+  </p>
+
+  <p>
+    <%= f.submit "Done" %>
+  </p>
+
+<% end %>
+

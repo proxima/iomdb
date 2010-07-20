@@ -1,0 +1,14 @@
+<table>
+  <% for damage_level in @damage_levels %>
+  <tr
+    <td><%= render :partial => "view", :object => damage_level %></td>
+    <td><%= link_to 'Show', damage_level %></td>
+    <td><%= link_to 'Edit', edit_damage_level_path(damage_level) %></td>
+    <td><%= link_to 'Destroy', damage_level, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+  <% end %>
+</table>
+
+<br>
+
+<%= link_to 'New', new_damage_level_path %>

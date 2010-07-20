@@ -1,0 +1,22 @@
+<h1>Listing guild_types</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Level</th>
+  </tr>
+
+<% for guild_type in @guild_types %>
+  <tr>
+    <td><%=h guild_type.name %></td>
+    <td><%=h guild_type.level %></td>
+    <td><%= link_to 'Show', guild_type %></td>
+    <td><%= link_to 'Edit', edit_guild_type_path(guild_type) %></td>
+    <td><%= link_to 'Destroy', guild_type, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New', new_guild_type_path %>

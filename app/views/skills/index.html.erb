@@ -1,0 +1,17 @@
+<table>
+  <% for skill in @skills %>
+  <tr>
+    <td><%=h skill.name %></td>
+    <td><%=h skill.base_cost %></td>
+    <td><%= link_to 'Show', skill %></td>
+    <td><%= link_to 'Edit', edit_skill_path(skill) %></td>
+    <td><%= link_to 'Destroy', skill, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+  <% end %>
+</table>
+
+<%= will_paginate @skills %>
+
+<br>
+
+<%= link_to 'New', new_skill_path %>

@@ -1,0 +1,16 @@
+<table>
+  <% for spell_affect in @spell_affects %>
+  <tr>
+    <td><%=h EquipmentPiece.find_by_id(spell_affect.equipment_piece_id).name %></td>
+    <td><%=h Spell.find_by_id(spell_affect.spell_id).name %></td>
+    <td><%=h spell_affect.value %></td>
+    <td><%= link_to 'Show', spell_affect %></td>
+    <td><%= link_to 'Edit', edit_spell_affect_path(spell_affect) %></td>
+    <td><%= link_to 'Destroy', spell_affect, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+  <% end %>
+</table>
+
+<br>
+
+<%= link_to 'New', new_spell_affect_path %>

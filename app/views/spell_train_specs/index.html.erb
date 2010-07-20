@@ -1,0 +1,24 @@
+<table>
+  <tr>
+    <th>Spell</th>
+    <th>Guild</th>
+    <th>Level</th>
+    <th>Max</th>
+  </tr>
+
+<% for spell_train_spec in @spell_train_specs %>
+  <tr>
+    <td><%=h Spell.find(spell_train_spec.spell_id).name %></td>
+    <td><%=h Guild.find(spell_train_spec.guild_id).name %></td>
+    <td><%=h spell_train_spec.level %></td>
+    <td><%=h spell_train_spec.max %></td>
+    <td><%= link_to 'Show', spell_train_spec %></td>
+    <td><%= link_to 'Edit', edit_spell_train_spec_path(spell_train_spec) %></td>
+    <td><%= link_to 'Destroy', spell_train_spec, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New', new_spell_train_spec_path %>

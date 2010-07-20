@@ -1,0 +1,25 @@
+<% form_for(modify) do |f| %>
+
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :equipment_piece_id %><br />
+    <%= f.select :equipment_piece_id, local_assigns[:eq_pieces].map{|c| [c.name, c.id]} %>
+  </p>
+
+  <p>
+    <%= f.label :damage_type_id %><br />
+    <%= f.select :damage_type_id, local_assigns[:damage_types].map{|c| [c.name, c.id]} %>
+  </p>
+
+  <p>
+    <%= f.label :value %><br />
+    <%= f.text_field :value %>
+  </p>
+
+  <p>
+    <%= f.submit "Done" %>
+  </p>
+
+<% end %>
+

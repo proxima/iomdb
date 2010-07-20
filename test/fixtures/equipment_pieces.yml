@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  equipment_monster_id: 1
+  klass: 1
+  weight: 1
+
+two:
+  name: MyString
+  equipment_monster_id: 1
+  klass: 1
+  weight: 1

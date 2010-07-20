@@ -1,0 +1,2 @@
+module ResistanceAffectsHelper
+end

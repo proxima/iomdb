@@ -1,0 +1,16 @@
+<table>
+  <% for stat_affect in @stat_affects %>
+  <tr>
+    <td><%=h EquipmentPiece.find_by_id(stat_affect.equipment_piece_id).name %></td>
+    <td><%=h Stat.find_by_id(stat_affect.stat_id).name %></td>
+    <td><%=h stat_affect.value %></td>
+    <td><%= link_to 'Show', stat_affect %></td>
+    <td><%= link_to 'Edit', edit_stat_affect_path(stat_affect) %></td>
+    <td><%= link_to 'Destroy', stat_affect, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New', new_stat_affect_path %>

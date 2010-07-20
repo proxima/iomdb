@@ -1,0 +1,29 @@
+<% form_for(modify) do |f| %>
+
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :skill_id %><br />
+    <%= f.select :skill_id, local_assigns[:skills].map{|c| [c.name, c.id]} %>
+  </p>
+
+  <p>
+    <%= f.label :guild_id %><br />
+    <%= f.select :guild_id, local_assigns[:guilds].map{|c| [c.name, c.id]} %>
+  </p>
+
+  <p>
+    <%= f.label :level %><br />
+    <%= f.text_field :level %>
+  </p>
+
+  <p>
+    <%= f.label :max %><br />
+    <%= f.text_field :max %>
+  </p>
+
+  <p>
+    <%= f.submit "Done" %>
+  </p>
+
+<% end %>

@@ -1,0 +1,16 @@
+<table>
+  <% for skill_affect in @skill_affects %>
+  <tr>
+    <td><%=h EquipmentPiece.find_by_id(skill_affect.equipment_piece_id).name %></td>
+    <td><%=h Skill.find_by_id(skill_affect.skill_id).name %></td>
+    <td><%=h skill_affect.value %></td>
+    <td><%= link_to 'Show', skill_affect %></td>
+    <td><%= link_to 'Edit', edit_skill_affect_path(skill_affect) %></td>
+    <td><%= link_to 'Destroy', skill_affect, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+  <% end %>
+</table>
+
+<br>
+
+<%= link_to 'New', new_skill_affect_path %>

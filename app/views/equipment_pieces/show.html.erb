@@ -1,0 +1,21 @@
+<h1><%= @equipment_piece.name %> (<%= link_to @eq_mob.name, @eq_mob %>)</h1>
+<b>Special:</b> <%= @equipment_piece.special %><br>
+<b>Class:</b> <%= @equipment_piece.klass %><br>
+<b>Weight:</b> <%= @equipment_piece.weight %><br>
+<b>Tp Value:</b> <%= @equipment_piece.tp_value %><br>
+<b>Slots:</b> <%= render :partial => "slot_affects/view", :collection => @equipment_piece.slot_affects %> (<%= link_to 'Add', :controller => 'slot_affects', :action => 'new', :equipment_piece_id => @equipment_piece.id %>)<br>
+<b>Stats:</b> <%= render :partial => "stat_affects/view", :collection => @equipment_piece.stat_affects %> (<%= link_to 'Add', :controller => 'stat_affects', :action => 'new', :equipment_piece_id => @equipment_piece.id %>)<br>
+<b>Skills:</b> <%= render :partial => "skill_affects/view", :collection => @equipment_piece.skill_affects %> (<%= link_to 'Add', :controller => 'skill_affects', :action => 'new', :equipment_piece_id => @equipment_piece.id %>)<br>
+<b>Spells:</b> <%= render :partial => "spell_affects/view", :collection => @equipment_piece.spell_affects %> (<%= link_to 'Add', :controller => 'spell_affects', :action => 'new', :equipment_piece_id => @equipment_piece.id %>)<br>
+<b>Resistances:</b> <%= render :partial => "resistance_affects/view", :collection => @equipment_piece.resistance_affects %> (<%= link_to 'Add', :controller => 'resistance_affects', :action => 'new', :equipment_piece_id => @equipment_piece.id %>)<br>
+
+<%= link_to 'Back', equipment_pieces_path %>
+
+<% if logged_in? %>
+  <p>
+    <b>Edit History</b><br>
+    <% @versions.reverse.each do |version| %>
+      Version <%= version.version %> Updated: <%= version.updated_at %> <%= link_to '(restore)', restore_equipment_piece_url(:equipment_piece_id => @equipment_piece.id, :version_id => version.version) %><br>
+    <% end %>
+  </p>
+<% end %>

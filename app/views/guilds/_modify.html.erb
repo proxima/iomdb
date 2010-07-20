@@ -1,0 +1,30 @@
+<% form_for(modify) do |f| %>
+
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :guild_type_id %><br />
+    <%= f.collection_select(:guild_type_id, @guild_types, :id, :name) %>
+  </p>
+
+  <p>
+    <%= f.label :location %><br />
+    <%= f.text_area :location %>
+  </p>
+
+  <p>
+    <%= f.label :levels %><br />
+    <%= f.text_field :levels %>
+  </p>
+
+  <p>
+    <%= f.submit "Done" %>
+  </p>
+
+<% end %>
+

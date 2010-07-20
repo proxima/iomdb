@@ -1,0 +1,58 @@
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Strength</th>
+    <th>Dexterity</th>
+    <th>Constitution</th>
+    <th>Intelligence</th>
+    <th>Wisdom</th>
+    <th>Stamina</th>
+    <th>Charisma</th>
+    <th>Hpregen</th>
+    <th>Spregen</th>
+    <th>Epregen</th>
+    <th>Average Height</th>
+    <th>Average Weight</th>
+    <th>Skill max</th>
+    <th>Spell max</th>
+    <th>Skill rate</th>
+    <th>Spell rate</th>
+    <th>Experience rate</th>
+    <th>Need dark to regen</th>
+    <th>Need light to regen</th>
+    <th>Corpse eating</th>
+  </tr>
+
+  <% for race in @races %>
+  <tr>
+    <td><%=h race.name %></td>
+    <td><%=h StatLevel.find_by_id(race.strength).name %></td>
+    <td><%=h StatLevel.find_by_id(race.dexterity).name %></td>
+    <td><%=h StatLevel.find_by_id(race.constitution).name %></td>
+    <td><%=h StatLevel.find_by_id(race.intelligence).name %></td>
+    <td><%=h StatLevel.find_by_id(race.wisdom).name %></td>
+    <td><%=h StatLevel.find_by_id(race.stamina).name %></td>
+    <td><%=h StatLevel.find_by_id(race.charisma).name %></td>
+    <td><%=h StatLevel.find_by_id(race.hpregen).name %></td>
+    <td><%=h StatLevel.find_by_id(race.spregen).name %></td>
+    <td><%=h StatLevel.find_by_id(race.epregen).name %></td>
+    <td><%=h race.average_height %></td>
+    <td><%=h race.average_weight %></td>
+    <td><%=h race.skill_max %></td>
+    <td><%=h race.spell_max %></td>
+    <td><%=h race.skill_rate %></td>
+    <td><%=h race.spell_rate %></td>
+    <td><%=h race.experience_rate %></td>
+    <td><%=h race.need_dark_to_regen %></td>
+    <td><%=h race.need_light_to_regen %></td>
+    <td><%=h race.corpse_eating %></td>
+    <td><%= link_to 'Show', race %></td>
+    <td><%= link_to 'Edit', edit_race_path(race) %></td>
+    <td><%= link_to 'Destroy', race, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+  <% end %>
+</table>
+
+<br>
+
+<%= link_to 'New', new_race_path %>

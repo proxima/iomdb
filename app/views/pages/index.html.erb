@@ -1,0 +1,23 @@
+<h1>Available Databases</h1>
+
+<%= link_to 'Alignment Levels', alignment_levels_path %><br>
+<%= link_to 'Armor Class Levels', armor_class_levels_path %><br>
+<%= link_to 'Damage Levels', damage_levels_path %><br>
+<%= link_to 'Damage Types', damage_types_path %><br>
+<%= link_to 'Equipment Monsters', equipment_monsters_path %><br>
+<%= link_to 'Equipment Pieces', equipment_pieces_path %><br>
+<%= link_to 'Guilds', guilds_path %><br>
+<%= link_to 'Guild Types', guild_types_path %><br>
+<%= link_to 'Hunger Levels', hunger_levels_path %><br>
+<%= link_to 'Races', races_path %><br>
+<%= link_to 'Slots', slots_path %><br>
+<%= link_to 'Skills', skills_path %><br>
+<%= link_to 'Spells', spells_path %><br>
+<%= link_to 'Stat Levels', stat_levels_path %><br>
+<%= link_to 'Stats', stats_path %><br>
+<br>
+<% if session[:user] %>
+  <%= link_to 'Logout', :controller => 'admin_user', :action => 'logout' %>
+<% else %>
+  <%= link_to 'Login', :controller => 'admin_user', :action => 'login' %>
+<% end %>

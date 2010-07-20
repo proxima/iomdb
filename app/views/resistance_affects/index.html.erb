@@ -1,0 +1,16 @@
+<table>
+  <% for resistance_affect in @resistance_affects %>
+  <tr>
+    <td><%=h EquipmentPiece.find_by_id(resistance_affect.equipment_piece_id).name %></td>
+    <td><%=h DamageType.find_by_id(resistance_affect.damage_type_id).name %>
+    <td><%=h resistance_affect.value %></td>
+    <td><%= link_to 'Show', resistance_affect %></td>
+    <td><%= link_to 'Edit', edit_resistance_affect_path(resistance_affect) %></td>
+    <td><%= link_to 'Destroy', resistance_affect, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New', new_resistance_affect_path %>

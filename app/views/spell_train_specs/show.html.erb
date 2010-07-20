@@ -1,0 +1,19 @@
+<p>
+  <b>Spell:</b>
+  <%=h Spell.find(@spell_train_spec.spell_id).name %>
+</p>
+
+<p>
+  <b>Guild:</b>
+  <%=h Guild.find(@spell_train_spec.guild_id).name %>
+</p>
+
+<p>
+  <b>Level:</b>
+  <%=h @spell_train_spec.level %>
+</p>
+
+<p>
+  <b>Max:</b>
+  <%=h @spell_train_spec.max %>
+</p>

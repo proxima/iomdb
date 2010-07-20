@@ -1,0 +1,43 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  strength: 1
+  dexterity: 1
+  constitution: 1
+  intelligence: 1
+  wisdom: 1
+  stamina: 1
+  charisma: 1
+  hpregen: 1
+  spregen: 1
+  epregen: 1
+  skill_max: 1
+  spell_max: 1
+  skill_rate: 9.99
+  spell_rate: 9.99
+  experience_rate: 9.99
+  need_dark_to_regen: false
+  need_light_to_regen: false
+  corpse_eating: false
+
+two:
+  name: MyString
+  strength: 1
+  dexterity: 1
+  constitution: 1
+  intelligence: 1
+  wisdom: 1
+  stamina: 1
+  charisma: 1
+  hpregen: 1
+  spregen: 1
+  epregen: 1
+  skill_max: 1
+  spell_max: 1
+  skill_rate: 9.99
+  spell_rate: 9.99
+  experience_rate: 9.99
+  need_dark_to_regen: false
+  need_light_to_regen: false
+  corpse_eating: false

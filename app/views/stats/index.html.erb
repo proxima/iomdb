@@ -1,0 +1,14 @@
+<table>
+  <% for stat in @stats %>
+  <tr>
+    <td><%=h stat.name %> (<%=h stat.abbreviation %>)</td>
+    <td><%= link_to 'Show', stat %></td>
+    <td><%= link_to 'Edit', edit_stat_path(stat) %></td>
+    <td><%= link_to 'Destroy', stat, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+  <% end %>
+</table>
+
+<br>
+
+<%= link_to 'New', new_stat_path %>

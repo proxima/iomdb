@@ -1,0 +1,14 @@
+<table>
+  <% for slot in @slots %>
+  <tr>
+    <td><%=h slot.name %></td>
+    <td><%= link_to 'Show', slot %></td>
+    <td><%= link_to 'Edit', edit_slot_path(slot) %></td>
+    <td><%= link_to 'Destroy', slot, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+  <% end %>
+</table>
+
+<br>
+
+<%= link_to 'New', new_slot_path %>

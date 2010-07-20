@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  equipment_piece_id: 1
+  stat_id: 1
+  value: 1
+
+two:
+  equipment_piece_id: 1
+  stat_id: 1
+  value: 1

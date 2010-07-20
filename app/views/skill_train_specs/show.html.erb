@@ -1,0 +1,19 @@
+<p>
+  <b>Skill:</b>
+  <%=h Skill.find(@skill_train_spec.skill_id).name %>
+</p>
+
+<p>
+  <b>Guild:</b>
+  <%=h Guild.find(@skill_train_spec.guild_id).name %>
+</p>
+
+<p>
+  <b>Level:</b>
+  <%=h @skill_train_spec.level %>
+</p>
+
+<p>
+  <b>Max:</b>
+  <%=h @skill_train_spec.max %>
+</p>

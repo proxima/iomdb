@@ -1,0 +1,14 @@
+<table>
+  <% for alignment_level in @alignment_levels %>
+  <tr>
+    <td><%= render :partial => "view", :object => alignment_level %></td>
+    <td><%= link_to 'Show', alignment_level %></td>
+    <td><%= link_to 'Edit', edit_alignment_level_path(alignment_level) %></td>
+    <td><%= link_to 'Destroy', alignment_level, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+  <% end %>
+</table>
+
+<br>
+
+<%= link_to 'New', new_alignment_level_path %>

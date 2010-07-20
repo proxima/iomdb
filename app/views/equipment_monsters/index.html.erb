@@ -1,0 +1,14 @@
+<table>
+  <% for equipment_monster in @equipment_monsters %>
+  <tr>
+    <td><%=h equipment_monster.name %></td>
+    <td><%= link_to 'Show', equipment_monster %></td>
+    <td><%= link_to 'Edit', edit_equipment_monster_path(equipment_monster) %></td>
+    <td><%= link_to 'Destroy', equipment_monster, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+  <% end %>
+</table>
+
+<br>
+
+<%= link_to 'New', new_equipment_monster_path %>

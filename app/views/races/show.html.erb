@@ -1,0 +1,48 @@
+<table width=550>
+  <tr><td colspan=3>-----------------------------------------------------------------------------</td></tr>
+  <tr><td colspan=3><center><%=h @race.name %></center></td></tr>
+  <tr><td colspan=3>-----------------------------------------------------------------------------</td></tr>
+  <tr><td colspan=3><%=h @race.description %></td></tr>
+  <tr><td colspan=3>-----------------------------------------------------------------------------</td></tr>
+  <tr>
+    <td>Strength: <%=h StatLevel.find_by_id(@race.strength).name %></td>
+    <td>Intelligence: <%=h StatLevel.find_by_id(@race.intelligence).name %></td>
+    <td>Constitution: <%=h StatLevel.find_by_id(@race.constitution).name %></td>
+  </tr>
+  <tr>
+     <td>Wisdom: <%=h StatLevel.find_by_id(@race.wisdom).name %></td>
+     <td>Dexterity: <%=h StatLevel.find_by_id(@race.dexterity).name %></td>
+     <td>Stamina: <%=h StatLevel.find_by_id(@race.stamina).name %></td>
+  </tr>
+  <tr>
+     <td>Hp regen: <%=h StatLevel.find_by_id(@race.hpregen).name %></td>
+     <td>Sp regen: <%=h StatLevel.find_by_id(@race.spregen).name %></td>
+     <td>Ep regen: <%=h StatLevel.find_by_id(@race.epregen).name %></td>
+  </tr>
+  <tr><td colspan=3>-----------------------------------------------------------------------------</td></tr>
+  <tr><td colspan=2>They can train skills up to <%=h @race.skill_max %>%</td><td colspan=1>Skill rate: <%=h @race.skill_rate %></td></tr>
+  <tr><td colspan=2>They can train spells up to <%=h @race.spell_max %>%</td><td colspan=1>Spell rate: <%=h @race.spell_rate %></td></tr>
+  <tr><td colspan=3>Their experience rate is <%=h @race.experience_rate %>%</td></tr>
+  <tr><td colspan=3>Average Height: <%=h @race.average_height %> inches</td></tr>
+  <tr><td colspan=3>Average Weight: <%=h @race.average_weight %></td></tr>
+  <tr><td colspan=3>They have <%=h StatLevel.find_by_id(@race.charisma).name %> charisma</td></tr>
+  <% if @race.need_dark_to_regen %>
+  <tr><td colspan=3>They only heal in dark places.</td></tr>
+  <% end %>
+  <% if @race.need_light_to_regen %>
+  <tr><td colspan=3>They only heal in light places.</td></tr>
+  <% end %>
+  <% if @race.corpse_eating %>
+  <tr><td colspan=3>They can eat corpses.</td></tr>
+  <% end %>
+  <tr><td colspan=3>-----------------------------------------------------------------------------</td></tr>
+</table>
+
+<% if logged_in? %>
+  <p>
+    <b>Edit History</b><br>
+    <% @versions.reverse.each do |version| %>
+      Version <%= version.version %> Updated: <%= version.updated_at %> <%= link_to '(restore)', restore_race_url(:race_id => @race.id, :version_id => version.version) %><br>
+    <% end %>
+  </p>
+<% end %>

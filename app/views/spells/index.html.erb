@@ -1,0 +1,17 @@
+<table>
+  <% for spell in @spells %>
+  <tr>
+    <td><%=h spell.name %></td>
+    <td><%=h spell.base_cost %></td>
+    <td><%= link_to 'Show', spell %></td>
+    <td><%= link_to 'Edit', edit_spell_path(spell) %></td>
+    <td><%= link_to 'Destroy', spell, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+  <% end %>
+</table>
+
+<%= will_paginate @spells %>
+
+<br>
+
+<%= link_to 'New', new_spell_path %>

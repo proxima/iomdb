@@ -1,0 +1,14 @@
+<table>
+  <% for hunger_level in @hunger_levels %>
+  <tr>
+    <td><%= render :partial => 'view', :object => hunger_level %></td>
+    <td><%= link_to 'Show', hunger_level %></td>
+    <td><%= link_to 'Edit', edit_hunger_level_path(hunger_level) %></td>
+    <td><%= link_to 'Destroy', hunger_level, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+  <% end %>
+</table>
+
+<br>
+
+<%= link_to 'New', new_hunger_level_path %>

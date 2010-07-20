@@ -1,0 +1,26 @@
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Guild type</th>
+    <th>Location</th>
+    <th>Levels</th>
+  </tr>
+
+  <% for guild in @guilds %>
+  <tr>
+    <td><%=h guild.name %></td>
+    <td><%=h GuildType.find_by_id(guild.guild_type_id).name %></td>
+    <td><%=h guild.location %></td>
+    <td><%=h guild.levels %></td>
+    <td><%= link_to 'Show', guild %></td>
+    <td><%= link_to 'Edit', edit_guild_path(guild) %></td>
+    <td><%= link_to 'Destroy', guild, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+  <% end %>
+</table>
+
+<%= will_paginate @guilds %>
+
+<br>
+
+<%= link_to 'New', new_guild_path %>

@@ -1,0 +1,21 @@
+<h1><%= @equipment_monster.name %></h1>
+<h2>Walkthrough:</h2>
+<p>
+  <%= @equipment_monster.walkthrough %>
+</p>
+<h2>Equipment:</h2>
+<p>
+  <% for piece in @equipment_monster.equipment_pieces %>
+    <%= link_to piece.name, piece %><br>
+  <% end %>
+</p>
+
+<% if logged_in? %>
+  <p>
+    <b>Edit History</b><br>
+    <% @versions.reverse.each do |version| %>
+      Version <%= version.version %> Updated: <%= version.updated_at %> <%= link_to '(restore)', restore_equipment_monster_url(:equipment_monster_id => @equipment_monster.id, :version_id => version.version) %><br>
+    <% end %>
+  </p>
+<% end %>
+

@@ -1,0 +1,97 @@
+<% form_for(modify) do |f| %>
+
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.label :strength %><br />
+    <%= f.select :strength, local_assigns[:stat_levels].map{|c| [c.name, c.id]} %>
+  </p>
+  <p>
+    <%= f.label :dexterity %><br />
+    <%= f.select :dexterity, local_assigns[:stat_levels].map{|c| [c.name, c.id]} %>
+  </p>
+  <p>
+    <%= f.label :constitution %><br />
+    <%= f.select :constitution, local_assigns[:stat_levels].map{|c| [c.name, c.id]} %>
+  </p>
+  <p>
+    <%= f.label :intelligence %><br />
+    <%= f.select :intelligence, local_assigns[:stat_levels].map{|c| [c.name, c.id]} %>
+  </p>
+  <p>
+    <%= f.label :wisdom %><br />
+    <%= f.select :wisdom, local_assigns[:stat_levels].map{|c| [c.name, c.id]} %>
+  </p>
+  <p>
+    <%= f.label :stamina %><br />
+    <%= f.select :stamina, local_assigns[:stat_levels].map{|c| [c.name, c.id]} %>
+  </p>
+  <p>
+    <%= f.label :charisma %><br />
+    <%= f.select :charisma, local_assigns[:stat_levels].map{|c| [c.name, c.id]} %>
+  </p>
+  <p>
+    <%= f.label :hpregen %><br />
+    <%= f.select :hpregen, local_assigns[:stat_levels].map{|c| [c.name, c.id]} %>
+  </p>
+  <p>
+    <%= f.label :spregen %><br />
+    <%= f.select :spregen, local_assigns[:stat_levels].map{|c| [c.name, c.id]} %>
+  </p>
+  <p>
+    <%= f.label :epregen %><br />
+    <%= f.select :epregen, local_assigns[:stat_levels].map{|c| [c.name, c.id]} %>
+  </p>
+  <p>
+    <%= f.label :average_height %><br>
+    <%= f.text_field :average_height %>
+  </p>
+  <p>
+    <%= f.label :average_weight %><br>
+    <%= f.text_field :average_weight %>
+  </p>
+  <p>
+    <%= f.label :skill_max %><br />
+    <%= f.text_field :skill_max %>
+  </p>
+  <p>
+    <%= f.label :spell_max %><br />
+    <%= f.text_field :spell_max %>
+  </p>
+  <p>
+    <%= f.label :skill_rate %><br />
+    <%= f.text_field :skill_rate %>
+  </p>
+  <p>
+    <%= f.label :spell_rate %><br />
+    <%= f.text_field :spell_rate %>
+  </p>
+  <p>
+    <%= f.label :experience_rate %><br />
+    <%= f.text_field :experience_rate %>
+  </p>
+  <p>
+    <%= f.label :need_dark_to_regen %><br />
+    <%= f.check_box :need_dark_to_regen %>
+  </p>
+  <p>
+    <%= f.label :need_light_to_regen %><br />
+    <%= f.check_box :need_light_to_regen %>
+  </p>
+  <p>
+    <%= f.label :corpse_eating %><br />
+    <%= f.check_box :corpse_eating %>
+  </p>
+  <p>
+    <%= f.submit "Done" %>
+  </p>
+<% end %>
+

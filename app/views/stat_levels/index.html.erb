@@ -1,0 +1,14 @@
+<table>
+  <% for stat_level in @stat_levels %>
+  <tr>
+    <td><%= render :partial => 'view', :object => stat_level %></td>
+    <td><%= link_to 'Show', stat_level %></td>
+    <td><%= link_to 'Edit', edit_stat_level_path(stat_level) %></td>
+    <td><%= link_to 'Destroy', stat_level, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+  <% end %>
+</table>
+
+<br>
+
+<%= link_to 'New', new_stat_level_path %>

@@ -1,0 +1,38 @@
+<p>
+  <b>Name:</b>
+  <%=h @guild.name %>
+</p>
+
+<p>
+  <b>Guild type:</b>
+  <%=h GuildType.find_by_id(@guild.guild_type_id).name %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%=h @guild.location %>
+</p>
+
+<p>
+  <b>Levels:</b>
+  <%=h @guild.levels %>
+</p>
+
+<p>
+  <b>Skills (<%= link_to 'Add', :controller => 'skill_train_specs', :action => 'new', :guild_id => @guild.id %>):</b><br>
+  <%= render :partial => 'skill_train_specs/view', :collection => @guild.skill_train_specs %>
+</p>
+
+<p>
+  <b>Spells (<%= link_to 'Add', :controller => 'spell_train_specs', :action => 'new', :guild_id => @guild.id %>):</b><br>
+  <%= render :partial => 'spell_train_specs/view', :collection => @guild.spell_train_specs %>
+</p>
+
+<% if logged_in? %>
+  <p>
+    <b>Edit History</b><br>
+    <% @versions.reverse.each do |version| %>
+      Version <%= version.version %> Updated: <%= version.updated_at %> <%= link_to '(restore)', restore_guild_url(:guild_id => @guild.id, :version_id => version.version) %><br>
+    <% end %>
+  </p>
+<% end %>
