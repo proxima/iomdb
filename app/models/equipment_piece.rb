@@ -27,7 +27,7 @@ class EquipmentPiece < ActiveRecord::Base
     end
 
     for sa in spell_affects do
-      ret = ret + sa.value.to_s + ' ' + Spell.find(sa.skill_id).name + ', '
+      ret = ret + sa.value.to_s + ' ' + Spell.find(sa.spell_id).name + ', '
     end
 
     for ra in resistance_affects do

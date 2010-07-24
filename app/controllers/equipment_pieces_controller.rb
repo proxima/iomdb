@@ -10,7 +10,28 @@ class EquipmentPiecesController < ApplicationController
 
     @eye_pieces = EquipmentPiece.find(:all, :joins => :slot_affects, :conditions => { 'slot_affects.slot_id' => Slot.find_by_name('eyes').id })
     @eye_pieces.delete_if {|x| @slot_counts[x.id.to_s] > 1}
-  
+ 
+    @neck_pieces = EquipmentPiece.find(:all, :joins => :slot_affects, :conditions => { 'slot_affects.slot_id' => Slot.find_by_name('neck').id })
+    @neck_pieces.delete_if {|x| @slot_counts[x.id.to_s] > 1}
+
+    @cloak_pieces = EquipmentPiece.find(:all, :joins => :slot_affects, :conditions => { 'slot_affects.slot_id' => Slot.find_by_name('cloak').id })
+    @cloak_pieces.delete_if {|x| @slot_counts[x.id.to_s] > 1}
+
+    @amulet_pieces = EquipmentPiece.find(:all, :joins => :slot_affects, :conditions => { 'slot_affects.slot_id' => Slot.find_by_name('amulet').id })
+    @amulet_pieces.delete_if {|x| @slot_counts[x.id.to_s] > 1}
+
+    @torso_pieces = EquipmentPiece.find(:all, :joins => :slot_affects, :conditions => { 'slot_affects.slot_id' => Slot.find_by_name('torso').id })
+    @torso_pieces.delete_if {|x| @slot_counts[x.id.to_s] > 1}
+
+    @arms_pieces = EquipmentPiece.find(:all, :joins => :slot_affects, :conditions => { 'slot_affects.slot_id' => [ Slot.find_by_name('right arm').id, Slot.find_by_name('left arm').id ] }).uniq
+    @arms_pieces.delete_if {|x| @slot_counts[x.id.to_s] != 2}
+     
+    @right_arm_pieces = EquipmentPiece.find(:all, :joins => :slot_affects, :conditions => { 'slot_affects.slot_id' => Slot.find_by_name('right arm').id })
+    @right_arm_pieces.delete_if {|x| @slot_counts[x.id.to_s] > 1}
+
+    @left_arm_pieces = EquipmentPiece.find(:all, :joins => :slot_affects, :conditions => { 'slot_affects.slot_id' => Slot.find_by_name('left arm').id })
+    @left_arm_pieces.delete_if {|x| @slot_counts[x.id.to_s] > 1}
+
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @equipment_pieces }
