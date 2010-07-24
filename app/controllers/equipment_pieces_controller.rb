@@ -3,8 +3,14 @@ class EquipmentPiecesController < ApplicationController
   # GET /equipment_pieces.xml
   # GET /equipment_pieces.json
   def index
-    @equipment_pieces = EquipmentPiece.paginate :page => params[:page], :order => 'name ASC'
+    @slot_counts = EquipmentPiece.count(:all, :joins => :slot_affects, :group => :equipment_piece_id)
+    
+    @head_pieces = EquipmentPiece.find(:all, :joins => :slot_affects, :conditions => { 'slot_affects.slot_id' => Slot.find_by_name('head').id })
+    @head_pieces.delete_if {|x| @slot_counts[x.id.to_s] > 1}
 
+    @eye_pieces = EquipmentPiece.find(:all, :joins => :slot_affects, :conditions => { 'slot_affects.slot_id' => Slot.find_by_name('eyes').id })
+    @eye_pieces.delete_if {|x| @slot_counts[x.id.to_s] > 1}
+  
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @equipment_pieces }
@@ -36,7 +42,7 @@ class EquipmentPiecesController < ApplicationController
   # GET /equipment_pieces/new.xml
   def new
     @equipment_piece = EquipmentPiece.new
-    @equipment_monsters = EquipmentMonster.find(:all)
+    @equipment_monsters = EquipmentMonster.find(:all, :order => 'name ASC')
 
     respond_to do |format|
       format.html # new.html.erb
@@ -47,7 +53,7 @@ class EquipmentPiecesController < ApplicationController
   # GET /equipment_pieces/1/edit
   def edit
     @equipment_piece = EquipmentPiece.find(params[:id])
-    @equipment_monsters = EquipmentMonster.find(:all)
+    @equipment_monsters = EquipmentMonster.find(:all, :order => 'name ASC')
   end
 
   # POST /equipment_pieces

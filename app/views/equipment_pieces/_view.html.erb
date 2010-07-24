@@ -1,0 +1,11 @@
+<tr>
+  <td><%= link_to view.name, view %></td>
+  <td><%=h view.stat_line %></td>
+  <td><%=h view.tp_value %></td>
+  <td><%= link_to view.equipment_monster.name, view.equipment_monster %></td>
+
+  <% if logged_in? %>
+     <td><%= link_to 'Edit', edit_equipment_piece_path(view) %></td>
+     <td><%= link_to '(X)', view, :confirm => 'Are you sure?', :method => :delete %></td>
+  <% end %>
+</tr>

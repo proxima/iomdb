@@ -1,14 +1,13 @@
-<table>
-  <% for equipment_piece in @equipment_pieces %>
-  <tr>
-    <td><%=h equipment_piece.name %></td>
-    <td><%= link_to 'Show', equipment_piece %></td>
-    <td><%= link_to 'Edit', edit_equipment_piece_path(equipment_piece) %></td>
-    <td><%= link_to 'Destroy', equipment_piece, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
+<h1>Head:</h1>
+
+<table id="head_table">
+  <%= render :partial => 'view', :collection => @head_pieces %>
 </table>
 
-<%= will_paginate @equipment_pieces %>
+<h1>Eyes:</h1>
+
+<table id="eye_table">
+  <%= render :partial => 'view', :collection => @eye_pieces %>
+</table>
 
 <%= link_to 'New', new_equipment_piece_path %>
