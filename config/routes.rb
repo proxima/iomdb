@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+
+  map.resources :pages
   map.resources :spell_train_specs, :belongs_to => :guild
   map.resources :skill_train_specs, :belongs_to => :guild
   map.resources :slot_affects, :has_one => :slot, :belongs_to => :equipment_piece

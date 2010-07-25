@@ -14,6 +14,21 @@
 
 <p style="color: #99E72F"><%= flash[:notice] %></p>
 
+<table id="toolbar" class="toolbar">
+  <tr>
+    <td><%= link_to 'Home', pages_path %></td>
+    <td><%= link_to 'Eq Pieces', equipment_pieces_path %></td>
+    <td><%= link_to 'Eq Mobs', equipment_monsters_path %></td>
+    <td><%= link_to 'Guilds', guilds_path %></td>
+    <td><%= link_to 'Races', races_path %></td>
+<% if logged_in? %>
+    <td><%= link_to 'Logout', :controller => 'admin_user', :action => 'logout' %></td>
+<% else %>
+    <td><%= link_to 'Login', :controller => 'admin_user', :action => 'login' %></td>
+<% end %>
+  </tr>
+</table>
+
 <%= yield %>
 
 </body>

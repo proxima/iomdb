@@ -22,6 +22,15 @@ a:hover { color: #80FFFF; background-color:#0000FF; }
   display: table;
 }
 
+.toolbar {
+  font-weight: bold;
+  background-color: #000000;
+  border: outset 3pt;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 #errorExplanation {
   width: 400px;
   border: 2px solid red;
@@ -51,4 +60,3 @@ a:hover { color: #80FFFF; background-color:#0000FF; }
   font-size: 12px;
   list-style: square;
 }
-
