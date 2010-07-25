@@ -14,7 +14,7 @@ class EquipmentPiecesController < ApplicationController
     if params[:slot]
       @slot_counts = EquipmentPiece.count(:all, :joins => :slot_affects, :group => :equipment_piece_id)
 
-      if params[:slot] == "head" or params[:slot] == "eyes"
+      if Slot.find_by_name(params[:slot])
         @pieces = EquipmentPiece.find(:all, :joins => :slot_affects, :conditions => { 'slot_affects.slot_id' => Slot.find_by_name(params[:slot]).id })
         @pieces.delete_if {|x| @slot_counts[x.id.to_s] > 1}
          
