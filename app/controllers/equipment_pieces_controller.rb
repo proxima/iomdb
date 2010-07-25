@@ -3,39 +3,23 @@ class EquipmentPiecesController < ApplicationController
   # GET /equipment_pieces.xml
   # GET /equipment_pieces.json
   def index
-    @slot_counts = EquipmentPiece.count(:all, :joins => :slot_affects, :group => :equipment_piece_id)
-    
-    @head_pieces = EquipmentPiece.find(:all, :joins => :slot_affects, :conditions => { 'slot_affects.slot_id' => Slot.find_by_name('head').id })
-    @head_pieces.delete_if {|x| @slot_counts[x.id.to_s] > 1}
-
-    @eye_pieces = EquipmentPiece.find(:all, :joins => :slot_affects, :conditions => { 'slot_affects.slot_id' => Slot.find_by_name('eyes').id })
-    @eye_pieces.delete_if {|x| @slot_counts[x.id.to_s] > 1}
- 
-    @neck_pieces = EquipmentPiece.find(:all, :joins => :slot_affects, :conditions => { 'slot_affects.slot_id' => Slot.find_by_name('neck').id })
-    @neck_pieces.delete_if {|x| @slot_counts[x.id.to_s] > 1}
-
-    @cloak_pieces = EquipmentPiece.find(:all, :joins => :slot_affects, :conditions => { 'slot_affects.slot_id' => Slot.find_by_name('cloak').id })
-    @cloak_pieces.delete_if {|x| @slot_counts[x.id.to_s] > 1}
-
-    @amulet_pieces = EquipmentPiece.find(:all, :joins => :slot_affects, :conditions => { 'slot_affects.slot_id' => Slot.find_by_name('amulet').id })
-    @amulet_pieces.delete_if {|x| @slot_counts[x.id.to_s] > 1}
-
-    @torso_pieces = EquipmentPiece.find(:all, :joins => :slot_affects, :conditions => { 'slot_affects.slot_id' => Slot.find_by_name('torso').id })
-    @torso_pieces.delete_if {|x| @slot_counts[x.id.to_s] > 1}
-
-    @arms_pieces = EquipmentPiece.find(:all, :joins => :slot_affects, :conditions => { 'slot_affects.slot_id' => [ Slot.find_by_name('right arm').id, Slot.find_by_name('left arm').id ] }).uniq
-    @arms_pieces.delete_if {|x| @slot_counts[x.id.to_s] != 2}
-     
-    @right_arm_pieces = EquipmentPiece.find(:all, :joins => :slot_affects, :conditions => { 'slot_affects.slot_id' => Slot.find_by_name('right arm').id })
-    @right_arm_pieces.delete_if {|x| @slot_counts[x.id.to_s] > 1}
-
-    @left_arm_pieces = EquipmentPiece.find(:all, :joins => :slot_affects, :conditions => { 'slot_affects.slot_id' => Slot.find_by_name('left arm').id })
-    @left_arm_pieces.delete_if {|x| @slot_counts[x.id.to_s] > 1}
-
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @equipment_pieces }
       format.json { render :json => @equipment_pieces }
+    end
+  end
+
+  def fetch_by_slot
+    if params[:slot]
+      @slot_counts = EquipmentPiece.count(:all, :joins => :slot_affects, :group => :equipment_piece_id)
+
+      if params[:slot] == "head" or params[:slot] == "eyes"
+        @pieces = EquipmentPiece.find(:all, :joins => :slot_affects, :conditions => { 'slot_affects.slot_id' => Slot.find_by_name(params[:slot]).id })
+        @pieces.delete_if {|x| @slot_counts[x.id.to_s] > 1}
+         
+        render :partial => 'view', :collection => @pieces
+      end
     end
   end
 

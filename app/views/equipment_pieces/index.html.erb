@@ -1,58 +1,6 @@
-<h1>Head:</h1>
+<%= link_to_remote 'Head', :update => 'eq_piece_div', :url => { :action => 'fetch_by_slot', :slot => "head" } %><br>
+<%= link_to_remote 'Eyes', :update => 'eq_piece_div', :url => { :action => 'fetch_by_slot', :slot => "eyes" } %><br><br>
 
-<table id="head_table">
-  <%= render :partial => 'view', :collection => @head_pieces %>
+<table id="eq_piece_table">
+<div id="eq_piece_div">
 </table>
-
-<h1>Eyes:</h1>
-
-<table id="eye_table">
-  <%= render :partial => 'view', :collection => @eye_pieces %>
-</table>
-
-<h1>Neck:</h1>
-
-<table id="neck_table">
-  <%= render :partial => 'view', :collection => @neck_pieces %>
-</table>
-
-<h1>Cloak:</h1>
-
-<table id="cloak_table">
-  <%= render :partial => 'view', :collection => @cloak_pieces %>
-</table>
-
-<h1>Amulet:</h1>
-
-<table id="amulet_table">
-  <%= render :partial => 'view', :collection => @amulet_pieces %>
-</table>
-
-<h1>Torso:</h1>
-
-<table id="torso_table">
-  <%= render :partial => 'view', :collection => @torso_pieces %>
-</table>
-
-<h1>Arms:</h1>
-
-<table id="arms_table">
-  <%= render :partial => 'view', :collection => @arms_pieces %>
-</table>
-
-<h1>Left Arm:</h1>
-
-<table id="left_arm_table">
-  <%= render :partial => 'view', :collection => @left_arm_pieces %>
-</table>
-
-<h1>Right Arm:</h1>
-
-<table id="right_arm_table">
-  <%= render :partial => 'view', :collection => @right_arm_pieces %>
-</table>
-
-
-
-
-
