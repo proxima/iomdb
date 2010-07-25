@@ -2,18 +2,18 @@ class AdminUserController < ApplicationController
 
   before_filter :login_required, :only=>['welcome', 'change_password', 'hidden']
 
-#  def signup
-#    @user = AdminUser.new(params[:user])
-#    if request.post?
-#      if @user.save
-#        session[:user] = AdminUser.authenticate(@user.login, @user.password)
-#        flash[:notice] = "Signup successful"
-#        redirect_to :action => "welcome"          
-#      else
-#        flash[:notice] = "Signup unsuccessful"
-#      end
-#    end
-#  end
+  def signup
+    @user = AdminUser.new(params[:user])
+    if request.post?
+      if @user.save
+        session[:user] = AdminUser.authenticate(@user.login, @user.password)
+        flash[:notice] = "Signup successful"
+        redirect_to :action => "welcome"          
+      else
+        flash[:notice] = "Signup unsuccessful"
+      end
+    end
+  end
 
   def login
     if request.post?

@@ -3,7 +3,8 @@
 
 function remove_non_header_rows(table)
 {
-  for(var i = table.rows.length; i > 1; i--) {
-    table.deleteRow(i - 1);
+  var t = document.getElementById(table);
+  for(var i = t.rows.length; i > 1; i--) {
+    t.deleteRow(i - 1);
   }
 }
