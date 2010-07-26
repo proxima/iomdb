@@ -31,6 +31,15 @@ a:hover { color: #80FFFF; background-color:#0000FF; }
   top: 0;
 }
 
+.even {
+  background-color: #111111;
+}
+
+.odd {
+  background-color: #000000;
+}
+
+
 #errorExplanation {
   width: 400px;
   border: 2px solid red;

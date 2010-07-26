@@ -1,4 +1,4 @@
-<tr>
+<tr class="<%= cycle("even", "odd") -%>">
   <td><%= link_to view.name, view %></td>
   <td><%=h view.stat_line %></td>
   <td><%=h view.tp_value %></td>
