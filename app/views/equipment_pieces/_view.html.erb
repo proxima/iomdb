@@ -1,5 +1,6 @@
 <tr class="<%= cycle("even", "odd") -%>">
   <td><%= link_to view.name, view %></td>
+  <td><%=h view.klass if view.klass and view.klass > 0 %></td>
   <td><%=h view.stat_line %></td>
   <td><%=h view.tp_value %></td>
   <td><%= link_to view.equipment_monster.name, view.equipment_monster %></td>

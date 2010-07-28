@@ -7,7 +7,7 @@
   </tr>
 
   <% for guild in @guilds %>
-  <tr>
+  <tr class="<%= cycle("even", "odd") -%>">
     <td><%=h guild.name %></td>
     <td><%=h GuildType.find_by_id(guild.guild_type_id).name %></td>
     <td><%=h guild.location %></td>

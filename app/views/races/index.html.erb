@@ -24,7 +24,7 @@
   </tr>
 
   <% for race in @races %>
-  <tr>
+  <tr class="<%= cycle("even", "odd") -%>">
     <td><%=h race.name %></td>
     <td><%=h StatLevel.find_by_id(race.strength).name %></td>
     <td><%=h StatLevel.find_by_id(race.dexterity).name %></td>

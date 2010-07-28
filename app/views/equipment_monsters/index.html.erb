@@ -1,6 +1,6 @@
 <table>
   <% for equipment_monster in @equipment_monsters %>
-  <tr>
+  <tr class="<%= cycle("even", "odd") -%>">
     <td><%=h equipment_monster.name %></td>
     <td><%= link_to 'Show', equipment_monster %></td>
     <td><%= link_to 'Edit', edit_equipment_monster_path(equipment_monster) %></td>
