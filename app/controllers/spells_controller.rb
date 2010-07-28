@@ -16,6 +16,7 @@ class SpellsController < ApplicationController
   # GET /spells/1.xml
   def show
     @spell = Spell.find(params[:id])
+    @specs = SpellTrainSpec.find_all_by_spell_id(params[:id], :order => 'guild_id ASC, max ASC')
 
     respond_to do |format|
       format.html # show.html.erb

@@ -7,3 +7,8 @@
   <b>Base cost:</b>
   <%=h @spell.base_cost %>
 </p>
+
+<h2>Learned By:</h2>
+<% for spec in @specs %>
+  <b><%= Guild.find_by_id(spec.guild_id).name %></b> - <%= render :partial => 'spell_train_specs/view', :object => spec %>
+<% end %>

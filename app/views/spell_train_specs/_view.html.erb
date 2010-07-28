@@ -1,2 +1,1 @@
-<%= Spell.find(view.spell_id).name %> to <%= view.max %>% at Level <%= view.level %> (<%= link_to 'Edit', edit_spell_train_spec_path(view) %>) (<%= link_to 'X', view, :confirm => 'Are you sure?', :method => :delete %>)<br>
-
+<%= Spell.find(view.spell_id).name %> to <%= view.max %>% at Level <%= view.level %> <%= link_to('(E)', edit_spell_train_spec_path(view)) if logged_in? %> <%= link_to('(X)', view, :confirm => 'Are you sure?', :method => :delete) if logged_in? %><br>
