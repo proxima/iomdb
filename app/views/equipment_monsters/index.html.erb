@@ -1,15 +1,14 @@
+<br>
+<br>
 <table>
-  <% for equipment_monster in @equipment_monsters %>
-  <tr class="<%= cycle("even", "odd") -%>">
-    <td><%=h equipment_monster.name %></td>
-    <td><%= link_to 'Show', equipment_monster %></td>
-    <td><%= link_to 'Edit', edit_equipment_monster_path(equipment_monster) %></td>
-    <td><%= link_to 'Destroy', equipment_monster, :confirm => 'Are you sure?', :method => :delete %></td>
+  <% @equipment_monsters.in_groups_of(8, false) do |eq_monsters| %>
+  <tr class="<%= cycle("even", "odd") -%>" height=30>
+    <% for equipment_monster in eq_monsters %>
+      <td><%= link_to equipment_monster.name, equipment_monster %> <%= link_to('(E)', edit_equipment_monster_path(equipment_monster)) if logged_in? %> <%= link_to('(X)', equipment_monster, :confirm => 'Are you sure?', :method => :delete) if logged_in? %></td>
+    <% end %>
   </tr>
   <% end %>
 </table>
-
-<%= will_paginate @equipment_monsters %>
 
 <br>
 
