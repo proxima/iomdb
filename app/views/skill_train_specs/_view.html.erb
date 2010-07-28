@@ -1,1 +1,2 @@
-<%= Skill.find(view.skill_id).name %> to <%= view.max %>% at Level <%= view.level %> <%= link_to('(E)', edit_skill_train_spec_path(view)) if logged_in? %> <%= link_to('(X)', view, :confirm => 'Are you sure?', :method => :delete) if logged_in? %><br>
+<% @skill = Skill.find(view.skill_id) %>
+<%= link_to(@skill.name, @skill) %> to <%= view.max %>% at Level <%= view.level %> <%= link_to('(E)', edit_skill_train_spec_path(view)) if logged_in? %> <%= link_to('(X)', view, :confirm => 'Are you sure?', :method => :delete) if logged_in? %><br>
