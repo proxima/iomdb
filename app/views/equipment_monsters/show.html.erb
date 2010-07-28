@@ -3,12 +3,20 @@
 <p>
   <%= @equipment_monster.walkthrough %>
 </p>
+
 <h2>Equipment:</h2>
-<p>
-  <% for piece in @equipment_monster.equipment_pieces %>
-    <%= link_to piece.name, piece %><br>
-  <% end %>
-</p>
+<table id="eq_piece_table">
+  <tr id="eq_piece_div">
+    <th>Name</th>
+    <th>Class</th>
+    <th>Stats</th>
+    <th>Tp Value</th>
+    <th>Location</th>
+    <th></th>
+    <th></th>
+  </tr>
+  <%= render :partial => 'equipment_pieces/view', :collection => @equipment_monster.equipment_pieces %>
+</table>
 
 <% if logged_in? %>
   <p>

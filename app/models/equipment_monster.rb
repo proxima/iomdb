@@ -8,6 +8,6 @@ class EquipmentMonster < ActiveRecord::Base
   validates_presence_of :name
   validates_uniqueness_of :name
 
-  has_many :equipment_pieces, :dependent => :destroy
+  has_many :equipment_pieces, :dependent => :destroy, :order => 'name ASC'
 
 end
