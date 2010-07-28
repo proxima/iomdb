@@ -7,8 +7,8 @@ class Guild < ActiveRecord::Base
 
   has_one :guild_type
 
-  has_many :skill_train_specs, :order => 'level ASC'
-  has_many :spell_train_specs, :order => 'level ASC'
+  has_many :skill_train_specs, :order => 'level ASC', :dependent => :destroy
+  has_many :spell_train_specs, :order => 'level ASC', :dependent => :destroy
 
   validates_presence_of :name, :location, :guild_type_id, :levels
   validates_uniqueness_of :name
