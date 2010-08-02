@@ -17,6 +17,7 @@ class DamageTypesController < ApplicationController
   # GET /damage_types/1.json
   def show
     @damage_type = DamageType.find(params[:id])
+    @pieces = ResistanceAffect.find_all_by_damage_type_id(params[:id], :order => 'value DESC')
 
     respond_to do |format|
       format.html # show.html.erb

@@ -17,7 +17,8 @@ class SkillsController < ApplicationController
   # GET /skills/1.json
   def show
     @skill = Skill.find(params[:id])
-    @specs = SkillTrainSpec.find_all_by_skill_id(params[:id], :order => 'guild_id ASC, max ASC')
+    @train_specs = SkillTrainSpec.find_all_by_skill_id(params[:id], :order => 'guild_id ASC, max ASC')
+    @eq_mods = SkillAffect.find_all_by_skill_id(params[:id], :order => 'value DESC')
 
     respond_to do |format|
       format.html # show.html.erb

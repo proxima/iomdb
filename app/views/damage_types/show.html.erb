@@ -1,1 +1,10 @@
 <%= render :partial => "view", :object => @damage_type %>
+
+<h2>Equipment Pieces - Resistances:</h2>
+<table>
+<% for mod in @pieces %>
+  <% piece = EquipmentPiece.find_by_id(mod.equipment_piece_id) %>
+  <tr><td><b><%= link_to(piece.name, piece) %></b></td><td><%= mod.value %></td></tr>
+<% end %>
+</table>
+

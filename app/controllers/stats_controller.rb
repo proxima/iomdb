@@ -17,6 +17,7 @@ class StatsController < ApplicationController
   # GET /stats/1.json
   def show
     @stat = Stat.find(params[:id])
+    @pieces = StatAffect.find_all_by_stat_id(params[:id], :order => 'value DESC')
 
     respond_to do |format|
       format.html # show.html.erb

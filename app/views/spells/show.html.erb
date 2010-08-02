@@ -8,7 +8,16 @@
   <%=h @spell.base_cost %>
 </p>
 
-<h2>Learned By:</h2>
-<% for spec in @specs %>
-  <b><%= Guild.find_by_id(spec.guild_id).name %></b> - <%= render :partial => 'spell_train_specs/view', :object => spec %>
+<h2>Guilds:</h2>
+<% for spec in @train_specs %>
+  <% guild = Guild.find_by_id(spec.guild_id) %>
+  <b><%= link_to(guild.name, guild) %></b> - <%= render :partial => 'spell_train_specs/view', :object => spec %>
 <% end %>
+
+<h2>Equipment Pieces:</h2>
+<table>
+<% for mod in @eq_mods %>
+  <% piece = EquipmentPiece.find_by_id(mod.equipment_piece_id) %>
+  <tr><td><b><%= link_to(piece.name, piece) %></b></td><td><%= mod.value %></td></tr>
+<% end %>
+</table>

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100720033229) do
+ActiveRecord::Schema.define(:version => 20100802234720) do
 
   create_table "admin_users", :force => true do |t|
     t.string   "login"
@@ -286,6 +286,8 @@ ActiveRecord::Schema.define(:version => 20100720033229) do
     t.integer  "version",            :limit => 11
   end
 
+  add_index "resistance_affects", ["id", "equipment_piece_id"], :name => "index_resistance_affects_on_id_and_equipment_piece_id"
+
   create_table "skill_affect_versions", :force => true do |t|
     t.integer  "skill_affect_id",    :limit => 11
     t.integer  "version",            :limit => 11
@@ -306,6 +308,8 @@ ActiveRecord::Schema.define(:version => 20100720033229) do
     t.datetime "updated_at"
     t.integer  "version",            :limit => 11
   end
+
+  add_index "skill_affects", ["id", "equipment_piece_id"], :name => "index_skill_affects_on_id_and_equipment_piece_id"
 
   create_table "skill_train_spec_versions", :force => true do |t|
     t.integer  "skill_train_spec_id", :limit => 11
@@ -370,6 +374,8 @@ ActiveRecord::Schema.define(:version => 20100720033229) do
     t.integer  "version",            :limit => 11
   end
 
+  add_index "slot_affects", ["id", "equipment_piece_id"], :name => "index_slot_affects_on_id_and_equipment_piece_id"
+
   create_table "slot_versions", :force => true do |t|
     t.integer  "slot_id",    :limit => 11
     t.integer  "version",    :limit => 11
@@ -407,6 +413,8 @@ ActiveRecord::Schema.define(:version => 20100720033229) do
     t.datetime "updated_at"
     t.integer  "version",            :limit => 11
   end
+
+  add_index "spell_affects", ["id", "equipment_piece_id"], :name => "index_spell_affects_on_id_and_equipment_piece_id"
 
   create_table "spell_train_spec_versions", :force => true do |t|
     t.integer  "spell_train_spec_id", :limit => 11
@@ -472,6 +480,8 @@ ActiveRecord::Schema.define(:version => 20100720033229) do
     t.datetime "updated_at"
     t.integer  "version",            :limit => 11
   end
+
+  add_index "stat_affects", ["id", "equipment_piece_id"], :name => "index_stat_affects_on_id_and_equipment_piece_id"
 
   create_table "stat_level_versions", :force => true do |t|
     t.integer  "stat_level_id", :limit => 11
