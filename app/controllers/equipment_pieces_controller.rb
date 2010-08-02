@@ -18,13 +18,13 @@ class EquipmentPiecesController < ApplicationController
       @pieces = []
 
       if Slot.find_by_name(params[:slot])
-        @pieces = EquipmentPiece.find(:all, :joins => :slot_affects, :conditions => { 'slot_affects.slot_id' => Slot.find_by_name(params[:slot]).id })
+        @pieces = EquipmentPiece.find(:all, :joins => :slot_affects, :order => 'name ASC', :conditions => { 'slot_affects.slot_id' => Slot.find_by_name(params[:slot]).id })
         @pieces.delete_if {|x| @slot_counts[x.id.to_s] > 1}
       elsif params[:slot] == "arms"
         @arm_slots = [ Slot.find_by_name('right arm').id, Slot.find_by_name('left arm').id ]
         @remaining = []
 
-        @pieces = EquipmentPiece.find(:all, :joins => :slot_affects, :conditions => { 'slot_affects.slot_id' => @arm_slots }).uniq
+        @pieces = EquipmentPiece.find(:all, :joins => :slot_affects, :order => 'name ASC', :conditions => { 'slot_affects.slot_id' => @arm_slots }).uniq
 
         for piece in @pieces
           if piece.slot_affects.size != 2
@@ -39,7 +39,7 @@ class EquipmentPiecesController < ApplicationController
         @leg_slots = [ Slot.find_by_name('right leg').id, Slot.find_by_name('left leg').id ]
         @remaining = []
 
-        @pieces = EquipmentPiece.find(:all, :joins => :slot_affects, :conditions => { 'slot_affects.slot_id' => @leg_slots }).uniq
+        @pieces = EquipmentPiece.find(:all, :joins => :slot_affects, :order => 'name ASC', :conditions => { 'slot_affects.slot_id' => @leg_slots }).uniq
 
         for piece in @pieces
           if piece.slot_affects.size != 2
@@ -53,7 +53,7 @@ class EquipmentPiecesController < ApplicationController
         @foot_slots = [ Slot.find_by_name('left foot').id, Slot.find_by_name('right foot').id ]
         @remaining = []
 
-        @pieces = EquipmentPiece.find(:all, :joins => :slot_affects, :conditions => { 'slot_affects.slot_id' => @foot_slots }).uniq
+        @pieces = EquipmentPiece.find(:all, :joins => :slot_affects, :order => 'name ASC', :conditions => { 'slot_affects.slot_id' => @foot_slots }).uniq
         for piece in @pieces
           if piece.slot_affects.size != 2
           elsif @foot_slots.include?(piece.slot_affects[0].slot_id) == false or @foot_slots.include?(piece.slot_affects[1].slot_id) == false
@@ -67,7 +67,7 @@ class EquipmentPiecesController < ApplicationController
         @hand_slots = [ Slot.find_by_name('left hand').id, Slot.find_by_name('right hand').id ]
         @remaining = []
 
-        @pieces = EquipmentPiece.find(:all, :joins => :slot_affects, :conditions => { 'slot_affects.slot_id' => @hand_slots }).uniq
+        @pieces = EquipmentPiece.find(:all, :joins => :slot_affects, :order => 'name ASC', :conditions => { 'slot_affects.slot_id' => @hand_slots }).uniq
         for piece in @pieces
           if piece.slot_affects.size != 2
           elsif @hand_slots.include?(piece.slot_affects[0].slot_id) == false or @hand_slots.include?(piece.slot_affects[1].slot_id) == false
@@ -78,7 +78,7 @@ class EquipmentPiecesController < ApplicationController
 
         @pieces = @remaining
       elsif params[:slot] == "multislot"
-        @pieces = EquipmentPiece.find(:all)
+        @pieces = EquipmentPiece.find(:all, :order => 'name ASC')
         @remaining = []
 
         for piece in @pieces
@@ -102,7 +102,7 @@ class EquipmentPiecesController < ApplicationController
         end
         @pieces = @remaining
       elsif params[:slot] == "unclassified"
-        @pieces = EquipmentPiece.find(:all)
+        @pieces = EquipmentPiece.find(:all, :order => 'name ASC')
         @remaining = []
         
         for piece in @pieces
