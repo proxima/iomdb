@@ -1,10 +1,18 @@
 <%=h @stat.name %> (<%=h @stat.abbreviation %>)
 
 <h2>Equipment Pieces:</h2>
-<table>
-<% for mod in @pieces %>
-  <% piece = EquipmentPiece.find_by_id(mod.equipment_piece_id) %>
-  <tr><td><b><%= link_to(piece.name, piece) %></b></td><td><%= mod.value %></td></tr>
-<% end %>
+<table id="eq_piece_table">
+  <tr id="eq_piece_div">
+    <th>Name</th>
+    <th>Class</th>
+    <th>Stats</th>
+    <th>Tp Value</th>
+    <th>Location</th>
+    <th></th>
+    <th></th>
+  </tr>
+  <% for mod in @pieces %>
+    <% piece = EquipmentPiece.find_by_id(mod.equipment_piece_id) %>
+    <%= render :partial => 'equipment_pieces/view', :object => piece %>
+  <% end %>
 </table>
-
