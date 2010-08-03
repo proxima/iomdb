@@ -8,6 +8,9 @@
   <%=h @guild_type.level %>
 </p>
 
+<% for guild in @guilds %>
+  <%= render :partial => 'guilds/view', :collection => @guilds %>
+<% end %>
 
 <%= link_to 'Edit', edit_guild_type_path(@guild_type) %> |
 <%= link_to 'Back', guild_types_path %>

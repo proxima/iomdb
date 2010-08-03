@@ -17,6 +17,7 @@ class GuildTypesController < ApplicationController
   # GET /guild_types/1.json
   def show
     @guild_type = GuildType.find(params[:id])
+    @guilds = Guild.find_all_by_guild_type_id(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
