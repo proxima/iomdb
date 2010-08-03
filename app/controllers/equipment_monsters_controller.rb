@@ -23,6 +23,7 @@ class EquipmentMonstersController < ApplicationController
     end
 
     @versions = @equipment_monster.versions.find(:all)
+    @eq_pieces = @equipment_monster.equipment_pieces
 
     respond_to do |format|
       format.html # show.html.erb
