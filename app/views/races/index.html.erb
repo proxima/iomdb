@@ -25,7 +25,7 @@
 
   <% for race in @races %>
   <tr class="<%= cycle("even", "odd") -%>">
-    <td><%=h race.name %></td>
+    <td><%= link_to(race.name, race) %></td>
     <td><%=h StatLevel.find_by_id(race.strength).name %></td>
     <td><%=h StatLevel.find_by_id(race.dexterity).name %></td>
     <td><%=h StatLevel.find_by_id(race.constitution).name %></td>
@@ -46,9 +46,8 @@
     <td><%=h race.need_dark_to_regen %></td>
     <td><%=h race.need_light_to_regen %></td>
     <td><%=h race.corpse_eating %></td>
-    <td><%= link_to 'Show', race %></td>
-    <td><%= link_to 'Edit', edit_race_path(race) %></td>
-    <td><%= link_to 'Destroy', race, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to '(E)', edit_race_path(race) %></td>
+    <td><%= link_to '(X)', race, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
   <% end %>
 </table>
