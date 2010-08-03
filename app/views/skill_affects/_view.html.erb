@@ -1,1 +1,1 @@
-<%= view.value %> <%= Skill.find_by_id(view.skill_id).name %>(<%= link_to 'X', view, :method => :delete, :confirm => 'Are you sure?' %>)
+<% skill = Skill.find_by_id(view.skill_id) %><%= view.value %> <%= link_to(skill.name, skill) %>(<%= link_to 'X', view, :method => :delete, :confirm => 'Are you sure?' %>)

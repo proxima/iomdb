@@ -1,1 +1,1 @@
-<%= Slot.find_by_id(view.slot_id).name %>(<%= link_to 'X', view, :method => :delete, :confirm => 'Are you sure?' %>)
+<% slot = Slot.find_by_id(view.slot_id) %><%= link_to(slot.name, slot) %>(<%= link_to 'X', view, :method => :delete, :confirm => 'Are you sure?' %>)

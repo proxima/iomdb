@@ -20,7 +20,7 @@ module EquipmentPiecesHelper
 
     for ra in piece.resistance_affects do
       temp = DamageType.find(ra.damage_type_id)
-      ret = ret + ra.value.to_s + ' ' + link_to(temp.name, temp) + ' Res, '
+      ret = ret + ra.value.to_s + ' ' + link_to(temp.name + ' Res', temp) + ', '
     end
 
     ret = ret + "Special: " + piece.special if piece.special

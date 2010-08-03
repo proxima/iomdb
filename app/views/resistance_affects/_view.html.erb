@@ -1,1 +1,1 @@
-<%= view.value %> <%= DamageType.find_by_id(view.damage_type_id).name %>(<%= link_to 'X', view, :method => :delete, :confirm => 'Are you sure?' %>) 
+<% dtype = DamageType.find_by_id(view.damage_type_id) %><%= view.value %> <%= link_to(dtype.name, dtype) %>(<%= link_to 'X', view, :method => :delete, :confirm => 'Are you sure?' %>) 
