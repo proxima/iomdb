@@ -12,6 +12,7 @@ class EquipmentPiece < ActiveRecord::Base
   
   validates_presence_of :name
 
-  validates_numericality_of :klass, :weight, :tp_value
+  validates_numericality_of :klass, :weight
+  validates_numericality_of :tp_value, :greater_than_or_equal_to => -1, :less_than_or_equal_to => 10
 
 end
