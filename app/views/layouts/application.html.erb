@@ -17,10 +17,15 @@
 <table id="toolbar" class="toolbar">
   <tr>
     <td><%= link_to 'Home', pages_path %></td>
+    <td>|</td>
     <td><%= link_to 'Eq Pieces', equipment_pieces_path %></td>
+    <td>|</td>
     <td><%= link_to 'Eq Mobs', equipment_monsters_path %></td>
+    <td>|</td>
     <td><%= link_to 'Guilds', guilds_path %></td>
+    <td>|</td>
     <td><%= link_to 'Races', races_path %></td>
+    <td>|</td>
 <% if logged_in? %>
     <td><%= link_to 'Logout', :controller => 'admin_user', :action => 'logout' %></td>
 <% else %>

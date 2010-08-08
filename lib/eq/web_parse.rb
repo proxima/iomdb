@@ -100,7 +100,11 @@ for line in @lines
 
     if item_name
       tp_match = tp_regex.match pieces[2]
-      tp_value = tp_match[1].to_i unless tp_match.nil?
+      if tp_match[1] and tp_match[1] == '?'
+        tp_value = -1
+      else
+        tp_value = tp_match[1].to_i unless tp_match.nil?
+      end
 
       mob_match = mob_regex.match pieces[3]
       mob = mob_match[1] unless mob_match.nil?

@@ -6,5 +6,6 @@ class EquipmentMonster < ActiveRecord::Base
   validates_uniqueness_of :name
 
   has_many :equipment_pieces, :dependent => :destroy, :order => 'tp_value DESC, name ASC'
+  has_one :equipment_mob_strategy, :dependent => :destroy
 
 end

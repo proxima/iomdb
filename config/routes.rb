@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :equipment_mob_strategies
+
 
   map.resources :pages
   map.resources :spell_train_specs, :belongs_to => :guild

@@ -1,0 +1,16 @@
+<h1>Listing EQ Mob Strategies:</h1>
+
+<table>
+<% for equipment_mob_strategy in @equipment_mob_strategies %>
+  <tr>
+    <td><%= render :partial => 'view', :object => equipment_mob_strategy %></td>
+    <td><%= link_to 'Show', equipment_mob_strategy %></td>
+    <td><%= link_to 'Edit', edit_equipment_mob_strategy_path(equipment_mob_strategy) %></td>
+    <td><%= link_to 'Destroy', equipment_mob_strategy, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New EQ Mob Strategy', new_equipment_mob_strategy_path %>

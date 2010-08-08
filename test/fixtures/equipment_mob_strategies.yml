@@ -1,0 +1,31 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  equipment_monster_id: 1
+  greater_tank_prot_id: 1
+  lesser_tank_prot1_id: 1
+  lesser_tank_prot2_id: 1
+  greater_party_prot_id: 1
+  lesser_party_prot1_id: 1
+  lesser_party_prot2_id: 1
+  additional_prot_info: MyText
+  walkthrough: MyText
+  map_id: 1
+  mapx: 1
+  mapy: 1
+  quest_mob: false
+
+two:
+  equipment_monster_id: 1
+  greater_tank_prot_id: 1
+  lesser_tank_prot1_id: 1
+  lesser_tank_prot2_id: 1
+  greater_party_prot_id: 1
+  lesser_party_prot1_id: 1
+  lesser_party_prot2_id: 1
+  additional_prot_info: MyText
+  walkthrough: MyText
+  map_id: 1
+  mapx: 1
+  mapy: 1
+  quest_mob: false

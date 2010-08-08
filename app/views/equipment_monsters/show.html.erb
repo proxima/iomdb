@@ -1,9 +1,10 @@
 <h1><%= @equipment_monster.name %></h1>
-<h2>Walkthrough:</h2>
-<p>
-  <%= @equipment_monster.walkthrough %>
-</p>
-
+<h2>Strategy:</h2>
+<% if @equipment_monster.equipment_mob_strategy %>
+  <%= render :partial => 'equipment_mob_strategies/view', :object => @equipment_monster.equipment_mob_strategy %>
+<% else %>
+  <%= link_to 'Create one', :controller => 'equipment_mob_strategies', :action => 'new', :equipment_monster_id => @equipment_monster.id %>
+<% end %>
 <h2>Equipment:</h2>
 <table id="eq_piece_table">
   <tr id="eq_piece_div">

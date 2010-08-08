@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100802234720) do
+ActiveRecord::Schema.define(:version => 20100808192329) do
 
   create_table "admin_users", :force => true do |t|
     t.string   "login"
@@ -93,6 +93,21 @@ ActiveRecord::Schema.define(:version => 20100802234720) do
     t.integer  "version",    :limit => 11
   end
 
+  create_table "equipment_mob_strategies", :force => true do |t|
+    t.integer  "equipment_monster_id",  :limit => 11
+    t.integer  "greater_tank_prot_id",  :limit => 11
+    t.integer  "lesser_tank_prot1_id",  :limit => 11
+    t.integer  "lesser_tank_prot2_id",  :limit => 11
+    t.integer  "greater_party_prot_id", :limit => 11
+    t.integer  "lesser_party_prot1_id", :limit => 11
+    t.integer  "lesser_party_prot2_id", :limit => 11
+    t.text     "additional_prot_info"
+    t.text     "walkthrough"
+    t.boolean  "quest_mob"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "equipment_monster_versions", :force => true do |t|
     t.integer  "equipment_monster_id", :limit => 11
     t.integer  "version",              :limit => 11
@@ -106,10 +121,9 @@ ActiveRecord::Schema.define(:version => 20100802234720) do
 
   create_table "equipment_monsters", :force => true do |t|
     t.string   "name"
-    t.text     "walkthrough"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "version",     :limit => 11
+    t.integer  "version",    :limit => 11
   end
 
   add_index "equipment_monsters", ["id", "name"], :name => "index_equipment_monsters_on_id_and_name"

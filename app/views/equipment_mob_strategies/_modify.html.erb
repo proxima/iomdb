@@ -1,0 +1,48 @@
+<% form_for(modify) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :equipment_monster_id %><br />
+    <%= f.select :equipment_monster_id, local_assigns[:equipment_mobs].map{|c| [c.name, c.id]} %>
+  </p>
+  <p>
+    <%= f.label 'Greater tank prot' %><br />
+    <%= f.select :greater_tank_prot_id, local_assigns[:damage_types].map{|c| [c.name, c.id]}, {:include_blank => 'None'} %>
+  </p>
+  <p>
+    <%= f.label 'Lesser tank prot' %><br />
+    <%= f.select :lesser_tank_prot1_id, local_assigns[:damage_types].map{|c| [c.name, c.id]}, {:include_blank => 'None'} %>
+  </p>
+  <p>
+    <%= f.label 'Lesser tank prot' %><br />
+    <%= f.select :lesser_tank_prot2_id, local_assigns[:damage_types].map{|c| [c.name, c.id]}, {:include_blank => 'None'} %>
+  </p>
+  <p>
+    <%= f.label 'Greater party prot' %><br />
+    <%= f.select :greater_party_prot_id, local_assigns[:damage_types].map{|c| [c.name, c.id]}, {:include_blank => 'None'} %>
+  </p>
+  <p>
+    <%= f.label 'Lesser party prot' %><br />
+    <%= f.select :lesser_party_prot1_id, local_assigns[:damage_types].map{|c| [c.name, c.id]}, {:include_blank => 'None'} %>
+  </p>
+  <p>
+    <%= f.label 'Lesser party prot' %><br />
+    <%= f.select :lesser_party_prot2_id, local_assigns[:damage_types].map{|c| [c.name, c.id]}, {:include_blank => 'None'} %>
+  </p>
+  <p>
+    <%= f.label 'Additional prot info' %><br />
+    <%= f.text_area :additional_prot_info, :rows => 3 %>
+  </p>
+  <p>
+    <%= f.label 'Walkthrough' %><br />
+    <%= f.text_area :walkthrough %>
+  </p>
+  <p>
+    <%= f.label :quest_mob %><br />
+    <%= f.check_box :quest_mob %>
+  </p>
+  <p>
+    <%= f.submit "Done" %>
+  </p>
+<% end %>
+
