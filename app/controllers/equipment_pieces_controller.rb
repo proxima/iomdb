@@ -4,10 +4,20 @@ class EquipmentPiecesController < ApplicationController
   # GET /equipment_pieces.xml
   # GET /equipment_pieces.json
   def index
+    @equipment_pieces = EquipmentPiece.find(:all)
+
     respond_to do |format|
       format.html # index.html.erb
-      format.xml  { render :xml => @equipment_pieces }
-      format.json { render :json => @equipment_pieces }
+      format.xml  { render :xml => @equipment_pieces.to_xml(:include => {:slot_affects => {},
+                                                                         :stat_affects => {},
+                                                                         :resistance_affects => {},
+                                                                         :skill_affects => {},
+                                                                         :spell_affects => {}} ) }
+      format.json { render :json => @equipment_pieces.to_json(:include => {:slot_affects => {},
+                                                                           :stat_affects => {},
+                                                                           :resistance_affects => {},
+                                                                           :skill_affects => {},
+                                                                           :spell_affects => {}} ) }
     end
   end
 
@@ -131,8 +141,16 @@ class EquipmentPiecesController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.xml  { render :xml => @equipment_piece }
-      format.json { render :json => @equipment_piece }
+      format.xml  { render :xml => @equipment_piece.to_xml(:include => {:slot_affects => {},
+                                                                         :stat_affects => {},
+                                                                         :resistance_affects => {},
+                                                                         :skill_affects => {},
+                                                                         :spell_affects => {}} ) }
+      format.json { render :json => @equipment_piece.to_json(:include => {:slot_affects => {},
+                                                                           :stat_affects => {},
+                                                                           :resistance_affects => {},
+                                                                           :skill_affects => {},
+                                                                           :spell_affects => {}} ) }
     end
   end
 

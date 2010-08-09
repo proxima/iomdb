@@ -3,6 +3,7 @@
 <table>
 <% for equipment_mob_strategy in @equipment_mob_strategies %>
   <tr>
+    <td><%= EquipmentMonster.find_by_id(equipment_mob_strategy.equipment_monster_id).name %></td>
     <td><%= render :partial => 'view', :object => equipment_mob_strategy %></td>
     <td><%= link_to 'Show', equipment_mob_strategy %></td>
     <td><%= link_to 'Edit', edit_equipment_mob_strategy_path(equipment_mob_strategy) %></td>

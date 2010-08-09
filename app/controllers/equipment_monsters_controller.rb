@@ -7,8 +7,21 @@ class EquipmentMonstersController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.xml  { render :xml => @equipment_monsters }
-      format.json { render :json => @equipment_monsters }
+      format.xml  { render :xml => @equipment_monsters.to_xml(:include => {
+                                                               :equipment_pieces => {:include => {:slot_affects => {},
+                                                                                                  :stat_affects => {},
+                                                                                                  :resistance_affects => {},
+                                                                                                  :skill_affects => {},
+                                                                                                  :spell_affects => {}}},
+                                                               :equipment_mob_strategy => {}} ) }
+
+      format.json { render :json => @equipment_monsters.to_json(:include => {
+                                                               :equipment_pieces => {:include => {:slot_affects => {}, 
+                                                                                                  :stat_affects => {}, 
+                                                                                                  :resistance_affects => {}, 
+                                                                                                  :skill_affects => {},
+                                                                                                  :spell_affects => {}}}, 
+                                                               :equipment_mob_strategy => {}} ) }
     end
   end
 
@@ -27,8 +40,21 @@ class EquipmentMonstersController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.xml  { render :xml => @equipment_monster }
-      format.json { render :json => @equipment_monster }
+      format.xml { render :xml => @equipment_monster.to_xml(:include => {
+                                                               :equipment_pieces => {:include => {:slot_affects => {},
+                                                                                                  :stat_affects => {},
+                                                                                                  :resistance_affects => {},
+                                                                                                  :skill_affects => {},
+                                                                                                  :spell_affects => {}}},
+                                                               :equipment_mob_strategy => {}} ) }
+
+      format.json { render :json => @equipment_monster.to_json(:include => {
+                                                               :equipment_pieces => {:include => {:slot_affects => {}, 
+                                                                                                  :stat_affects => {}, 
+                                                                                                  :resistance_affects => {}, 
+                                                                                                  :skill_affects => {},
+                                                                                                  :spell_affects => {}}}, 
+                                                               :equipment_mob_strategy => {}} ) }
     end
   end
 
