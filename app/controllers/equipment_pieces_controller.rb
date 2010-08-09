@@ -12,12 +12,18 @@ class EquipmentPiecesController < ApplicationController
                                                                          :stat_affects => {},
                                                                          :resistance_affects => {},
                                                                          :skill_affects => {},
-                                                                         :spell_affects => {}} ) }
+                                                                         :spell_affects => {}},
+                                                            :except => [ :created_at, :updated_at ],
+                                                            :skip_types => true,
+                                                            :skip_instruct => true ) }
       format.json { render :json => @equipment_pieces.to_json(:include => {:slot_affects => {},
-                                                                           :stat_affects => {},
-                                                                           :resistance_affects => {},
-                                                                           :skill_affects => {},
-                                                                           :spell_affects => {}} ) }
+                                                                          :stat_affects => {},
+                                                                          :resistance_affects => {},
+                                                                          :skill_affects => {},
+                                                                          :spell_affects => {}},
+                                                            :except => [ :created_at, :updated_at ],
+                                                            :skip_types => true,
+                                                            :skip_instruct => true ) }
     end
   end
 
@@ -142,15 +148,22 @@ class EquipmentPiecesController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @equipment_piece.to_xml(:include => {:slot_affects => {},
-                                                                         :stat_affects => {},
-                                                                         :resistance_affects => {},
-                                                                         :skill_affects => {},
-                                                                         :spell_affects => {}} ) }
+                                                                        :stat_affects => {},
+                                                                        :resistance_affects => {},
+                                                                        :skill_affects => {},
+                                                                        :spell_affects => {}},
+                                                           :except => [ :created_at, :updated_at ],
+                                                           :skip_types => true,
+                                                           :skip_instruct => true ) }
+
       format.json { render :json => @equipment_piece.to_json(:include => {:slot_affects => {},
-                                                                           :stat_affects => {},
-                                                                           :resistance_affects => {},
-                                                                           :skill_affects => {},
-                                                                           :spell_affects => {}} ) }
+                                                                          :stat_affects => {},
+                                                                          :resistance_affects => {},
+                                                                          :skill_affects => {},
+                                                                          :spell_affects => {}},
+                                                           :except => [ :created_at, :updated_at ],
+                                                           :skip_types => true,
+                                                           :skip_instruct => true ) }
     end
   end
 

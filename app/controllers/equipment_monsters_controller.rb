@@ -13,7 +13,10 @@ class EquipmentMonstersController < ApplicationController
                                                                                                   :resistance_affects => {},
                                                                                                   :skill_affects => {},
                                                                                                   :spell_affects => {}}},
-                                                               :equipment_mob_strategy => {}} ) }
+                                                               :equipment_mob_strategy => {}},
+                                                               :except => [ :created_at, :updated_at ],
+                                                               :skip_types => true,
+                                                               :skip_instruct => true ) } 
 
       format.json { render :json => @equipment_monsters.to_json(:include => {
                                                                :equipment_pieces => {:include => {:slot_affects => {}, 
@@ -21,7 +24,10 @@ class EquipmentMonstersController < ApplicationController
                                                                                                   :resistance_affects => {}, 
                                                                                                   :skill_affects => {},
                                                                                                   :spell_affects => {}}}, 
-                                                               :equipment_mob_strategy => {}} ) }
+                                                               :equipment_mob_strategy => {}},
+                                                               :except => [ :created_at, :updated_at ],
+                                                               :skip_types => true,
+                                                               :skip_instruct => true ) } 
     end
   end
 
@@ -46,7 +52,10 @@ class EquipmentMonstersController < ApplicationController
                                                                                                   :resistance_affects => {},
                                                                                                   :skill_affects => {},
                                                                                                   :spell_affects => {}}},
-                                                               :equipment_mob_strategy => {}} ) }
+                                                               :equipment_mob_strategy => {}},
+                                                               :except => [ :created_at, :updated_at ],
+                                                               :skip_types => true,
+                                                               :skip_instruct => true ) } 
 
       format.json { render :json => @equipment_monster.to_json(:include => {
                                                                :equipment_pieces => {:include => {:slot_affects => {}, 
@@ -54,7 +63,10 @@ class EquipmentMonstersController < ApplicationController
                                                                                                   :resistance_affects => {}, 
                                                                                                   :skill_affects => {},
                                                                                                   :spell_affects => {}}}, 
-                                                               :equipment_mob_strategy => {}} ) }
+                                                               :equipment_mob_strategy => {}},
+                                                               :except => [ :created_at, :updated_at ],
+                                                               :skip_types => true,
+                                                               :skip_instruct => true ) } 
     end
   end
 
