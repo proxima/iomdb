@@ -5,6 +5,10 @@ class EquipmentPiecesController < ApplicationController
   # GET /equipment_pieces.json
   def index
     @equipment_pieces = EquipmentPiece.find(:all)
+   
+    if params[:search]
+      @equipment_pieces = EquipmentPiece.find(:all, :conditions => ['name LIKE ?', "%#{params[:search]}%"], :limit => 8)
+    end
 
     respond_to do |format|
       format.html # index.html.erb
@@ -24,6 +28,7 @@ class EquipmentPiecesController < ApplicationController
                                                             :except => [ :created_at, :updated_at ],
                                                             :skip_types => true,
                                                             :skip_instruct => true ) }
+      format.js # index.js.erb
     end
   end
 

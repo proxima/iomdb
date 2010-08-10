@@ -69,3 +69,31 @@ a:hover { color: #80FFFF; background-color:#0000FF; }
   font-size: 12px;
   list-style: square;
 }
+
+div.auto_complete {
+  width: 600px;
+  background: #000000;
+} 
+
+div.auto_complete ul {    
+  border: 1px solid #888;    
+  margin: 0px;    
+  padding: 0px;    
+  width: 100%;    
+  list-style-type: none;  
+} 
+
+div.auto_complete ul li {    
+  margin: 0px;    
+  padding: 3px;  
+} 
+
+div.auto_complete ul li.selected {    
+  background-color: #0000FF;  
+} 
+
+div.auto_complete ul strong.highlight {    
+  color: #FF0000;    
+  margin: 0px;    
+  padding: 0px;  
+} 

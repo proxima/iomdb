@@ -4,7 +4,7 @@
 <% if view.lesser_tank_prot2_id %><b>L:</b><%= render :partial => 'damage_types/view', :object => DamageType.find_by_id(view.lesser_tank_prot2_id) %><% end %>
 <br>
 <b>Party: </b>
-<% if view.greater_party_prot_id %><b>G:</b><%= render :partial => 'damage_types/view', :object => DamageType.find_by_id(view.greater_tank_prot_id) %><% end %>
+<% if view.greater_party_prot_id %><b>G:</b><%= render :partial => 'damage_types/view', :object => DamageType.find_by_id(view.greater_party_prot_id) %><% end %>
 <% if view.lesser_party_prot1_id %><b>L:</b><%= render :partial => 'damage_types/view', :object => DamageType.find_by_id(view.lesser_party_prot1_id) %><% end %>
 <% if view.lesser_party_prot2_id %><b>L:</b><%= render :partial => 'damage_types/view', :object => DamageType.find_by_id(view.lesser_party_prot2_id) %><% end %>
 <br>

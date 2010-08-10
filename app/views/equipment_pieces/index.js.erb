@@ -1,0 +1,13 @@
+<ul>
+  <% for piece in @equipment_pieces %>
+    <li class="<%= cycle("even", "odd") -%>">
+      <%= link_to piece.name, piece %> - <%= stat_line(piece) %>
+      <% if piece.tp_value == -1 %>
+        (? tps)
+      <% else %>
+        (<%=h piece.tp_value %> tps)
+      <% end %>
+      [<%= link_to piece.equipment_monster.name, piece.equipment_monster %>]
+    </li>
+  <% end %>
+</ul>
