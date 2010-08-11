@@ -3,7 +3,7 @@
 <ul>
   <% for mob in @equipment_monsters %>
   <li class="<%= cycle("even", "odd") -%>">
-    <%= link_to mob.name, mob %> <%= link_to('(E)', edit_equipment_monster_path(equipment_monster)) if logged_in? %> <%= link_to('(X)', equipment_monster, :confirm => 'Are you sure?', :method => :delete) if logged_in? %>
+    <%= link_to mob.name, mob %> <%= link_to('(E)', edit_equipment_monster_path(mob)) if logged_in? %> <%= link_to('(X)', mob, :confirm => 'Are you sure?', :method => :delete) if logged_in? %>
   </li>
   <% end %>
 </ul>

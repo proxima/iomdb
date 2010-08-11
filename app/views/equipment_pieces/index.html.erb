@@ -1,39 +1,55 @@
-Armors:<br>
-<%= link_to_remote 'Head', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'head' } %> |
-<%= link_to_remote 'Eyes', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'eyes' } %> |
-<%= link_to_remote 'Neck', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'neck' } %> |
-<%= link_to_remote 'Cloak', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'cloak' } %> |
-<%= link_to_remote 'Amulet', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'amulet' } %> |
-<%= link_to_remote 'Torso', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'torso' } %> |
-<%= link_to_remote 'Arms', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'arms' } %> |
-<%= link_to_remote 'R. Arm', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'right arm' } %> |
-<%= link_to_remote 'L. Arm', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'left arm' } %> |
-<%= link_to_remote 'Hands', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'hands' } %> |
-<%= link_to_remote 'R. Hand', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'right hand' } %> |
-<%= link_to_remote 'L. Hand', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'left hand' } %><br>
-<%= link_to_remote 'Finger', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'finger' } %> |
-<%= link_to_remote 'R. Finger', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'right finger' } %> |
-<%= link_to_remote 'L. Finger', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'left finger' } %> |
-<%= link_to_remote 'Belt', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'belt' } %> |
-<%= link_to_remote 'Legs', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'legs' } %> |
-<%= link_to_remote 'R. Leg', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'right leg' } %> |
-<%= link_to_remote 'L. Leg', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'left leg' } %> |
-<%= link_to_remote 'Feet', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'feet' } %> |
-<%= link_to_remote 'R. Foot', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'right foot' } %> |
-<%= link_to_remote 'L. Foot', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'left foot' } %> |
-<%= link_to_remote 'Multi-Slot', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'multislot' } %><br>
+<table width="99%">
+  <tr>
+    <td width="50%" style="vertical-align:top;">
+      <hr>
+      Armors:<br>
+      <%= link_to_remote 'Head', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'head' } %> |
+      <%= link_to_remote 'Eyes', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'eyes' } %> |
+      <%= link_to_remote 'Neck', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'neck' } %> |
+      <%= link_to_remote 'Cloak', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'cloak' } %> |
+      <%= link_to_remote 'Amulet', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'amulet' } %> |
+      <%= link_to_remote 'Torso', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'torso' } %> |
+      <%= link_to_remote 'Arms', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'arms' } %> |
+      <%= link_to_remote 'R. Arm', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'right arm' } %> |
+      <%= link_to_remote 'L. Arm', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'left arm' } %> |
+      <%= link_to_remote 'Hands', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'hands' } %> |
+      <%= link_to_remote 'R. Hand', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'right hand' } %> |
+      <%= link_to_remote 'L. Hand', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'left hand' } %><br>
+      <%= link_to_remote 'Finger', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'finger' } %> |
+      <%= link_to_remote 'R. Finger', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'right finger' } %> |
+      <%= link_to_remote 'L. Finger', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'left finger' } %> |
+      <%= link_to_remote 'Belt', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'belt' } %> |
+      <%= link_to_remote 'Legs', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'legs' } %> |
+      <%= link_to_remote 'R. Leg', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'right leg' } %> |
+      <%= link_to_remote 'L. Leg', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'left leg' } %> |
+      <%= link_to_remote 'Feet', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'feet' } %> |
+      <%= link_to_remote 'R. Foot', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'right foot' } %> |
+      <%= link_to_remote 'L. Foot', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'left foot' } %> |
+      <%= link_to_remote 'Multi-Slot', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'multislot' } %><br>
+      <hr>
+      Weapons:<br>
+      <%= link_to_remote 'Slashing', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'slashing' } %> |
+      <%= link_to_remote 'Piercing', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'piercing' } %> |
+      <%= link_to_remote 'Blunt', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'blunt' } %> |
+      <%= link_to_remote 'Whipping', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'whipping' } %> |
+      <%= link_to_remote 'Shield', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'shield' } %><br>
+      <hr>
 
-Weapons:<br>
-<%= link_to_remote 'Slashing', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'slashing' } %> |
-<%= link_to_remote 'Piercing', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'piercing' } %> |
-<%= link_to_remote 'Blunt', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'blunt' } %> |
-<%= link_to_remote 'Whipping', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'whipping' } %> |
-<%= link_to_remote 'Shield', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'shield' } %><br>
-
-<% if logged_in? %>
-Admin:<br>
-<%= link_to_remote '(Unclassified)', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'unclassified' } %><br>
-<% end %>
+      <% if logged_in? %>
+        Admin:<br>
+        <%= link_to_remote '(Unclassified)', :update => 'eq_piece_div', :position => 'after', :before => 'remove_non_header_rows(\'eq_piece_table\')', :url => { :action => 'fetch_by_slot', :slot => 'unclassified' } %><br>
+        <hr>
+      <% end %>
+    </td>
+    <td width="50%" style="vertical-align:top;">
+      <hr>
+      Filters:
+      <%= link_to_remote '(New)', :update => 'filter_div', :position => 'after', :url => { :action => 'create_filter'} %> 
+      <div id="filter_div"></div>
+      <hr>
+    </td>
+  </tr>
+</table>
 
 <hr>
 <table width=99%>
