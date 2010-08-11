@@ -72,7 +72,7 @@ a:hover { color: #80FFFF; background-color:#0000FF; }
 
 div.auto_complete {
   width: 600px;
-  background: #000000;
+  background: #111111;
 } 
 
 div.auto_complete ul {    
@@ -97,3 +97,9 @@ div.auto_complete ul strong.highlight {
   margin: 0px;    
   padding: 0px;  
 } 
+
+.typeahead_edit {
+  width: 100%;
+  background-color: #000000;
+  color: #FFFFFF;
+}

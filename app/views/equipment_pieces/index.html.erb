@@ -36,7 +36,10 @@ Admin:<br>
 <% end %>
 
 <hr>
-<%= text_field_with_auto_complete :equipment_piece, :name, { :size => 150 }, { :url => formatted_equipment_pieces_path(:js), :method => :get, :param_name => 'search', :skip_style => TRUE } %>
+<table width=99%>
+<tr><th width=80>Search:</th><td><%= text_field_with_auto_complete :equipment_piece, :name, { :class => 'typeahead_edit' }, { :url => formatted_equipment_pieces_path(:js), :method => :get, :param_name => 'search', :skip_style => TRUE } %></td></tr>
+</table>
+<hr>
 
 <table id="eq_piece_table">
   <tr id="eq_piece_div">
