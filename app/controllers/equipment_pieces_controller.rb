@@ -5,9 +5,11 @@ class EquipmentPiecesController < ApplicationController
   # GET /equipment_pieces.json
   def index
     @equipment_pieces = EquipmentPiece.find(:all)
+    @equipment_mobs = []
    
     if params[:search]
-      @equipment_pieces = EquipmentPiece.find(:all, :conditions => ['name LIKE ?', "%#{params[:search]}%"], :limit => 8)
+      @equipment_pieces = EquipmentPiece.find(:all, :conditions => ['name LIKE ?', "%#{params[:search]}%"], :limit => 12)
+      @equipment_mobs = EquipmentMonster.find(:all, :conditions => ['name LIKE ?', "%#{params[:search]}%"], :limit => 3)
     end
 
     respond_to do |format|

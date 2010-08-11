@@ -29,9 +29,9 @@ class EquipmentPiece < ActiveRecord::Base
         item_name.strip!
         cost.delete! ','
 
-        pieces = EquipmentPiece.find(:all, :conditions => ["name = ?", "%#{item_name}%"])
+        pieces = EquipmentPiece.find(:all, :conditions => ["name = ?", "#{item_name}%"])
         if pieces.size == 0
-          pieces = EquipmentPiece.find(:all, :conditions => ["name LIKE ?", "%#{item_name}%"])
+          pieces = EquipmentPiece.find(:all, :conditions => ["name LIKE ?", "#{item_name}%"])
         end
 
         if pieces.size > 0

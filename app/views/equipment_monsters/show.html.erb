@@ -18,8 +18,9 @@
   </tr>
   <%= render :partial => 'equipment_pieces/view', :collection => @eq_pieces %>
 </table>
-
+<br>
 <% if logged_in? %>
+  <%= link_to 'Edit', edit_equipment_monster_path(@equipment_monster) %><br>
   <p>
     <b>Edit History</b><br>
     <% @versions.reverse.each do |version| %>

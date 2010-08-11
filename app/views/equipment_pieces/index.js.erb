@@ -1,4 +1,12 @@
 <ul>
+  <% for mob in @equipment_mobs %>
+    <li class="<%= cycle("even", "odd") -%>">
+      <%= link_to mob.name, mob %>
+    </li>
+  <% end %>
+  <% if @equipment_mobs.size > 0 %>
+    <hr>
+  <% end %>  
   <% for piece in @equipment_pieces %>
     <li class="<%= cycle("even", "odd") -%>">
       <%= link_to piece.name, piece %> - <%= stat_line(piece) %>
