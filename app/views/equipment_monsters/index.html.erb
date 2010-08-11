@@ -1,15 +1,13 @@
 <br>
 <br>
-<table>
-  <% @equipment_monsters.in_groups_of(8, false) do |eq_monsters| %>
-  <tr class="<%= cycle("even", "odd") -%>" height=30>
-    <% for equipment_monster in eq_monsters %>
-      <td><%= link_to equipment_monster.name, equipment_monster %> <%= link_to('(E)', edit_equipment_monster_path(equipment_monster)) if logged_in? %> <%= link_to('(X)', equipment_monster, :confirm => 'Are you sure?', :method => :delete) if logged_in? %></td>
-    <% end %>
-  </tr>
+<ul>
+  <% for mob in @equipment_monsters %>
+  <li class="<%= cycle("even", "odd") -%>">
+    <%= link_to mob.name, mob %> <%= link_to('(E)', edit_equipment_monster_path(equipment_monster)) if logged_in? %> <%= link_to('(X)', equipment_monster, :confirm => 'Are you sure?', :method => :delete) if logged_in? %>
+  </li>
   <% end %>
-</table>
+</ul>
 
 <br>
 
-<%= link_to 'New', new_equipment_monster_path %>
+<%= link_to ('New', new_equipment_monster_path) if logged_in? %>
