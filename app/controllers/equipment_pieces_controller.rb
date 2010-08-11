@@ -34,6 +34,12 @@ class EquipmentPiecesController < ApplicationController
     end
   end
 
+  def create_filter
+    respond_to do |format|
+      format.js # create_filter.js.erb
+    end
+  end
+
   def fetch_by_slot
     if params[:slot]
       @slot_counts = EquipmentPiece.count(:all, :joins => :slot_affects, :group => :equipment_piece_id)

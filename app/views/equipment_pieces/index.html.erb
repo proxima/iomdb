@@ -44,7 +44,12 @@
     <td width="50%" style="vertical-align:top;">
       <hr>
       Filters:
-      <%= link_to_remote '(New)', :update => 'filter_div', :position => 'after', :url => { :action => 'create_filter'} %> 
+      <%= link_to_remote '(New)', :update => 'filter_div', :position => 'after', :url => { :action => 'create_filter'} %><br>
+      <% if session[:filters] %>
+        <% session[:filters].each_pair do |k,v| %>
+          <%= k.to_s %> - <%= v.to_s %>
+        <% end %>
+      <% end %>
       <div id="filter_div"></div>
       <hr>
     </td>

@@ -1,0 +1,10 @@
+<% if session[:filters].nil? %>
+  <%  session[:filters] = {} %>
+<% end %>
+
+<% @size = session[:filters].size %>
+
+<% if @size < 5 %>
+  <% session[:filters][@size] = 'Feature in progress. <br>' %>
+  <%= session[:filters][@size] %> 
+<% end %>
