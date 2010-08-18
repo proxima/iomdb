@@ -26,13 +26,13 @@
   <tr><td colspan=3>Average Height: <%=h @race.average_height %> inches</td></tr>
   <tr><td colspan=3>Average Weight: <%=h @race.average_weight %></td></tr>
   <tr><td colspan=3>They have <%=h StatLevel.find_by_id(@race.charisma).name %> charisma</td></tr>
-  <% if @race.need_dark_to_regen %>
+  <% if @race.need_dark_to_regen? %>
   <tr><td colspan=3>They only heal in dark places.</td></tr>
   <% end %>
-  <% if @race.need_light_to_regen %>
+  <% if @race.need_light_to_regen? %>
   <tr><td colspan=3>They only heal in light places.</td></tr>
   <% end %>
-  <% if @race.corpse_eating %>
+  <% if @race.corpse_eating? %>
   <tr><td colspan=3>They can eat corpses.</td></tr>
   <% end %>
   <tr><td colspan=3>-----------------------------------------------------------------------------</td></tr>

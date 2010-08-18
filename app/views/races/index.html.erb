@@ -43,9 +43,9 @@
     <td><%=h race.skill_rate %></td>
     <td><%=h race.spell_rate %></td>
     <td><%=h race.experience_rate %></td>
-    <td><%=h race.need_dark_to_regen %></td>
-    <td><%=h race.need_light_to_regen %></td>
-    <td><%=h race.corpse_eating %></td>
+    <td><%=h race.need_dark_to_regen? ? 'Y' : 'N' %></td>
+    <td><%=h race.need_light_to_regen? ? 'Y' : 'N' %></td>
+    <td><%=h race.corpse_eating? ? 'Y' : 'N' %></td>
     <td><%= link_to '(E)', edit_race_path(race) %></td>
     <td><%= link_to '(X)', race, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>

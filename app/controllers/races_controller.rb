@@ -3,7 +3,7 @@ class RacesController < ApplicationController
   # GET /races.xml
   # GET /races.json
   def index
-    @races = Race.find(:all)
+    @races = Race.find(:all, :order => 'name ASC')
 
     respond_to do |format|
       format.html # index.html.erb

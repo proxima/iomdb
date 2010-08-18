@@ -1,0 +1,19 @@
+<% form_for(modify) do |f| %>
+
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :owner %><br />
+    <%= f.select :admin_user_id, local_assigns[:admin_users].map{|c| [c.login, c.id]} %>
+  </p>
+
+  <p>
+    <%= f.submit "Done" %>
+  </p>
+
+<% end %>

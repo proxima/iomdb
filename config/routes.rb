@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :equipment_piece_lists
+
   map.resources :equipment_mob_strategies
 
 

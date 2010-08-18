@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100808192329) do
+ActiveRecord::Schema.define(:version => 20100818050434) do
 
   create_table "admin_users", :force => true do |t|
     t.string   "login"
@@ -106,6 +106,7 @@ ActiveRecord::Schema.define(:version => 20100808192329) do
     t.boolean  "quest_mob"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "fight_notes"
   end
 
   create_table "equipment_monster_versions", :force => true do |t|
@@ -127,6 +128,20 @@ ActiveRecord::Schema.define(:version => 20100808192329) do
   end
 
   add_index "equipment_monsters", ["id", "name"], :name => "index_equipment_monsters_on_id_and_name"
+
+  create_table "equipment_piece_list_entries", :id => false, :force => true do |t|
+    t.integer  "equipment_piece_id",      :limit => 11
+    t.integer  "equipment_piece_list_id", :limit => 11
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "equipment_piece_lists", :force => true do |t|
+    t.string   "name"
+    t.integer  "admin_user_id", :limit => 11
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "equipment_piece_versions", :force => true do |t|
     t.integer  "equipment_piece_id",   :limit => 11

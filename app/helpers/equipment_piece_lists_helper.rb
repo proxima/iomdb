@@ -1,0 +1,2 @@
+module EquipmentPieceListsHelper
+end

@@ -1,0 +1,23 @@
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Owner</th>
+    <th>List Size</th>
+  </tr>
+
+<% for equipment_piece_list in @equipment_piece_lists %>
+  <tr>
+    <td><%= link_to equipment_piece_list.name, equipment_piece_list %></td>
+    <td><%=h AdminUser.find_by_id(equipment_piece_list.admin_user_id).login %></td>
+    <td><%= equipment_piece_list.equipment_piece_list_entries.size.to_s %></td>    
+    <% if logged_in? %>
+    <td><%= link_to '(E)', edit_equipment_piece_list_path(equipment_piece_list) %></td>
+    <td><%= link_to '(X)', equipment_piece_list, :confirm => 'Are you sure?', :method => :delete %></td>
+    <% end %>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New', new_equipment_piece_list_path %>

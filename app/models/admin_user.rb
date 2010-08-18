@@ -8,6 +8,8 @@ class AdminUser < ActiveRecord::Base
   validates_confirmation_of :password
   validates_format_of :email, :with => /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i, :message => "Invalid email"  
 
+  has_many :equipment_piece_lists
+
   attr_protected :id, :salt
 
   attr_accessor :password, :password_confirmation
