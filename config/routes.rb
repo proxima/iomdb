@@ -1,9 +1,9 @@
-ActionController::Routing::Routes.draw do |map|
+ActionController::Routing::Routes.draw do |map|  
+
+  map.connect 'equipment_piece_lists/change_list', :controller => 'equipment_piece_lists', :action => 'change_list', :conditions => { :method => :post }
+
   map.resources :equipment_piece_lists
-
   map.resources :equipment_mob_strategies
-
-
   map.resources :pages
   map.resources :spell_train_specs, :belongs_to => :guild
   map.resources :skill_train_specs, :belongs_to => :guild

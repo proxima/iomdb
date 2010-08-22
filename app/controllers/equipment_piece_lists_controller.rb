@@ -23,8 +23,6 @@ class EquipmentPieceListsController < ApplicationController
       @eq_pieces << EquipmentPiece.find_by_id(entry.equipment_piece_id)
     end
   
-    p @eq_pieces
-
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @equipment_piece_list }
@@ -47,6 +45,14 @@ class EquipmentPieceListsController < ApplicationController
   def edit
     @equipment_piece_list = EquipmentPieceList.find(params[:id])
     @admin_users = AdminUser.find(:all, :order => 'login ASC')
+  end
+
+  def change_list
+    session[:equipment_piece_list_id] = params[:id]
+
+    render :update do |page|
+      page.replace_html 'current_eq_list', :partial => 'view'
+    end
   end
 
   # POST /equipment_piece_lists
