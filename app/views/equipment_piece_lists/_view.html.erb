@@ -1,2 +1,5 @@
-<b>Active:</b> <%= EquipmentPieceList.find(session[:equipment_piece_list_id]).name if session[:equipment_piece_list_id] %>
-
+<b>Active:</b>
+<% eq_list = EquipmentPieceList.find(session[:equipment_piece_list_id]) %>
+<% if eq_list %>
+  <%= link_to eq_list.name, eq_list %>
+<% end %>

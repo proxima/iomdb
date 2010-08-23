@@ -20,8 +20,11 @@ class EquipmentPieceListsController < ApplicationController
     @eq_pieces = []
    
     for entry in @equipment_piece_list.equipment_piece_list_entries
-      @eq_pieces << EquipmentPiece.find_by_id(entry.equipment_piece_id)
+      @piece = EquipmentPiece.find_by_id(entry.equipment_piece_id)
+      @eq_pieces << EquipmentPiece.find_by_id(entry.equipment_piece_id) if @piece
     end
+
+    p @eq_pieces
   
     respond_to do |format|
       format.html # show.html.erb
@@ -52,6 +55,18 @@ class EquipmentPieceListsController < ApplicationController
 
     render :update do |page|
       page.replace_html 'current_eq_list', :partial => 'view'
+    end
+  end
+
+  def add_to_list
+    p params
+    if session[:equipment_piece_list_id]
+      if params[:equipment_piece_id]
+        eple = EquipmentPieceListEntry.new
+        eple.equipment_piece_id = params[:equipment_piece_id]
+        eple.equipment_piece_list_id = session[:equipment_piece_list_id]
+        eple.save
+      end
     end
   end
 

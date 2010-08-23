@@ -12,7 +12,9 @@
   <td><%= link_to view.equipment_monster.name, view.equipment_monster %></td>
 
   <% if logged_in? %>
+     <% if session[:equipment_piece_list_id] %>
+       <td><%= link_to_remote '(+ List)', :url => { :controller => 'equipment_piece_lists', :action => 'add_to_list', :equipment_piece_id => view.id } %></td>
+     <% end %>
      <td><%= link_to 'Edit', edit_equipment_piece_path(view) %></td>
-     <td><%= link_to '(X)', view, :confirm => 'Are you sure?', :method => :delete %></td>
   <% end %>
 </tr>
