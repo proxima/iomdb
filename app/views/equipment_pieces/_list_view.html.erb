@@ -1,0 +1,20 @@
+<tr class="<%= cycle("even", "odd") -%>" id="<%= 'row_' + list_view.id.to_s %>">
+  <td><%= link_to list_view.name, list_view %></td>
+  <td><%=h list_view.klass if list_view.klass and list_view.klass > 0 %></td>
+  <td><%= stat_line(list_view) %></td>
+  <td>
+    <% if list_view.tp_value == -1 %>
+    ?
+    <% else %>
+    <%=h list_view.tp_value %>
+    <% end %>
+  </td>
+  <td><%= link_to list_view.equipment_monster.name, list_view.equipment_monster %></td>
+
+  <% if logged_in? %>
+     <% if session[:equipment_piece_list_id] %>
+       <td><%= link_to_remote '(- List)', :complete => visual_effect(:fade, 'row_' + list_view.id.to_s), :url => { :controller => 'equipment_piece_lists', :action => 'remove_from_list', :equipment_piece_id => list_view.id, :list_id => session[:equipment_piece_list_id] } %></td>
+     <% end %>
+     <td><%= link_to 'Edit', edit_equipment_piece_path(list_view) %></td>
+  <% end %>
+</tr>

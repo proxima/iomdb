@@ -13,7 +13,7 @@
 
   <% if logged_in? %>
      <% if session[:equipment_piece_list_id] %>
-       <td><%= link_to_remote '(+ List)', :url => { :controller => 'equipment_piece_lists', :action => 'add_to_list', :equipment_piece_id => view.id } %></td>
+       <td><%= link_to_remote '(+ List)', :url => { :controller => 'equipment_piece_lists', :action => 'add_to_list', :equipment_piece_id => view.id }, :complete => visual_effect(:highlight, 'current_eq_list', :duration => 0.5) %></td>
      <% end %>
      <td><%= link_to 'Edit', edit_equipment_piece_path(view) %></td>
   <% end %>

@@ -24,7 +24,7 @@ class EquipmentPieceListsController < ApplicationController
       @eq_pieces << EquipmentPiece.find_by_id(entry.equipment_piece_id) if @piece
     end
 
-    p @eq_pieces
+    @eq_pieces = @eq_pieces.sort_by{|x| [-x[:tp_value], x[:name]]}
   
     respond_to do |format|
       format.html # show.html.erb
@@ -59,7 +59,6 @@ class EquipmentPieceListsController < ApplicationController
   end
 
   def add_to_list
-    p params
     if session[:equipment_piece_list_id]
       if params[:equipment_piece_id]
         eple = EquipmentPieceListEntry.new
@@ -67,6 +66,14 @@ class EquipmentPieceListsController < ApplicationController
         eple.equipment_piece_list_id = session[:equipment_piece_list_id]
         eple.save
       end
+    end
+  end
+
+  def remove_from_list
+    if params[:equipment_piece_id] and params[:list_id]
+      piece_id = params[:equipment_piece_id]
+      list_id = params[:list_id]
+      EquipmentPieceListEntry.delete_all(["equipment_piece_list_id = ? AND equipment_piece_id = ?", list_id, piece_id])
     end
   end
 
