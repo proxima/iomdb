@@ -22,3 +22,52 @@
 <% else %>
   <%= link_to 'Login', :controller => 'admin_user', :action => 'login' %>
 <% end %>
+
+<br>
+<br>
+
+<h2>New EQ:</h2>
+<table id="new_eq_piece_table">
+  <tr>
+    <th>Name</th>
+    <th>Class</th>
+    <th>Stats</th>
+    <th>Tp Value</th>
+    <th>Location</th>
+    <th></th>
+    <th></th>
+  </tr>
+  <%= render :partial => 'equipment_pieces/view', :collection => @new_pieces %>
+</table>
+
+<h2>Updated EQ:</h2>
+<table id="updated_eq_piece_table">
+  <tr>
+    <th>Name</th>
+    <th>Class</th>
+    <th>Stats</th>
+    <th>Tp Value</th>
+    <th>Location</th>
+    <th></th>
+    <th></th>
+  </tr>
+  <%= render :partial => 'equipment_pieces/view', :collection => @updated_pieces %>
+</table>
+
+<h2>New EQ Mobs:</h2>
+<ul>
+  <% for mob in @new_mobs %>
+  <li class="<%= cycle("even", "odd") -%>">
+    <%= link_to mob.name, mob %> <%= link_to('(E)', edit_equipment_monster_path(mob)) if logged_in? %> <%= link_to('(X)', mob, :confirm => 'Are you sure?', :method => :delete) if logged_in? %>
+  </li>
+  <% end %>
+</ul>
+
+<h2>Updated EQ Mobs:</h2>
+<ul>
+  <% for mob in @updated_mobs %>
+  <li class="<%= cycle("even", "odd") -%>">
+    <%= link_to mob.name, mob %> <%= link_to('(E)', edit_equipment_monster_path(mob)) if logged_in? %> <%= link_to('(X)', mob, :confirm => 'Are you sure?', :method => :delete) if logged_in? %>
+  </li>
+  <% end %>
+</ul>

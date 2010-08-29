@@ -8,4 +8,11 @@ class EquipmentMobStrategy < ActiveRecord::Base
   has_one :lesser_party_prot1, :class_name => 'DamageType'
   has_one :lesser_party_prot2, :class_name => 'DamageType'
 
+  after_save :modify_mob_updated_time
+
+  def modify_mob_updated_time
+    self.equipment_monster.updated_at = self.updated_at
+    self.equipment_monster.save
+  end
+
 end
