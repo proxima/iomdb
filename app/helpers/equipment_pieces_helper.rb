@@ -41,16 +41,34 @@ module EquipmentPiecesHelper
   end
 
   def slot_line(piece)
-    ret = ""
   
-    for sa in piece.slot_affects do
-      temp = Slot.find(sa.slot_id)
-      ret = ret + temp.abbreviation.to_s + ', '
+    if piece.slot_affects.size == 1
+      temp = Slot.find(piece.slot_affects[0].slot_id)
+      return temp.name
+    else
+      @foot_slots = [ Slot.find_by_name('left foot').id, Slot.find_by_name('right foot').id ]
+      @hand_slots = [ Slot.find_by_name('left hand').id, Slot.find_by_name('right hand').id ]
+      @leg_slots = [ Slot.find_by_name('left leg').id, Slot.find_by_name('right leg').id ]
+      @arm_slots = [ Slot.find_by_name('left arm').id, Slot.find_by_name('right arm').id ]
+
+      if piece.slot_affects.size == 2 and @foot_slots.include?(piece.slot_affects[0].slot_id) == true and @foot_slots.include?(piece.slot_affects[1].slot_id) == true
+        return "Feet"
+      elsif piece.slot_affects.size == 2 and @hand_slots.include?(piece.slot_affects[0].slot_id) == true and @hand_slots.include?(piece.slot_affects[1].slot_id) == true
+        return "Hands"
+      elsif piece.slot_affects.size == 2 and @leg_slots.include?(piece.slot_affects[0].slot_id) == true and @leg_slots.include?(piece.slot_affects[1].slot_id) == true
+        return "Legs"
+      elsif piece.slot_affects.size == 2 and @arm_slots.include?(piece.slot_affects[0].slot_id) == true and @arm_slots.include?(piece.slot_affects[1].slot_id) == true
+        return "Arms"
+      else
+       ret = ""
+        for sa in piece.slot_affects do
+          temp = Slot.find(sa.slot_id)
+          ret = ret + temp.abbreviation.to_s + ', '
+        end
+        ret.chop!.chop! if ret[-2,2] == ', '
+        return ret
+      end
     end
-
-    ret.chop!.chop! if ret[-2,2] == ', '
-
-    return ret
   end
 
   def stat_line(piece)
