@@ -94,7 +94,7 @@ module EquipmentPiecesHelper
       ret = ret + ra.value.to_s + ' ' + link_to(temp.name + ' Res', temp) + ', '
     end
 
-    ret = ret + "Special: " + piece.special if piece.special
+    ret = ret + "Special: " + piece.special if piece.special and !piece.special.empty?
 
     ret.chop!.chop! if ret[-2,2] == ', '
 
