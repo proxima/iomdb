@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100818050434) do
+ActiveRecord::Schema.define(:version => 20100830040754) do
 
   create_table "admin_users", :force => true do |t|
     t.string   "login"
@@ -406,11 +406,12 @@ ActiveRecord::Schema.define(:version => 20100818050434) do
   add_index "slot_affects", ["id", "equipment_piece_id"], :name => "index_slot_affects_on_id_and_equipment_piece_id"
 
   create_table "slot_versions", :force => true do |t|
-    t.integer  "slot_id",    :limit => 11
-    t.integer  "version",    :limit => 11
+    t.integer  "slot_id",      :limit => 11
+    t.integer  "version",      :limit => 11
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "abbreviation"
   end
 
   add_index "slot_versions", ["slot_id"], :name => "index_slot_versions_on_slot_id"
@@ -419,7 +420,8 @@ ActiveRecord::Schema.define(:version => 20100818050434) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "version",    :limit => 11
+    t.integer  "version",      :limit => 11
+    t.string   "abbreviation"
   end
 
   create_table "spell_affect_versions", :force => true do |t|

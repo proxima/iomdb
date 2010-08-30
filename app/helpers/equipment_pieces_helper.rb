@@ -40,6 +40,19 @@ module EquipmentPiecesHelper
     return ret
   end
 
+  def slot_line(piece)
+    ret = ""
+  
+    for sa in piece.slot_affects do
+      temp = Slot.find(sa.slot_id)
+      ret = ret + temp.abbreviation.to_s + ', '
+    end
+
+    ret.chop!.chop! if ret[-2,2] == ', '
+
+    return ret
+  end
+
   def stat_line(piece)
     ret = ""
 

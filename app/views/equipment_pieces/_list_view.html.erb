@@ -1,6 +1,7 @@
 <tr class="<%= cycle("even", "odd") -%>" id="<%= 'row_' + list_view.id.to_s %>">
   <td><%= link_to list_view.name, list_view %></td>
   <td><%=h list_view.klass if list_view.klass and list_view.klass > 0 %></td>
+  <td><%= slot_line(list_view) %></td>
   <td><%= stat_line(list_view) %></td>
   <td>
     <% if list_view.tp_value == -1 %>
