@@ -1,0 +1,2 @@
+module WeaponDamageLevelsHelper
+end

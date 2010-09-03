@@ -17,7 +17,8 @@ class DamageTypesController < ApplicationController
   # GET /damage_types/1.json
   def show
     @damage_type = DamageType.find(params[:id])
-    @pieces = ResistanceAffect.find_all_by_damage_type_id(params[:id], :order => 'value DESC')
+    @armor_pieces = ResistanceAffect.find_all_by_damage_type_id(params[:id], :order => 'value DESC')
+    @weapon_pieces = WeaponDamageAffect.find_by_sql('select weapon_damage_affects.* from weapon_damage_affects inner join weapon_damage_levels where weapon_damage_affects.damage_type_id = ' + params[:id].to_s + ' and weapon_damage_affects.weapon_damage_level_id = weapon_damage_levels.id order by weapon_damage_levels.level DESC')
 
     respond_to do |format|
       format.html # show.html.erb

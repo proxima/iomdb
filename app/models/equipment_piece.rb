@@ -9,6 +9,7 @@ class EquipmentPiece < ActiveRecord::Base
   has_many :skill_affects
   has_many :spell_affects
   has_many :slot_affects
+  has_many :weapon_damage_affects
   
   validates_presence_of :name
 

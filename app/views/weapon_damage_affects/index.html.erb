@@ -1,0 +1,22 @@
+<h1>Listing weapon_damage_affects</h1>
+
+<table>
+  <tr>
+    <th>Equipment piece</th>
+  </tr>
+
+<% for weapon_damage_affect in @weapon_damage_affects %>
+  <% equipment_piece = EquipmentPiece.find(weapon_damage_affect.equipment_piece_id) %>
+  <tr>
+    <td><%= link_to equipment_piece.name, equipment_piece %></td>
+    <td><%= render :partial => 'view', :object => weapon_damage_affect %></td>
+    <td><%= link_to 'Show', weapon_damage_affect %></td>
+    <td><%= link_to 'Edit', edit_weapon_damage_affect_path(weapon_damage_affect) %></td>
+    <td><%= link_to 'Destroy', weapon_damage_affect, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New', new_weapon_damage_affect_path %>

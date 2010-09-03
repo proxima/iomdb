@@ -1,0 +1,18 @@
+<p>
+  <b>Equipment piece:</b>
+  <%=h @weapon_damage_affect.equipment_piece_id %>
+</p>
+
+<p>
+  <b>Damage type:</b>
+  <%=h @weapon_damage_affect.damage_type_id %>
+</p>
+
+<p>
+  <b>Weapon damage level:</b>
+  <%=h @weapon_damage_affect.weapon_damage_level_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_weapon_damage_affect_path(@weapon_damage_affect) %> |
+<%= link_to 'Back', weapon_damage_affects_path %>

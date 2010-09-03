@@ -1,0 +1,14 @@
+<table>
+  <% for weapon_damage_level in @weapon_damage_levels %>
+  <tr>
+    <td><%= render :partial => 'view', :object => weapon_damage_level %></td>
+    <td><%= link_to 'Show', weapon_damage_level %></td>
+    <td><%= link_to 'Edit', edit_weapon_damage_level_path(weapon_damage_level) %></td>
+    <td><%= link_to 'Destroy', weapon_damage_level, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+  <% end %>
+</table>
+
+<br>
+
+<%= link_to 'New', new_weapon_damage_level_path %>

@@ -1,0 +1,1 @@
+<% damage_type = DamageType.find(view.damage_type_id) %> <%= link_to damage_type.name, damage_type %> Damage (<%=h WeaponDamageLevel.find(view.weapon_damage_level_id).name %>)

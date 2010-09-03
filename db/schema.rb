@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100830040754) do
+ActiveRecord::Schema.define(:version => 20100902002119) do
 
   create_table "admin_users", :force => true do |t|
     t.string   "login"
@@ -550,6 +550,21 @@ ActiveRecord::Schema.define(:version => 20100830040754) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "version",      :limit => 11
+  end
+
+  create_table "weapon_damage_affects", :force => true do |t|
+    t.integer  "equipment_piece_id",     :limit => 11
+    t.integer  "weapon_damage_level_id", :limit => 11
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "damage_type_id",         :limit => 11
+  end
+
+  create_table "weapon_damage_levels", :force => true do |t|
+    t.string   "name"
+    t.integer  "level",      :limit => 11
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

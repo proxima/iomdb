@@ -94,6 +94,13 @@ module EquipmentPiecesHelper
       ret = ret + ra.value.to_s + ' ' + link_to(temp.name + ' Res', temp) + ', '
     end
 
+    for wa in piece.weapon_damage_affects do
+      damage_type = DamageType.find(wa.damage_type_id) 
+      damage_level = WeaponDamageLevel.find(wa.weapon_damage_level_id)
+
+      ret = ret + link_to(damage_type.name, damage_type) + ' Damage (' + damage_level.name + '), '
+    end
+
     ret = ret + "Special: " + piece.special if piece.special and !piece.special.empty?
 
     ret.chop!.chop! if ret[-2,2] == ', '
