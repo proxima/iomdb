@@ -81,10 +81,33 @@ class EquipmentPieceListsController < ApplicationController
   # POST /equipment_piece_lists.xml
   def create
     @equipment_piece_list = EquipmentPieceList.new(params[:equipment_piece_list])
+    @admin_users = AdminUser.find(:all, :order => 'login ASC')
+
+    @pieces = []
+    @not_found = []
 
     respond_to do |format|
       if @equipment_piece_list.save
-        flash[:notice] = 'EquipmentPieceList was successfully created.'
+        if !@equipment_piece_list.parchment.empty?
+          @pieces, @not_found = parchment_parse(@equipment_piece_list.parchment)
+          for piece in @pieces
+            eple = EquipmentPieceListEntry.new
+            eple.equipment_piece_id = piece.id
+            eple.equipment_piece_list_id = @equipment_piece_list.id
+            eple.save
+          end
+        end
+
+        base_message = 'Equipment piece list was successfully created.<br><br>'
+        not_found_message = "The following items didn't match an item in iomdb.  Please mudmail this list to Proxima:<br>"
+        for line in @not_found
+          not_found_message = not_found_message + line + "<br>"
+        end
+
+        if @not_found.size > 0
+          base_message = base_message + not_found_message
+        end
+        flash[:notice] = base_message
         format.html { redirect_to(@equipment_piece_list) }
         format.xml  { render :xml => @equipment_piece_list, :status => :created, :location => @equipment_piece_list }
       else
@@ -122,4 +145,25 @@ class EquipmentPieceListsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+  private
+
+  def parchment_parse(parchment_text)
+    @eq_pieces = []
+    @not_found = []
+
+    parchment_text.each_line do |line|
+      temp = line.chomp
+      piece = EquipmentPiece.find_by_name(temp)
+      if piece
+        @eq_pieces << piece
+      else
+        @not_found << temp
+      end
+    end
+
+    return @eq_pieces, @not_found
+  end
+
+
 end
