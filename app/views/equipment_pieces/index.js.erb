@@ -16,6 +16,11 @@
         (<%=h piece.tp_value %> tps)
       <% end %>
       [<%= link_to piece.equipment_monster.name, piece.equipment_monster %>]
+      <% if logged_in? %>
+        <% if session[:equipment_piece_list_id] %>
+          <div align=right><%= link_to_remote('(+ List)', :url => { :controller => 'equipment_piece_lists', :action => 'add_to_list', :equipment_piece_id => piece.id }, :complete => visual_effect(:highlight, 'current_eq_list', :duration => 0.5)) %></div>
+        <% end %>
+      <% end %>
     </li>
   <% end %>
 </ul>
