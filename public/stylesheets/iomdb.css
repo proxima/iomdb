@@ -39,6 +39,9 @@ a:hover { color: #80FFFF; background-color:#0000FF; }
   background-color: #000000;
 }
 
+.in_current_list {
+  background-color: #AA0000;
+}
 
 #errorExplanation {
   width: 400px;
