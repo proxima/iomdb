@@ -1,4 +1,9 @@
-<tr class="<%= cycle("even", "odd") -%>" id="<%= 'row_' + list_view.id.to_s %>">
+<% if logged_in? and session[:equipment_piece_list_id] and EquipmentPieceListEntry.find_by_equipment_piece_id_and_equipment_piece_list_id(list_view.id, session[:equipment_piece_list_id]) %>
+  <tr class="in_current_list" id="<%= 'row_' + list_view.id.to_s %>">
+<% else %>
+  <tr class="<%= cycle("even", "odd") -%>" id="<%= 'row_' + list_view.id.to_s %>">
+<% end %>
+
   <td><%= link_to list_view.name, list_view %></td>
   <td><%=h list_view.klass if list_view.klass and list_view.klass > 0 %></td>
   <td><%= slot_line(list_view) %></td>

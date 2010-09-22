@@ -122,9 +122,31 @@ class EquipmentPieceListsController < ApplicationController
   def update
     @equipment_piece_list = EquipmentPieceList.find(params[:id])
 
+    @pieces = []
+    @not_found = []
+
     respond_to do |format|
       if @equipment_piece_list.update_attributes(params[:equipment_piece_list])
-        flash[:notice] = 'EquipmentPieceList was successfully updated.'
+        if !@equipment_piece_list.parchment.empty?
+          @pieces, @not_found = parchment_parse(@equipment_piece_list.parchment)
+          for piece in @pieces
+            eple = EquipmentPieceListEntry.new
+            eple.equipment_piece_id = piece.id
+            eple.equipment_piece_list_id = @equipment_piece_list.id
+            eple.save
+          end
+        end
+
+        base_message = 'Equipment piece list was successfully updated.<br><br>'
+        not_found_message = "The following items didn't match an item in iomdb.  Please mudmail this list to Proxima:<br>"
+        for line in @not_found
+          not_found_message = not_found_message + line + "<br>"
+        end
+
+        if @not_found.size > 0
+          base_message = base_message + not_found_message
+        end
+        flash[:notice] = base_message
         format.html { redirect_to(@equipment_piece_list) }
         format.xml  { head :ok }
       else
