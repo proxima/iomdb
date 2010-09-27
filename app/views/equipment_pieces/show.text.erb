@@ -1,0 +1,5 @@
+<% 
+  ret = "tell %2 #{@equipment_piece.name} - #{@equipment_piece.tp_value} tps | #{slot_line(@equipment_piece)}\n" 
+  ret = ret + "tell %2 #{simple_stat_line(@equipment_piece)}\n"
+%>
+<%= ret %>

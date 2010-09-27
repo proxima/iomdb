@@ -71,6 +71,43 @@ module EquipmentPiecesHelper
     end
   end
 
+  def simple_stat_line(piece)
+    ret = ""
+
+    for sa in piece.stat_affects do
+      temp = Stat.find(sa.stat_id)
+      ret = ret + sa.value.to_s + ' ' + temp.abbreviation + ', '
+    end
+
+    for sa in piece.skill_affects do
+      temp = Skill.find(sa.skill_id)
+      ret = ret + sa.value.to_s + ' ' + temp.name + ', '
+    end
+
+    for sa in piece.spell_affects do
+      temp = Spell.find(sa.spell_id)
+      ret = ret + sa.value.to_s + ' ' + temp.name + ', '
+    end
+
+    for ra in piece.resistance_affects do
+      temp = DamageType.find(ra.damage_type_id)
+      ret = ret + ra.value.to_s + ' ' + temp.name + ' Res' + ', '
+    end
+
+    for wa in piece.weapon_damage_affects do
+      damage_type = DamageType.find(wa.damage_type_id) 
+      damage_level = WeaponDamageLevel.find(wa.weapon_damage_level_id)
+
+      ret = ret + damage_type.name + ' Damage' + ' (' + damage_level.name + '), '
+    end
+
+    ret = ret + "Special: " + piece.special if piece.special and !piece.special.empty?
+
+    ret.chop!.chop! if ret[-2,2] == ', '
+
+    return ret
+  end
+
   def stat_line(piece)
     ret = ""
 

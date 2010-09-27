@@ -154,8 +154,14 @@ class EquipmentPiecesController < ApplicationController
   # GET /equipment_pieces/1.xml
   # GET /equipment_pieces/1.json
   def show
+    @equipment_piece = nil
+
     if params[:name]
       @equipment_piece = EquipmentPiece.find_by_name(params[:name])
+      if @equipment_piece.nil?
+        render :text => "tell %2 A piece of that exact name doesn't exist in iomdb.\n"
+        return
+      end
     else
       @equipment_piece = EquipmentPiece.find(params[:id])
     end
@@ -182,6 +188,7 @@ class EquipmentPiecesController < ApplicationController
                                                            :except => [ :created_at, :updated_at ],
                                                            :skip_types => true,
                                                            :skip_instruct => true ) }
+      format.text # show.txt.erb
     end
   end
 

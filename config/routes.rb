@@ -33,8 +33,8 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :damage_types
   map.resources :slots
   
-  map.connect 'equipment_pieces/by_name/:name', :controller => 'equipment_pieces', :action => 'show'
-  map.connect 'equipment_monsters/by_name/:name', :controller => 'equipment_monsters', :action => 'show'
+  map.connect 'equipment_pieces/by_name/:name.:format', :controller => 'equipment_pieces', :action => 'show'
+  map.connect 'equipment_monsters/by_name/:name.:format', :controller => 'equipment_monsters', :action => 'show'
 
   map.restore_guild             'guilds/:guild_id/restore/:version_id', :controller => 'guilds', :action => 'restore'
   map.restore_alignment_level   'alignment_levels/:alignment_level_id/restore/:version_id', :controller => 'alignment_levels', :action => 'restore'
