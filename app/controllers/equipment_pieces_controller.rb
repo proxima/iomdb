@@ -23,7 +23,8 @@ class EquipmentPiecesController < ApplicationController
                                                                          :stat_affects => {},
                                                                          :resistance_affects => {},
                                                                          :skill_affects => {},
-                                                                         :spell_affects => {}},
+                                                                         :spell_affects => {},
+                                                                         :weapon_damage_affects => {}},
                                                             :except => [ :created_at, :updated_at ],
                                                             :skip_types => true,
                                                             :skip_instruct => true ) }
@@ -31,7 +32,8 @@ class EquipmentPiecesController < ApplicationController
                                                                           :stat_affects => {},
                                                                           :resistance_affects => {},
                                                                           :skill_affects => {},
-                                                                          :spell_affects => {}},
+                                                                          :spell_affects => {},
+                                                                          :weapon_damage_affects => {}},
                                                             :except => [ :created_at, :updated_at ],
                                                             :skip_types => true,
                                                             :skip_instruct => true ) }
