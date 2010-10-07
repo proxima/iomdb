@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100902002119) do
+ActiveRecord::Schema.define(:version => 20101007203205) do
 
   create_table "admin_users", :force => true do |t|
     t.string   "login"
@@ -129,7 +129,7 @@ ActiveRecord::Schema.define(:version => 20100902002119) do
 
   add_index "equipment_monsters", ["id", "name"], :name => "index_equipment_monsters_on_id_and_name"
 
-  create_table "equipment_piece_list_entries", :id => false, :force => true do |t|
+  create_table "equipment_piece_list_entries", :force => true do |t|
     t.integer  "equipment_piece_id",      :limit => 11
     t.integer  "equipment_piece_list_id", :limit => 11
     t.datetime "created_at"

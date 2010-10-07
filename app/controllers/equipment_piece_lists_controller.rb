@@ -73,7 +73,9 @@ class EquipmentPieceListsController < ApplicationController
     if params[:equipment_piece_id] and params[:list_id]
       piece_id = params[:equipment_piece_id]
       list_id = params[:list_id]
-      EquipmentPieceListEntry.delete_all(["equipment_piece_list_id = ? AND equipment_piece_id = ?", list_id, piece_id])
+
+      eple = EquipmentPieceListEntry.find_by_equipment_piece_list_id_and_equipment_piece_id(list_id, piece_id)
+      eple.destroy
     end
   end
 
