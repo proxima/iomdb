@@ -75,7 +75,7 @@ class EquipmentPieceListsController < ApplicationController
       list_id = params[:list_id]
 
       eple = EquipmentPieceListEntry.find_by_equipment_piece_list_id_and_equipment_piece_id(list_id, piece_id)
-      eple.destroy
+      eple.destroy if eple
     end
   end
 

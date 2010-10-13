@@ -40,6 +40,21 @@ module EquipmentPiecesHelper
     return ret
   end
 
+  def stat_sort_line
+    ret = '('
+
+    @stats = Stat.find(:all)
+    for stat in @stats
+      ret << link_to(stat.abbreviation, stat)
+      ret << ' '
+    end
+
+    ret.chop! if ret[-1,1] == ' '
+
+    ret << ')'
+    return ret
+  end
+
   def slot_line(piece)
   
     if piece.slot_affects.size == 1

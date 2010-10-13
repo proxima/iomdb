@@ -8,12 +8,12 @@
 <% if view.lesser_party_prot1_id %><b>L:</b><%= render :partial => 'damage_types/view', :object => DamageType.find_by_id(view.lesser_party_prot1_id) %><% end %>
 <% if view.lesser_party_prot2_id %><b>L:</b><%= render :partial => 'damage_types/view', :object => DamageType.find_by_id(view.lesser_party_prot2_id) %><% end %>
 <br>
-<b>Additional Prot Info: </b><%=h view.additional_prot_info %>
+<b>Additional Prot Info: </b><%= view.additional_prot_info %>
 <br>
-<b>Fight Notes: </b><%=h view.fight_notes %>
+<b>Fight Notes: </b><%= view.fight_notes %>
 <br>
 <b>Walkthrough:</b>
-<%=h view.walkthrough %>
+<%= view.walkthrough %>
 <br>
 <% if view.quest_mob %>
 <b>This is a Quest Mob</b><br>

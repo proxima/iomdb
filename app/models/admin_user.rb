@@ -8,7 +8,7 @@ class AdminUser < ActiveRecord::Base
   validates_confirmation_of :password
   validates_format_of :email, :with => /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i, :message => "Invalid email"  
 
-  has_many :equipment_piece_lists
+  has_many :equipment_piece_lists, :dependent => :destroy
 
   attr_protected :id, :salt
 
@@ -31,6 +31,7 @@ class AdminUser < ActiveRecord::Base
     new_pass = AdminUser.random_string(10)
     self.password = self.password_confirmation = new_pass
     self.save
+    puts "PW: #{new_pass}"
     Notifications.deliver_forgot_password(self.email, self.login, new_pass)
   end
 
