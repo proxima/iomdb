@@ -26,10 +26,46 @@ class EquipmentPieceListsController < ApplicationController
 
     @eq_pieces = @eq_pieces.sort_by{|x| [-x[:tp_value], x[:name]]}
   
+    @items_per_mob = {}
+    @tps_needed_per_mob = {}
+
+    if @equipment_piece_list.name == 'tplist'
+      @all_eq = EquipmentPiece.find(:all, :conditions => 'tp_value <> 0')
+      @need_to_sac = @all_eq - @eq_pieces
+
+      @need_to_sac.group_by(&:equipment_monster).each do |mob, pieces|
+        sum = 0
+        pieces.each { |item| sum += item.tp_value if item.tp_value > 0 }
+        @tps_needed_per_mob[mob] = sum
+        @items_per_mob[mob] = []
+        pieces.each { |item| @items_per_mob[mob] << item }
+      end
+
+      @items_per_mob = @items_per_mob.sort {|a,b| @tps_needed_per_mob[b[0]] <=> @tps_needed_per_mob[a[0]]}
+    end
+
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @equipment_piece_list }
     end
+  end
+
+  def wishlists
+    @equipment_piece_lists = EquipmentPieceList.find_all_by_name('wishlist')
+
+    @mobs_to_players = {}
+
+    for list in @equipment_piece_lists
+      for entry in list.equipment_piece_list_entries
+        @piece = EquipmentPiece.find_by_id(entry.equipment_piece_id)
+
+        @mobs_to_players[@piece.equipment_monster] = {} unless @mobs_to_players[@piece.equipment_monster]
+        @mobs_to_players[@piece.equipment_monster][list.admin_user] = [] unless @mobs_to_players[@piece.equipment_monster][list.admin_user]
+        @mobs_to_players[@piece.equipment_monster][list.admin_user] << @piece if @piece
+      end
+    end
+
+    @mobs_to_players = @mobs_to_players.sort{|x,y| -1*(x[1].size<=>y[1].size) }
   end
 
   # GET /equipment_piece_lists/new

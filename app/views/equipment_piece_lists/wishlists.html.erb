@@ -1,0 +1,11 @@
+<% @mobs_to_players.each do |eq_mob,player_to_items| %>
+  <hr>
+  <h2><%= link_to eq_mob.name, eq_mob %> - <%= player_to_items.size %> players</h2>
+  <% player_to_items.each do |player,pieces| %>
+    <h4><%= player.login %></h4>
+    <%= render :partial => 'equipment_pieces/wishlist_header' %>
+      <%= render :partial => 'equipment_pieces/view', :collection => pieces %>
+    <%= render :partial => 'equipment_pieces/footer' %>
+  <% end %>
+<% end %>
+<hr>

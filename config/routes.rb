@@ -6,6 +6,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.connect 'equipment_piece_lists/change_list', :controller => 'equipment_piece_lists', :action => 'change_list', :conditions => { :method => :post }
   map.connect 'equipment_piece_lists/add_to_list', :controller => 'equipment_piece_lists', :action => 'add_to_list', :conditions => { :method => :post }
+  map.connect 'equipment_piece_lists/wishlists', :controller => 'equipment_piece_lists', :action => 'wishlists'
 
   map.resources :equipment_piece_lists
   map.resources :equipment_mob_strategies

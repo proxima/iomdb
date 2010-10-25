@@ -11,10 +11,20 @@
 <h2>Pieces:</h2>
 <%= render :partial => 'equipment_pieces/header' %>
 
-
 <table id="eq_piece_table">
   <%= render :partial => 'equipment_pieces/list_view', :collection => @eq_pieces %>
 <%= render :partial => 'equipment_pieces/footer' %>
+
+<br>
+<% if @equipment_piece_list.name == 'tplist' %>
+  <h1>Remaining Tps, by Mob</h1>
+  <% @items_per_mob.each do |mob,pieces| %>
+    <h2><%= link_to mob.name, mob %> - <%= @tps_needed_per_mob[mob] %> tps</h2>    
+    <%= render :partial => 'equipment_pieces/wishlist_header' %>
+      <%= render :partial => 'equipment_pieces/view', :collection => pieces %>
+    <%= render :partial => 'equipment_pieces/footer' %>
+  <% end %>
+<% end %>
 <br>
 <% if logged_in? %>
 <%= link_to 'Edit', edit_equipment_piece_list_path(@equipment_piece_list) %> |
