@@ -17,7 +17,6 @@ class RacesController < ApplicationController
   # GET /races/1.json
   def show
     @race = Race.find(params[:id])
-    @versions = @race.versions.find(:all)
 
     respond_to do |format|
       format.html # show.html.erb
@@ -88,13 +87,5 @@ class RacesController < ApplicationController
       format.html { redirect_to(races_url) }
       format.xml  { head :ok }
     end
-  end
-
-  def restore
-    @race = Race.find(params[:race_id])
-    @race.revert_to! params[:version_id]
-
-    flash[:notice] = "Race was successfully restored to version #{params[:version_id]}"
-    redirect_to(@race)
   end
 end

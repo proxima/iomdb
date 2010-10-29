@@ -1,7 +1,5 @@
 class SpellTrainSpec < ActiveRecord::Base
 
-  acts_as_versioned
-
   def initialize(params = nil)
     super(params)
     self.max = 100 unless self.max

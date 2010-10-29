@@ -1,10 +1,1 @@
 <%= render :partial => "view", :object => @alignment_level %>
-
-<% if logged_in? %>
-  <p>
-    <b>Edit History</b><br>
-    <% @versions.reverse.each do |version| %>
-      Version <%= version.version %> Updated: <%= version.updated_at %> <%= link_to '(restore)', restore_alignment_level_url(:alignment_level_id => @alignment_level.id, :version_id => version.version) %><br>
-    <% end %>
-  </p>
-<% end %>

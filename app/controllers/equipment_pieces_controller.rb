@@ -169,7 +169,6 @@ class EquipmentPiecesController < ApplicationController
     end
 
     @eq_mob = EquipmentMonster.find(@equipment_piece.equipment_monster_id)
-    @versions = @equipment_piece.versions.find(:all)
 
     respond_to do |format|
       format.html # show.html.erb
@@ -256,13 +255,5 @@ class EquipmentPiecesController < ApplicationController
       format.html { redirect_to(equipment_pieces_url) }
       format.xml  { head :ok }
     end
-  end
-
-  def restore
-    @equipment_piece = EquipmentPiece.find(params[:equipment_piece_id])
-    @equipment_piece.revert_to! params[:version_id]
-
-    flash[:notice] = "EquipmentPiece was successfully restored to version #{params[:version_id]}"
-    redirect_to(@equipment_piece)
   end
 end

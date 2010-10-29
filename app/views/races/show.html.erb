@@ -37,12 +37,3 @@
   <% end %>
   <tr><td colspan=3>-----------------------------------------------------------------------------</td></tr>
 </table>
-
-<% if logged_in? %>
-  <p>
-    <b>Edit History</b><br>
-    <% @versions.reverse.each do |version| %>
-      Version <%= version.version %> Updated: <%= version.updated_at %> <%= link_to '(restore)', restore_race_url(:race_id => @race.id, :version_id => version.version) %><br>
-    <% end %>
-  </p>
-<% end %>

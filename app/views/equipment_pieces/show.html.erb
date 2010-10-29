@@ -11,13 +11,3 @@
 <b>Special:</b> <%= @equipment_piece.special %><br>
 
 <%= link_to 'Back', equipment_pieces_path %><br>
-
-<% if logged_in? %>
-  <%= link_to 'Edit', edit_equipment_piece_path(@equipment_piece) %><br>
-  <p>
-    <b>Edit History</b><br>
-    <% @versions.reverse.each do |version| %>
-      Version <%= version.version %> Updated: <%= version.updated_at %> <%= link_to '(restore)', restore_equipment_piece_url(:equipment_piece_id => @equipment_piece.id, :version_id => version.version) %><br>
-    <% end %>
-  </p>
-<% end %>

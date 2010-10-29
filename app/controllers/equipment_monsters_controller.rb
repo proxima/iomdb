@@ -35,13 +35,18 @@ class EquipmentMonstersController < ApplicationController
   # GET /equipment_monsters/1.xml
   # GET /equipment_monsters/1.json
   def show
+    @equipment_monster = nil
+
     if params[:name]
       @equipment_monster = EquipmentMonster.find_by_name(params[:name])
+      if @equipment_monster.nil?
+        render :text => "tell %2 A monster of that exact name doesn't exist in iomdb.\n"
+        return
+      end
     else
       @equipment_monster = EquipmentMonster.find(params[:id])
     end
 
-    @versions = @equipment_monster.versions.find(:all)
     @eq_pieces = @equipment_monster.equipment_pieces
 
     respond_to do |format|
@@ -67,6 +72,7 @@ class EquipmentMonstersController < ApplicationController
                                                                :except => [ :created_at, :updated_at ],
                                                                :skip_types => true,
                                                                :skip_instruct => true ) } 
+      format.text # show.txt.erb
     end
   end
 
@@ -130,13 +136,5 @@ class EquipmentMonstersController < ApplicationController
       format.html { redirect_to(equipment_monsters_url) }
       format.xml  { head :ok }
     end
-  end
-
-  def restore
-    @equipment_monster = EquipmentMonster.find(params[:equipment_monster_id])
-    @equipment_monster.revert_to! params[:version_id]
-
-    flash[:notice] = "EquipmentMonster was successfully restored to version #{params[:version_id]}"
-    redirect_to(@equipment_monster)
   end
 end

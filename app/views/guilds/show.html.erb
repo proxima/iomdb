@@ -27,12 +27,3 @@
   <b>Spells (<%= link_to 'Add', :controller => 'spell_train_specs', :action => 'new', :guild_id => @guild.id %>):</b><br>
   <%= render :partial => 'spell_train_specs/view', :collection => @guild.spell_train_specs %>
 </p>
-
-<% if logged_in? %>
-  <p>
-    <b>Edit History</b><br>
-    <% @versions.reverse.each do |version| %>
-      Version <%= version.version %> Updated: <%= version.updated_at %> <%= link_to '(restore)', restore_guild_url(:guild_id => @guild.id, :version_id => version.version) %><br>
-    <% end %>
-  </p>
-<% end %>

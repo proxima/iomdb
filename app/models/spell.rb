@@ -1,7 +1,5 @@
 class Spell < ActiveRecord::Base
 
-  acts_as_versioned
-
   cattr_reader :per_page
   @@per_page = 30
 

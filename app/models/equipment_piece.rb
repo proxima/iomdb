@@ -1,15 +1,13 @@
 class EquipmentPiece < ActiveRecord::Base
 
-  acts_as_versioned
-
   belongs_to :equipment_monster
 
-  has_many :stat_affects
-  has_many :resistance_affects
-  has_many :skill_affects
-  has_many :spell_affects
-  has_many :slot_affects
-  has_many :weapon_damage_affects
+  has_many :stat_affects, :dependent => :destroy
+  has_many :resistance_affects, :dependent => :destroy
+  has_many :skill_affects, :dependent => :destroy
+  has_many :spell_affects, :dependent => :destroy
+  has_many :slot_affects, :dependent => :destroy
+  has_many :weapon_damage_affects, :dependent => :destroy
   
   validates_presence_of :name
 

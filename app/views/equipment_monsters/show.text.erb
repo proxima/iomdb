@@ -1,0 +1,42 @@
+<%
+  strat = @equipment_monster.equipment_mob_strategy
+  if strat.nil?
+    ret = "tell %2 No strategy has been created for this mob.\n" if strat.nil?
+  else
+
+    ret = "tell %2 Tank: "
+
+    if strat.greater_tank_prot_id
+      ret = ret + "G:" + DamageType.find_by_id(strat.greater_tank_prot_id).name + " "
+    end
+
+    if strat.lesser_tank_prot1_id
+      ret = ret + "L:" + DamageType.find_by_id(strat.lesser_tank_prot1_id).name + " "
+    end
+
+    if strat.lesser_tank_prot2_id
+      ret = ret + "L:" + DamageType.find_by_id(strat.lesser_tank_prot2_id).name + " "
+    end
+
+    ret = ret + "Party: "
+
+    if strat.greater_party_prot_id
+      ret = ret + "G:" + DamageType.find_by_id(strat.greater_party_prot_id).name + " "      
+    end
+
+    if strat.lesser_party_prot1_id
+      ret = ret + "L:" + DamageType.find_by_id(strat.lesser_party_prot1_id).name + " "
+    end
+
+    if strat.lesser_party_prot2_id
+      ret = ret + "L:" + DamageType.find_by_id(strat.lesser_party_prot2_id).name + " "
+    end
+
+    ret = ret + "\n"
+
+    ret = ret + "tell %2 Additional Prot Info: " + strat.additional_prot_info + "\n" if strat.additional_prot_info and !strat.additional_prot_info.empty?
+
+  end
+%>
+
+<%= ret %>

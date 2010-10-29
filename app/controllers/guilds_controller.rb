@@ -14,7 +14,6 @@ class GuildsController < ApplicationController
   # GET /guilds/1.xml
   def show
     @guild = Guild.find(params[:id])
-    @versions = @guild.versions.find(:all)
 
     respond_to do |format|
       format.html # show.html.erb
@@ -85,13 +84,4 @@ class GuildsController < ApplicationController
       format.xml  { head :ok }
     end
   end
-
-  def restore
-    @guild = Guild.find(params[:guild_id])
-    @guild.revert_to! params[:version_id]
-
-    flash[:notice] = "Guild was successfully restored to version #{params[:version_id]}"
-    redirect_to(@guild)
-  end
-
 end

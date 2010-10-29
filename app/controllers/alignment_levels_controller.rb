@@ -17,7 +17,6 @@ class AlignmentLevelsController < ApplicationController
   # GET /alignment_levels/1.json
   def show
     @alignment_level = AlignmentLevel.find(params[:id])
-    @versions = @alignment_level.versions.find(:all)
 
     respond_to do |format|
       format.html # show.html.erb
@@ -87,13 +86,4 @@ class AlignmentLevelsController < ApplicationController
       format.xml  { head :ok }
     end
   end
-
-  def restore
-    @alignment_level = AlignmentLevel.find(params[:alignment_level_id])
-    @alignment_level.revert_to! params[:version_id]
-
-    flash[:notice] = "AlignmentLevel was successfully restored to version #{params[:version_id]}"
-    redirect_to(@alignment_level)
-  end
-
 end

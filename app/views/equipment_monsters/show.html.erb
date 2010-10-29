@@ -9,14 +9,3 @@
 <%= render :partial => 'equipment_pieces/header' %>
   <%= render :partial => 'equipment_pieces/view', :collection => @eq_pieces %>
 <%= render :partial => 'equipment_pieces/footer' %>
-<br>
-<% if logged_in? %>
-  <%= link_to 'Edit', edit_equipment_monster_path(@equipment_monster) %><br>
-  <p>
-    <b>Edit History</b><br>
-    <% @versions.reverse.each do |version| %>
-      Version <%= version.version %> Updated: <%= version.updated_at %> <%= link_to '(restore)', restore_equipment_monster_url(:equipment_monster_id => @equipment_monster.id, :version_id => version.version) %><br>
-    <% end %>
-  </p>
-<% end %>
-

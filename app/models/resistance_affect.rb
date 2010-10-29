@@ -1,7 +1,5 @@
 class ResistanceAffect < ActiveRecord::Base
 
-  acts_as_versioned
-
   belongs_to :equipment_piece
   has_one :damage_type
 
