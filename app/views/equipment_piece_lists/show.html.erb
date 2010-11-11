@@ -8,14 +8,15 @@
   <%=h AdminUser.find_by_id(@equipment_piece_list.admin_user_id).login %>
 </p>
 
-<h2>Pieces:</h2>
-<%= render :partial => 'equipment_pieces/header' %>
+<% unless @equipment_piece_list.name == 'tplist' %>
+  <h2>Pieces:</h2>
+  <%= render :partial => 'equipment_pieces/header' %>
+  <table id="eq_piece_table">
+    <%= render :partial => 'equipment_pieces/list_view', :collection => @eq_pieces %>
+  <%= render :partial => 'equipment_pieces/footer' %>
+  <br>
+<% end %>
 
-<table id="eq_piece_table">
-  <%= render :partial => 'equipment_pieces/list_view', :collection => @eq_pieces %>
-<%= render :partial => 'equipment_pieces/footer' %>
-
-<br>
 <% if @equipment_piece_list.name == 'tplist' %>
   <h1>Remaining Tps, by Mob</h1>
   <% @items_per_mob.each do |mob,pieces| %>

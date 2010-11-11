@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101029155046) do
+ActiveRecord::Schema.define(:version => 20101111032344) do
 
   create_table "admin_users", :force => true do |t|
     t.string   "login"
@@ -101,6 +101,7 @@ ActiveRecord::Schema.define(:version => 20101029155046) do
     t.string   "special"
     t.integer  "tp_value",             :limit => 11
     t.integer  "version",              :limit => 11
+    t.integer  "rufrin_price",         :limit => 11
   end
 
   add_index "equipment_pieces", ["id", "name"], :name => "index_equipment_pieces_on_id_and_name"

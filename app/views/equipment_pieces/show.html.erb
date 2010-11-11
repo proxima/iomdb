@@ -2,6 +2,7 @@
 <b>Class:</b> <%= @equipment_piece.klass %><br>
 <b>Weight:</b> <%= @equipment_piece.weight %><br>
 <b>Tp Value:</b> <%= @equipment_piece.tp_value %><br>
+<b>Rufrin:</b> <%= @equipment_piece.rufrin_price %><br>
 <b>Slots:</b> <%= render :partial => "slot_affects/view", :collection => @equipment_piece.slot_affects %> (<%= link_to 'Add', :controller => 'slot_affects', :action => 'new', :equipment_piece_id => @equipment_piece.id %>)<br>
 <b>Stats:</b> <%= render :partial => "stat_affects/view", :collection => @equipment_piece.stat_affects %> (<%= link_to 'Add', :controller => 'stat_affects', :action => 'new', :equipment_piece_id => @equipment_piece.id %>)<br>
 <b>Skills:</b> <%= render :partial => "skill_affects/view", :collection => @equipment_piece.skill_affects %> (<%= link_to 'Add', :controller => 'skill_affects', :action => 'new', :equipment_piece_id => @equipment_piece.id %>)<br>

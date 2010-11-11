@@ -13,6 +13,7 @@ class EquipmentPiece < ActiveRecord::Base
 
   validates_numericality_of :klass, :weight
   validates_numericality_of :tp_value, :greater_than_or_equal_to => -1, :less_than_or_equal_to => 10
+  validates_numericality_of :rufrin_price, :greater_than_or_equal_to => 0
 
   def self.find_by_gab_list(gab_list)
     rg = Regexp.new(/^ \d*    \d   ([a-zA-Z '\-()]*)([0-9,]*)\s*\w*/)

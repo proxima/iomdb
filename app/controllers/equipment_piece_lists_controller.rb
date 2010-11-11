@@ -37,6 +37,10 @@ class EquipmentPieceListsController < ApplicationController
         sum = 0
         pieces.each { |item| sum += item.tp_value if item.tp_value > 0 }
         @tps_needed_per_mob[mob] = sum
+      end
+
+      @all_eq.group_by(&:equipment_monster).each do |mob, pieces|
+        @tps_needed_per_mob[mob] ||= 0
         @items_per_mob[mob] = []
         pieces.each { |item| @items_per_mob[mob] << item }
       end

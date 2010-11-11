@@ -1,5 +1,7 @@
 class EquipmentPiecesController < ApplicationController
 
+  skip_before_filter :verify_authenticity_token
+
   # GET /equipment_pieces
   # GET /equipment_pieces.xml
   # GET /equipment_pieces.json
@@ -15,7 +17,7 @@ class EquipmentPiecesController < ApplicationController
 
     if session[:user]
       @equipment_lists = EquipmentPieceList.find_all_by_admin_user_id(session[:user].id, :order => 'name ASC')
-    end
+    end    
 
     respond_to do |format|
       format.html # index.html.erb
