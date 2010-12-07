@@ -1,0 +1,20 @@
+<% if logged_in? and session[:equipment_piece_list_id] and EquipmentPieceListEntry.find_by_equipment_piece_id_and_equipment_piece_list_id(rufrin.id, session[:equipment_piece_list_id]) %>
+  <tr class="in_current_list">
+<% else %>
+  <tr class="<%= cycle("even", "odd") -%>">
+<% end %>
+
+  <td><%= link_to rufrin.name, rufrin %></td>
+  <td><%=h rufrin.klass if rufrin.klass and rufrin.klass > 0 %></td>
+  <td><%= slot_line(rufrin) %></td>
+  <td><%= stat_line(rufrin) %></td>
+  <td>
+    <% if rufrin.tp_value == -1 %>
+    ?
+    <% else %>
+    <%=h rufrin.tp_value %>
+    <% end %>
+  </td>
+  <td><%= link_to rufrin.equipment_monster.name, rufrin.equipment_monster %></td>
+  <td><%= rufrin.rufrin_price %></td>
+</tr>

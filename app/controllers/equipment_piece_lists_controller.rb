@@ -18,18 +18,18 @@ class EquipmentPieceListsController < ApplicationController
   def show
     @equipment_piece_list = EquipmentPieceList.find(params[:id])
     @eq_pieces = []
-   
+
     for entry in @equipment_piece_list.equipment_piece_list_entries
       @piece = EquipmentPiece.find_by_id(entry.equipment_piece_id)
       @eq_pieces << EquipmentPiece.find_by_id(entry.equipment_piece_id) if @piece
     end
 
     @eq_pieces = @eq_pieces.sort_by{|x| [-x[:tp_value], x[:name]]}
-  
+
     @items_per_mob = {}
     @tps_needed_per_mob = {}
 
-    if @equipment_piece_list.name == 'tplist'
+    if EquipmentPieceListType.find(@equipment_piece_list.equipment_piece_list_type_id).name == 'TP'
       @all_eq = EquipmentPiece.find(:all, :conditions => 'tp_value <> 0')
       @need_to_sac = @all_eq - @eq_pieces
 
@@ -55,7 +55,7 @@ class EquipmentPieceListsController < ApplicationController
   end
 
   def wishlists
-    @equipment_piece_lists = EquipmentPieceList.find_all_by_name('wishlist')
+    @equipment_piece_lists = EquipmentPieceList.find_all_by_equipment_piece_list_type_id(EquipmentPieceListType.find_by_name('Wishlist').id)
 
     @mobs_to_players = {}
 
@@ -72,11 +72,16 @@ class EquipmentPieceListsController < ApplicationController
     @mobs_to_players = @mobs_to_players.sort{|x,y| -1*(x[1].size<=>y[1].size) }
   end
 
+  def rufrin
+    @equipment_pieces = EquipmentPiece.find(:all, :conditions => 'rufrin_price > 0', :order => 'rufrin_price DESC')
+  end
+
   # GET /equipment_piece_lists/new
   # GET /equipment_piece_lists/new.xml
   def new
     @equipment_piece_list = EquipmentPieceList.new
     @admin_users = AdminUser.find(:all, :order => 'login ASC')
+    @equipment_piece_list_types = EquipmentPieceListType.find(:all, :order => 'name ASC')
 
     respond_to do |format|
       format.html # new.html.erb
@@ -88,6 +93,7 @@ class EquipmentPieceListsController < ApplicationController
   def edit
     @equipment_piece_list = EquipmentPieceList.find(params[:id])
     @admin_users = AdminUser.find(:all, :order => 'login ASC')
+    @equipment_piece_list_types = EquipmentPieceListType.find(:all, :order => 'name ASC')
   end
 
   def change_list

@@ -7,6 +7,9 @@ class EquipmentPieceList < ActiveRecord::Base
 
   has_many :equipment_piece_list_entries, :dependent => :destroy
 
+#  validates_presence_of :equipment_piece_list_type
+  has_one :equipment_piece_list_type
+
   belongs_to :admin_user
 
 end

@@ -1,9 +1,22 @@
+R:
+Ye find the lair where death awaits
+and fight the awful smell.
+But demons will ensure your fates
+and send you straight to hell.
+The fires burn and sear the flesh
+of all who try to pass.
+Yet struggle on through the mesh
+is realy quite a farse.
+In the end the brave will fall
+and the mighty left to feast.
+For inside the demons hall
+you must slay the beast.
 G:
-Deep within the foul dark lair
+Deep within the foul dark lair 
 where plenty evils lurk.
 Ugly with blood stained hair
 you shalt not pass the murk.
-From whence they came you shall not see
+From whence they come you shall not see
 for fate will blind your toil.
 Lord Jesrael makes the mighty flee
 and all to return to soil.
@@ -11,19 +24,19 @@ But alas you are in vain
 for ye arnt the one who sings.
 Many will fail and be in pain
 for salvation rides on dragon's wings.
-R:
-Ye find the lair where death awaits
-and fight the awful smellm
-But demons will ensure your fates
-and send you straight to hell.
-The fires burn and sear the flesh
-of all who try to pass.
-Yet struggle on through the mesh
-is really quite a farse.
-In the end the brave will fall 
-and the mighty left to feast.
-For inside the demons hall
-you must slay the beast.
+B:
+In the centre lies the gate
+but opening it sure to vex.
+Many are the guards who wait
+as you go to the middle hex.
+Randomly sent to find a way
+back to a different oaken door.
+A seventh time and you may stay
+and seek the glowing prize no more.
+You have won evil Jesrael's prize
+his hoard cache of magic.
+And free the one with yearning eyes
+whose lot was hunger tragic.
 Y:
 It is scribed on the wall
 that the islands are doomed.
@@ -37,16 +50,3 @@ When all is lost and only despair
 a lone hero will rise to the top.
 Seek out the foe and right the unfairs
 but will he be able to stop.
-B:
-In the centre lies the gate
-but opening it sure to vex.
-Many are the guards who wait
-as you go to the middle hex.
-Randomly sent to find a way
-back to a different oaken door
-A seventh time and you may stay
-and seek the glowing prize no more.
-You have won evil Jesrael's prize
-his hoard cache of magic.
-And free the one with yearning eyes
-whose lot was hunger tragic.

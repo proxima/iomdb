@@ -1,4 +1,13 @@
-<% if logged_in? and session[:equipment_piece_list_id] and EquipmentPieceListEntry.find_by_equipment_piece_id_and_equipment_piece_list_id(view.id, session[:equipment_piece_list_id]) %>
+<% list ||= nil %>
+<% list_type ||= nil %>
+
+<% if list and list_type.name == 'TP' %>
+  <% if EquipmentPieceListEntry.find_by_equipment_piece_id_and_equipment_piece_list_id(view.id, list.id) %>
+    <tr class="in_current_list">
+  <% else %>
+    <tr class="<%= cycle("even", "odd") -%>">
+  <% end %>
+<% elsif logged_in? and session[:equipment_piece_list_id] and EquipmentPieceListEntry.find_by_equipment_piece_id_and_equipment_piece_list_id(view.id, session[:equipment_piece_list_id]) %>
   <tr class="in_current_list">
 <% else %>
   <tr class="<%= cycle("even", "odd") -%>">

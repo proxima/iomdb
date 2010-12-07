@@ -1,0 +1,14 @@
+<table>
+  <% for list_type in @equipment_piece_list_types %>
+  <tr>
+    <td><%= render :partial => "view", :object => list_type %></td>
+    <td><%= link_to 'Show', list_type %></td>
+    <td><%= link_to 'Edit', edit_equipment_piece_list_type_path(list_type) %></td>
+    <td><%= link_to 'Destroy', list_type, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+  <% end %>
+</table>
+
+<br>
+
+<%= link_to 'New', new_equipment_piece_list_type_path %>

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101111032344) do
+ActiveRecord::Schema.define(:version => 20101113225233) do
 
   create_table "admin_users", :force => true do |t|
     t.string   "login"
@@ -80,15 +80,23 @@ ActiveRecord::Schema.define(:version => 20101111032344) do
     t.integer  "equipment_piece_list_id", :limit => 11
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "dicer"
   end
 
   add_index "equipment_piece_list_entries", ["equipment_piece_list_id"], :name => "index_equipment_piece_list_entries_on_equipment_piece_list_id"
 
-  create_table "equipment_piece_lists", :force => true do |t|
+  create_table "equipment_piece_list_types", :force => true do |t|
     t.string   "name"
-    t.integer  "admin_user_id", :limit => 11
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "equipment_piece_lists", :force => true do |t|
+    t.string   "name"
+    t.integer  "admin_user_id",                :limit => 11
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "equipment_piece_list_type_id", :limit => 11
   end
 
   create_table "equipment_pieces", :force => true do |t|

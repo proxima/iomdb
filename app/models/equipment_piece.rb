@@ -11,9 +11,16 @@ class EquipmentPiece < ActiveRecord::Base
   
   validates_presence_of :name
 
-  validates_numericality_of :klass, :weight
+  validates_numericality_of :klass, :allow_nil => true
+  validates_numericality_of :weight, :allow_nil => true
   validates_numericality_of :tp_value, :greater_than_or_equal_to => -1, :less_than_or_equal_to => 10
-  validates_numericality_of :rufrin_price, :greater_than_or_equal_to => 0
+  validates_numericality_of :rufrin_price, :greater_than_or_equal_to => 0, :allow_nil => true
+
+  def self.find_by_list_id(list_id)
+    pieces = find_by_sql("select * from equipment_pieces t1 join equipment_piece_list_entries t2 where t1.id = t2.equipment_piece_id and t2.equipment_piece_list_id = #{list_id} order by tp_value DESC, name ASC")
+    preload_associations(pieces, [:stat_affects, :resistance_affects, :skill_affects, :spell_affects, :slot_affects, :weapon_damage_affects])
+    return pieces
+  end
 
   def self.find_by_gab_list(gab_list)
     rg = Regexp.new(/^ \d*    \d   ([a-zA-Z '\-()]*)([0-9,]*)\s*\w*/)

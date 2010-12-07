@@ -13,6 +13,11 @@
   </p>
 
   <p>
+    <%= f.label :list_type %><br>
+    <%= f.select :equipment_piece_list_type_id, local_assigns[:list_types].map{|c| [c.name, c.id]} %>
+  </p>
+
+  <p>
     <%= f.label :parchment %><br />
     <%= f.text_area :parchment %><br />
   </p>  
