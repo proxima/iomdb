@@ -14,7 +14,7 @@
     <td><%= equipment_piece_list.equipment_piece_list_entries.size.to_s %></td>    
     <% if logged_in? %>
     <td><%= link_to '(E)', edit_equipment_piece_list_path(equipment_piece_list) %></td>
-    <% if false %>
+    <% if logged_in? and equipment_piece_list.admin_user_id == session[:user].id %>
       <td><%= link_to '(X)', equipment_piece_list, :confirm => 'Are you sure?', :method => :delete %></td>
     <% end %>
     <% end %>

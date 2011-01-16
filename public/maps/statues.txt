@@ -1,0 +1,41 @@
++----+----+-----=+-----+---+-----+------------+
+|\   |Wea-X      |     |   |     |           /|
+| \  |    |      |     +---+--X--+----+-----+ |
+|  \ +----+      | Pv  |   | Mh  |    |    /  |
+|   \     |      +--X--+---+-----+----+---+   |
+|    \-Ar |      |     |-Vt|     |       /Mag | 
++-----+---+-----=+-----+---+-----+------+--'--+ 
+|  Gen-\  |      ]     |   |     |     /|     |
++-+-----+-+------+=----+---+-----+----+-+-----+
+| |   Ap-\    Fd |     |-Bk|     |   /  |     |
+| | +-+-+-+----'-+     +---+--X--+  /   |     |
+| | | | |  \-Rs  | X-=-+---+ Adv | +----+-----+
+| +-+-X-+   \    | |   |:::|     |/     |     | 
+| | | | |    +---+-+---C---+--+--X-Ca   |     X
+| | +-+-+   /    | |:::|   |  |  |\     X-Ff  |
+| |        +-----+-+---+-=-+--+--+-+    |     |
+| |   Toy-/      | Rm  |      ]  ]  ]   ]     |
++-+------+---+---+--'--+---+--+--+---+--+-----+
+|       /|   |   |     |   |  |  |    \       |
+|  Blk-/ |   |-A |     |   |  |  | Fig \      |
++-----+--+---+---+-----+---+--+--+--X---+-----+
+|    /   |   |   |     |Cc X     |       \    |
+|   +----+   |-Tr+--,--X-'-+-----+-----+--+   |
+|  /     |   |   | Ms  |:::|     |     |   \  |
+| +--,---+---+---+     +---+--,--X? Cl-+--+ \ |
+|/ Gsp   |   |   |     |   | Bm  |        |  \|
++--------+---+---+-----+---+-----+--------+---+
+
+Ona - Outside the fighter guild
+Stralic - Garden east illium
+Rawknhrol - Outside the Music Hall
+Dhrugs - Outside the Pavillion
+Secs - Outside the Fiery Flagon
+Fazibaw - Northwest corner of central square
+Kreativ - eastern lake
+Mordulak - south from central square 
+Lloth - by the luna moths
+Selinea - Outside cathedral
+Talakh - Outside the weapon shop
+Shirija - Outside hagworth castle
+memorial - Outside of adv

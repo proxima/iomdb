@@ -13,7 +13,7 @@ class EquipmentPiece < ActiveRecord::Base
 
   validates_numericality_of :klass, :allow_nil => true
   validates_numericality_of :weight, :allow_nil => true
-  validates_numericality_of :tp_value, :greater_than_or_equal_to => -1, :less_than_or_equal_to => 10
+  validates_numericality_of :tp_value, :greater_than_or_equal_to => -1, :less_than_or_equal_to => 20
   validates_numericality_of :rufrin_price, :greater_than_or_equal_to => 0, :allow_nil => true
 
   def self.find_by_list_id(list_id)

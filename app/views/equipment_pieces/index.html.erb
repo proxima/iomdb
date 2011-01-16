@@ -45,14 +45,6 @@
       <% end %>
       <div id="filter_div"></div>
       <hr>
-      <% if logged_in? %>
-        <%= link_to 'EQ Lists', equipment_piece_lists_path %> <%= link_to '(+)', new_equipment_piece_list_path %>: <div id="current_eq_list"><%= render :partial => 'equipment_piece_lists/view' %></div>
-        <% form_remote_for :equipment_piece_list, :url => { :controller => 'equipment_piece_lists', :action => 'change_list' } do |f| %>
-          <%= select_tag :id, options_from_collection_for_select(@equipment_lists, :id, :name) %>
-          <%= submit_tag 'Set as Active' %>
-        <% end %>
-      <% end %>
-      <hr>
     </td>
   </tr>
 </table>

@@ -8,16 +8,11 @@ class EquipmentPiecesController < ApplicationController
   def index
     @equipment_pieces = EquipmentPiece.find(:all)
     @equipment_mobs = []
-    @equipment_lists = []
    
     if params[:search]
       @equipment_pieces = EquipmentPiece.find(:all, :conditions => ['name LIKE ?', "%#{params[:search]}%"], :limit => 12)
       @equipment_mobs = EquipmentMonster.find(:all, :conditions => ['name LIKE ?', "%#{params[:search]}%"], :limit => 3)
     end
-
-    if session[:user]
-      @equipment_lists = EquipmentPieceList.find_all_by_admin_user_id(session[:user].id, :order => 'name ASC')
-    end    
 
     respond_to do |format|
       format.html # index.html.erb

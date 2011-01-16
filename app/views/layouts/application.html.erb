@@ -25,6 +25,18 @@
     <td>|</td>
     <td><%= link_to 'Races', races_path %></td>
     <td>|</td>
+    <% if logged_in? %>
+      <td><%= link_to 'EQ Lists', equipment_piece_lists_path %> <%= link_to '(+)', new_equipment_piece_list_path %>: </td>
+      <td id="current_eq_list"><%= render :partial => 'equipment_piece_lists/view' %></td>
+      <td>|</td>
+      <td>
+      <% form_remote_for :equipment_piece_list, :url => { :controller => 'equipment_piece_lists', :action => 'change_list' } do |f| %>
+        <%= select_tag :id, options_from_collection_for_select(EquipmentPieceList.find_all_by_admin_user_id(session[:user].id, :order => 'name ASC'), :id, :name) %>
+        <%= submit_tag 'Set as Active' %>
+      <% end %>
+      </td>
+      <td>|</td>
+    <% end %>
 <% if logged_in? %>
     <td><%= link_to 'Logout', :controller => 'admin_user', :action => 'logout' %></td>
 <% else %>
@@ -33,6 +45,7 @@
   </tr>
 </table>
 
+<br>
 <%= yield %>
 
 </body>

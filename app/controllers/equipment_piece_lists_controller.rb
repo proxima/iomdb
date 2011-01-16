@@ -37,6 +37,8 @@ class EquipmentPieceListsController < ApplicationController
         sum = 0
         pieces.each { |item| sum += item.tp_value if item.tp_value > 0 }
         @tps_needed_per_mob[mob] = sum
+        @items_per_mob[mob] = []
+        pieces.each { |item| @items_per_mob[mob] << item }
       end
 
       @all_eq.group_by(&:equipment_monster).each do |mob, pieces|
@@ -209,6 +211,10 @@ class EquipmentPieceListsController < ApplicationController
   def destroy
     @equipment_piece_list = EquipmentPieceList.find(params[:id])
     @equipment_piece_list.destroy
+
+    if session[:user] and session[:equipment_piece_list_id] == params[:id]
+      session[:equipment_piece_list_id] = nil
+    end
 
     respond_to do |format|
       format.html { redirect_to(equipment_piece_lists_url) }
