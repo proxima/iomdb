@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<cmud>
+  <class name="Lurker">
+    <trigger priority="8290">
+      <pattern>$%1 growls at the rudness of the remark, and with a gutteral snarl becomes extremely enraged!$</pattern>
+      <value>proxprot Anger Opponent up on %1</value>
+    </trigger>
+    <trigger priority="8300">
+      <pattern>$Using your deep knowledge in the art of assassination, you greedily plunge  your weapon into %1's heart, killing it instantly!$</pattern>
+      <value>proxprot Stab insta -&gt; %1</value>
+    </trigger>
+    <trigger priority="8310">
+      <pattern>$You quietly focus your internal energies, focusing on the heightening your abilities.$</pattern>
+      <value>proxprot Honed Perception UP!
+#eval %btncol("HP",white,green)</value>
+    </trigger>
+    <trigger priority="8320">
+      <pattern>$You feel your heightened perception fade.$</pattern>
+      <value>proxprot Honed Perception DOWN!
+#eval %btncol("HP",white,red)</value>
+    </trigger>
+    <trigger priority="8340">
+      <pattern>$Lurker's Kukri glows briefly as poison is applied to it.$</pattern>
+      <value>proxprot Apply1 Up!
+#eval %btncol("Poison1",white,green)</value>
+    </trigger>
+    <trigger priority="8360">
+      <pattern>$You feel like you lost the motivation gained from the magical drink.$</pattern>
+      <value>proxprot Bartender Drink is DOWN!
+#eval %btncol("Skill",white,red)</value>
+    </trigger>
+    <trigger priority="8370">
+      <pattern>$You feel motivated by the magical drink!$</pattern>
+      <value>proxprot Bartender Flask is UP!
+#eval %btncol("Skill",white,green)</value>
+    </trigger>
+    <trigger priority="8380">
+      <pattern>$Your Lurker's Kukri loses its light aura.$</pattern>
+      <value>proxprot Sharp1 Down!
+#eval %btncol("Sharp1",white,red)</value>
+    </trigger>
+    <trigger priority="8770">
+      <pattern>$You are quite lucky, it seems.  The powers of the god have not banished you too far from where you were.$</pattern>
+      <value>s
+party follow all
+use unbalancing blow</value>
+    </trigger>
+    <trigger priority="9100">
+      <pattern>$Grinning evilly, you greedily plunge  your weapon into %1's heart, killing it instantly!</pattern>
+      <value>proxprot Backstab insta -&gt; %1</value>
+    </trigger>
+    <trigger priority="9510">
+      <pattern>$You enter an acrobat stance.</pattern>
+      <value>proxprot Acrobat Stance UP!
+#eval %btncol("Acro",white,green)</value>
+    </trigger>
+    <trigger priority="9280">
+      <pattern>$You feel your body control return to normal.</pattern>
+      <value>proxprot Acrobat Stance DOWN!
+#eval %btncol("Acro",white,red)</value>
+    </trigger>
+    <trigger priority="8330">
+      <pattern>$You feel your muscles tighten up.$</pattern>
+      <value>proxprot Limber Up is DOWN!
+#eval %btncol("Limb",white,red)</value>
+    </trigger>
+    <trigger priority="8350">
+      <pattern>$You do some stretching exercises.$</pattern>
+      <value>proxprot Limber Up UP!
+#eval %btncol("Limb",white,green)</value>
+    </trigger>
+    <button color="maroon" textcolor="white" priority="9630">
+      <caption>Limb</caption>
+      <value>use limber up</value>
+    </button>
+    <button color="maroon" textcolor="white" priority="9640">
+      <caption>Acro</caption>
+      <value>use acrobat stance</value>
+    </button>
+    <button color="maroon" textcolor="white" priority="9652">
+      <caption>Skill</caption>
+      <value>label a bartender flask fatal strike
+btskill</value>
+    </button>
+    <button color="maroon" textcolor="white" priority="9650">
+      <caption>Spell</caption>
+      <value>label a bartender flask touch of darkness
+btspell</value>
+    </button>
+    <button color="#00B300" textcolor="white" priority="9670">
+      <caption>HP</caption>
+      <value>use honed perception</value>
+    </button>
+    <trigger priority="9680">
+      <pattern>$You feel like you lost the inspiration gained from the magical drink.$</pattern>
+      <value>proxprot Bartender Drink is DOWN!
+#eval %btncol("Spell",white,red)</value>
+    </trigger>
+    <trigger priority="9690">
+      <pattern>$You feel inspired by the magical drink!$</pattern>
+      <value>proxprot Bartender Flask is UP!
+#eval %btncol("Spell",white,green)</value>
+    </trigger>
+    <trigger priority="9700">
+      <pattern>$You sing softly as you brew a strange drink.</pattern>
+      <value>drink a bartender flask</value>
+    </trigger>
+    <trigger priority="9710">
+      <pattern>$You concentrate your mind over Lurker's Kukri and invest it with enhanced powers.</pattern>
+      <value>proxprot Sharp1 Up!
+#eval %btncol("Sharp1",white,green)</value>
+    </trigger>
+    <button color="#00B300" textcolor="white" priority="9720">
+      <caption>Sharp1</caption>
+      <value>use sharpen weapon at kukri</value>
+    </button>
+    <button color="#00B300" textcolor="white" priority="9730">
+      <caption>Sharp2</caption>
+      <value>use sharpen weapon at a fang</value>
+    </button>
+    <button color="#00B300" textcolor="white" priority="9740">
+      <caption>Poison1</caption>
+      <value>use apply poison at a kukri with a poison</value>
+    </button>
+    <button color="#00B300" textcolor="white" priority="9750">
+      <caption>Poison2</caption>
+      <value>use apply poison at a fang with a poison</value>
+    </button>
+    <trigger priority="9760">
+      <pattern>$Your Bloody fang of Nosferatu loses its light aura.$</pattern>
+      <value>proxprot Sharp2 Down!
+#eval %btncol("Sharp2",white,red)</value>
+    </trigger>
+    <trigger priority="9770">
+      <pattern>$You concentrate your mind over Bloody fang of Nosferatu and invest it with enhanced powers.</pattern>
+      <value>proxprot Sharp2 Up!
+#eval %btncol("Sharp2",white,green)</value>
+    </trigger>
+    <trigger priority="9780">
+      <pattern>$Bloody fang of Nosferatu glows briefly as poison is applied to it.$</pattern>
+      <value>proxprot Apply2 Up!
+#eval %btncol("Poison2",white,green)</value>
+    </trigger>
+    <button color="maroon" textcolor="white" priority="9790">
+      <caption>Shade</caption>
+      <value>cast shaded ally at proxima</value>
+    </button>
+    <button color="maroon" textcolor="white" priority="9800">
+      <caption>FW</caption>
+      <value>cast fluttering wall at proxima</value>
+    </button>
+    <trigger priority="9810">
+      <pattern>$You wave your hands in an arcane gesture, and shadows swarm around yourself veiling yourself in darkness.</pattern>
+      <value>proxprot Shaded Ally Up!
+#eval %btncol("Shade",white,green)</value>
+    </trigger>
+    <trigger priority="9820">
+      <pattern>$You wave your hands in an arcane gesture, summoning shadows to form around yourself.</pattern>
+      <value>proxprot Fluttering Wall Up!
+#eval %btncol("FW",white,green)</value>
+    </trigger>
+    <button color="maroon" textcolor="white" priority="9830">
+      <caption>Stealth</caption>
+      <value>use stealth</value>
+    </button>
+    <button color="maroon" textcolor="white" priority="9840">
+      <caption>Hide</caption>
+      <value>use hide</value>
+    </button>
+    <trigger priority="9850">
+      <pattern>$You feel more stealthy.</pattern>
+      <value>#eval %btncol("Stealth",white,green)</value>
+    </trigger>
+    <trigger priority="9860">
+      <pattern>$You slip into the shadows.</pattern>
+      <value>#eval %btncol("Hide",white,green)</value>
+    </trigger>
+    <trigger priority="9870">
+      <pattern>$You leave your hiding place as you enter combat.</pattern>
+      <value>#eval %btncol("Hide",white,red)</value>
+    </trigger>
+    <trigger priority="9880">
+      <pattern>$Your cloak falls around you, making you look like a pile of leaves!</pattern>
+      <value>#eval %btncol("Hide",white,green)</value>
+    </trigger>
+    <trigger priority="9890">
+      <pattern>$You feel less stealthy.</pattern>
+      <value>#eval %btncol("Stealth",white,red)</value>
+    </trigger>
+    <trigger priority="9900">
+      <pattern>$Your cloak stops hiding you in this unnatural environment.</pattern>
+      <value>#eval %btncol("Hide",white,red)</value>
+    </trigger>
+    <trigger priority="9910">
+      <pattern>$You are no longer hidden.</pattern>
+      <value>#eval %btncol("Hide",white,red)</value>
+    </trigger>
+    <trigger priority="9920">
+      <pattern>$You chant softly as you brew a strange drink.</pattern>
+      <value>drink a bartender flask</value>
+    </trigger>
+    <trigger priority="9930">
+      <pattern>$You feel stealthy.</pattern>
+      <value>#eval %btncol("Stealth",white,green)</value>
+    </trigger>
+    <trigger priority="9940">
+      <pattern>$You feel the shadows disappear from your body.</pattern>
+      <value>proxprot Fluttering Wall DOWN!
+#eval %btncol("FW",white,red)</value>
+    </trigger>
+    <trigger priority="9950">
+      <pattern>$Bloody fang of Nosferatu loses the last bits of poison covering it.</pattern>
+      <value>proxprot Poison2 Down!
+#eval %btncol("Poison2",white,red)</value>
+    </trigger>
+    <trigger priority="9960">
+      <pattern>$Lurker's Kukri loses the last bits of poison covering it.</pattern>
+      <value>proxprot Poison1 Down!
+#eval %btncol("Poison1",white,red)</value>
+    </trigger>
+    <trigger priority="9970">
+      <pattern>$You are no longer veiled in shadows.</pattern>
+      <value>proxprot Shaded Ally DOWN!
+#eval %btncol("Shade",white,red)</value>
+    </trigger>
+  </class>
+</cmud>
+

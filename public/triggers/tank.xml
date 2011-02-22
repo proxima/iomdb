@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<cmud>
+  <class name="le">
+    <trigger priority="8270">
+      <pattern>Gigantic creature wraps its tentacles around you, and swallows you whole!$</pattern>
+      <value>party say I WAS SWALLOWED!</value>
+    </trigger>
+    <trigger priority="8430">
+      <pattern>$Schizomycetes' tendrils reach out as one unit and smash into the ground. Your party wobbles around trying to orient itself.$</pattern>
+      <value>w</value>
+    </trigger>
+    <trigger priority="8460">
+      <pattern>Vahl shoots off a blinding beam of light that gets absorbed by %1'* body.</pattern>
+      <value>party say %1 IS THE BOMB!
+10 tell %1 YOU ARE THE BOMB -&gt; out, W</value>
+    </trigger>
+    <trigger priority="8470">
+      <pattern>The ground starts to shine with a bright white light.</pattern>
+      <value>3 party say %^GREEN%^Drain is done.%^RESET%^
+//3 tell tuffgong %^GREEN%^Drain is done.%^RESET%^</value>
+    </trigger>
+    <trigger priority="8480">
+      <pattern>$Vahl is surrounded by a protective blue light.</pattern>
+      <value>3 party say %^YELLOW%^Reflect is UP!%^RESET%^
+//3 tell tuffgong %^YELLOW%^Reflect is UP!%^RESET%^</value>
+    </trigger>
+    <trigger priority="8490">
+      <pattern>$Vahl, the paladin warleader's blue aura fades away.</pattern>
+      <value>3 party say %^YELLOW%^Reflect is DOWN!%^RESET%^
+//3 tell tuffgong %^YELLOW%^Reflect is DOWN!%^RESET%^</value>
+    </trigger>
+    <trigger priority="8500">
+      <pattern>$Vahl spreads his arms and invokes the powers of the Gods.</pattern>
+      <value>2 party say %^GREEN%^3 ROUNDS UNTIL DRAIN%^RESET%^
+#ALARM +3 {party say %^GREEN%^2 rounds until DRAIN%^RESET%^}
+#ALARM +6 {party say %^GREEN%^1 round until DRAIN%^RESET%^}
+//3 tell tuffgong %^RED%^3 rounds until DRAIN special%^RESET%^</value>
+    </trigger>
+    <trigger priority="8510">
+      <pattern>$The stone door slams shut and locks.</pattern>
+      <value>say Lord Jesrael</value>
+    </trigger>
+    <trigger priority="8520">
+      <pattern>$Jesrael summons forth a demon to do his bidding.$</pattern>
+      <value>say Lord Jesrael
+west</value>
+    </trigger>
+    <trigger priority="8530">
+      <pattern>$The death of the Acidic slime weakens Gigantic creature.</pattern>
+      <value>2 party say SLIME IS NOW VULNED -&gt; DESTROY</value>
+    </trigger>
+    <trigger priority="8540">
+      <pattern>The black demon wields the spear in one of its limbs and throws it at you!$</pattern>
+      <value>parry 100</value>
+    </trigger>
+    <trigger priority="8550">
+      <pattern>$Gigantic creature wraps its tentacles around %1, and swallows %2 whole!</pattern>
+      <value>5 party say %1 SWALLOWED!</value>
+    </trigger>
+    <trigger priority="8580">
+      <pattern>$Vahl raises his arms and whispers a prayer.$</pattern>
+      <value>party say %^RED%^3 rounds until REFLECT special%^RESET%^
+#ALARM +3 {party say %^RED%^2 rounds until REFLECT special%^RESET%^}
+#ALARM +6 {party say %^RED%^1 round until REFLECT special%^RESET%^}
+//3 tell tuffgong %^RED%^3 rounds until REFLECT special%^RESET%^</value>
+    </trigger>
+    <trigger priority="8640">
+      <pattern>$Dreadful smoke demon utters some mystic words and forms a magical shield around it.$</pattern>
+      <value>party say Smoke Demon reflect shield UP, please DISPEL</value>
+    </trigger>
+    <trigger priority="8650">
+      <pattern>$Gigantic creature is no longer weakened.</pattern>
+      <value>2 party say Creature vuln is DOWN</value>
+    </trigger>
+    <trigger priority="8660">
+      <pattern>$A dreadful smoke demon's magical shield disappears.</pattern>
+      <value>party say Smoke demon's reflect shield is DOWN, Thank you!!!</value>
+    </trigger>
+    <trigger priority="10240">
+      <pattern>$Jesrael falls to the ground DEAD!$</pattern>
+      <value>get gold</value>
+    </trigger>
+    <trigger priority="13570">
+      <pattern>$Lilith deftly spins the hourglass in her hands and butts it into your stomach. You begin to warp and fold, finally disappearing into nothingness!</pattern>
+      <value>party say I WAS BANISHED -&gt; NW</value>
+    </trigger>
+  </class>
+</cmud>
+

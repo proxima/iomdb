@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<cmud>
+  <class name="Martial Artist" enabled="false">
+    <trigger priority="8330">
+      <pattern>$You feel your muscles tighten up.$</pattern>
+      <value>proxprot Limber Up is DOWN!
+#eval %btncol("Limb",white,red)</value>
+    </trigger>
+    <trigger priority="8350">
+      <pattern>$You do some stretching exercises.$</pattern>
+      <value>proxprot Limber Up UP!
+#eval %btncol("Limb",white,green)</value>
+    </trigger>
+    <trigger priority="9180">
+      <pattern>$You gain focus over your martial form.</pattern>
+      <value>proxprot Style Preference UP!
+#eval %btncol("SP",white,green)</value>
+    </trigger>
+    <trigger priority="9190">
+      <pattern>$You focus your chi.</pattern>
+      <value>proxprot Focus Chi UP!
+#eval %btncol("FC",white,green)</value>
+    </trigger>
+    <trigger priority="9200">
+      <pattern>$You have found your inner peace.</pattern>
+      <value>proxprot Inner Peace UP!
+#eval %btncol("IP",white,green)</value>
+    </trigger>
+    <trigger priority="9210">
+      <pattern>$You adjust your stance.</pattern>
+      <value>proxprot Toad Leg Power UP!
+#eval %btncol("TLP",white,green)</value>
+    </trigger>
+    <trigger priority="9220">
+      <pattern>$You appear to have survived the dragon possession.</pattern>
+      <value>proxprot Dragon Possession DOWN!
+#eval %btncol("DPos",white,red)</value>
+    </trigger>
+    <trigger priority="9230">
+      <pattern>$You are possessed by the power of the dragon!</pattern>
+      <value>proxprot Dragon Possession UP!
+#eval %btncol("DPos",white,green)</value>
+    </trigger>
+    <trigger priority="9240">
+      <pattern>$Your inner turmoil has returned.</pattern>
+      <value>proxprot Inner Peace DOWN!
+#eval %btncol("IP",white,red)</value>
+    </trigger>
+    <trigger priority="9250">
+      <pattern>$Your throat clogs back up.</pattern>
+      <value>proxprot Focus Chi DOWN!
+#eval %btncol("FC",white,red)</value>
+    </trigger>
+    <trigger priority="9260">
+      <pattern>$You focus your chi and fill your fists with magical energy.</pattern>
+      <value>proxprot Fists of Elements UP!
+#eval %btncol("Fists",white,green)</value>
+    </trigger>
+    <trigger priority="9270">
+      <pattern>$You sense your fists returning to normal.</pattern>
+      <value>proxprot Fists of Elements DOWN!
+#eval %btncol("Fists",white,red)</value>
+    </trigger>
+    <trigger priority="9280">
+      <pattern>$You feel your body control return to normal.</pattern>
+      <value>proxprot Acrobat Stance DOWN!
+#eval %btncol("Acro",white,red)</value>
+    </trigger>
+    <trigger priority="9290">
+      <pattern>$You get tired of jumping.</pattern>
+      <value>proxprot Bouncing Toad DOWN!
+#eval %btncol("BT",white,red)</value>
+    </trigger>
+    <trigger priority="9300">
+      <pattern>$Your essence is whole again.</pattern>
+      <value>proxprot Split Essence DOWN!
+#eval %btncol("SE",white,red)</value>
+    </trigger>
+    <trigger priority="9310">
+      <pattern>$You stumble and lose your stance.</pattern>
+      <value>proxprot Toad Leg Power DOWN!
+#eval %btncol("TLP",white,red)</value>
+    </trigger>
+    <trigger priority="9320">
+      <pattern>$Your ego is no longer forged as iron.</pattern>
+      <value>proxprot Forged Ego DOWN!
+#eval %btncol("FE",white,red)</value>
+    </trigger>
+    <trigger priority="9330">
+      <pattern>$You lose focus over your martial form.</pattern>
+      <value>proxprot Style Preference DOWN!
+#eval %btncol("SP",white,red)</value>
+    </trigger>
+    <trigger priority="9340">
+      <pattern>$You empower your will.</pattern>
+      <value>proxprot Empower Will UP!
+#eval %btncol("EW",white,green)</value>
+    </trigger>
+    <button color="maroon" textcolor="white" priority="9508">
+      <caption>DPos</caption>
+      <value>use dragon possession</value>
+    </button>
+    <button color="maroon" textcolor="white" priority="9504">
+      <caption>SP</caption>
+      <value>use style preference with dragon</value>
+    </button>
+    <button color="maroon" textcolor="white" priority="9518">
+      <caption>IP</caption>
+      <value>use inner peace</value>
+    </button>
+    <button color="maroon" textcolor="white" priority="9512">
+      <caption>FC</caption>
+      <value>use focus chi</value>
+    </button>
+    <button color="maroon" textcolor="white" priority="9524">
+      <caption>TLP</caption>
+      <value>use toad leg power</value>
+    </button>
+    <macro key="BT">
+      <value>use bouncing toad</value>
+    </macro>
+    <trigger priority="9410">
+      <pattern>$You plant your legs and start to jump about.</pattern>
+      <value>proxprot Bouncing Toad UP!
+#eval %btncol("BT",white,green)</value>
+    </trigger>
+    <button color="maroon" textcolor="white" priority="9506">
+      <caption>BT</caption>
+      <value>use bouncing toad</value>
+    </button>
+    <trigger priority="9430">
+      <pattern>$You focus on making yourself appear as two.</pattern>
+      <value>proxprot Split Essence UP!
+#eval %btncol("SE",white,green)</value>
+    </trigger>
+    <button color="maroon" textcolor="white" priority="9522">
+      <caption>SE</caption>
+      <value>use split essence</value>
+    </button>
+    <trigger priority="9450">
+      <pattern>$You feel as if you could dive off a cliff and not notice.</pattern>
+      <value>proxprot Forged Ego UP!
+#eval %btncol("FE",white,green)</value>
+    </trigger>
+    <button color="maroon" textcolor="white" priority="9514">
+      <caption>FE</caption>
+      <value>use forged ego</value>
+    </button>
+    <button color="maroon" textcolor="white" priority="9516">
+      <caption>Fists</caption>
+      <value>use fists of elements with cold</value>
+    </button>
+    <button color="maroon" textcolor="white" priority="9510">
+      <caption>EW</caption>
+      <value>use empower will</value>
+    </button>
+    <button color="maroon" textcolor="white" priority="9520">
+      <caption>Limb</caption>
+      <value>use limber up</value>
+    </button>
+    <button color="#00B300" textcolor="white" priority="9502">
+      <caption>Acro</caption>
+      <value>use acrobat stance</value>
+    </button>
+    <trigger priority="9510">
+      <pattern>$You enter an acrobat stance.</pattern>
+      <value>proxprot Acrobat Stance UP!
+#eval %btncol("Acro",white,green)</value>
+    </trigger>
+    <trigger priority="9520">
+      <pattern>$Your will loses some of its power.</pattern>
+      <value>proxprot Empower Will DOWN!
+#eval %btncol("EW",white,red)</value>
+    </trigger>
+    <button color="maroon" textcolor="white" priority="9530">
+      <caption>Yin</caption>
+      <value>use chi of yin</value>
+    </button>
+    <button color="maroon" textcolor="white" priority="9540">
+      <caption>NOTB</caption>
+      <value>use nature of the beast</value>
+    </button>
+    <trigger priority="9550">
+      <pattern>$You prepare for your opponents.</pattern>
+      <value>proxprot Chi of Yin UP!
+#eval %btncol("Yin",white,green)</value>
+    </trigger>
+    <trigger priority="9560">
+      <pattern>$You feel the power of the beast.</pattern>
+      <value>proxprot Nature of the Beast UP!
+#eval %btncol("NOTB",white,green)</value>
+    </trigger>
+    <trigger priority="9570">
+      <pattern>$You weep as the power of the beast is gone.</pattern>
+      <value>proxprot Nature of the Beast DOWN!
+#eval %btncol("NOTB",white,red)</value>
+    </trigger>
+    <trigger priority="9580">
+      <pattern>$Your concentration on the Chi of Yin has faltered.</pattern>
+      <value>proxprot Chi of Yin DOWN!
+#eval %btncol("Yin",white,red)</value>
+    </trigger>
+    <trigger priority="9980">
+      <pattern>$You get a far off look in your eyes.</pattern>
+      <value>proxprot Toad Armor Up!
+#eval %btncol("TA",white,green)</value>
+    </trigger>
+    <button color="maroon" textcolor="white" priority="9990">
+      <caption>TA</caption>
+      <value>use toad armor</value>
+    </button>
+    <trigger priority="10000">
+      <pattern>$You focus on the here and now.</pattern>
+      <value>proxprot Toad Armor DOWN!
+#eval %btncol("TA",white,red)</value>
+    </trigger>
+  </class>
+</cmud>
+

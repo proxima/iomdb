@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<cmud>
+  <class name="Dice">
+    <trigger priority="10260" regex="true">
+      <pattern>\w* \[\w*\]: Doing Party Dice!$</pattern>
+      <value>#if (@DiceTrig = 1) {
+  Dicers = ""
+  DiceCounter = 1
+}</value>
+    </trigger>
+    <trigger priority="10270" regex="true">
+      <pattern>\w* \[\w*\]:\s*(\w*)\s*\d*\s*\(\s*\d*\s*\)$</pattern>
+      <value>#if (@DiceTrig = 1) { 
+  Dicers = @Dicers + "|" + %lower(%1)
+  party place %lower(%1) @DiceCounter
+  DiceCounter = @DiceCounter + 1
+}</value>
+    </trigger>
+    <alias name="dicetrig">
+      <value>#var DiceTrig 1
+party dice
+#ALARM +3 {dicedone}</value>
+    </alias>
+    <var name="Dicers">|proxima</var>
+    <alias name="dicedone">
+      <value>#var DiceTrig 0
+PeopleToDice = (@DiceCounter-1)*2
+DiceCounter = 1
+report_up</value>
+    </alias>
+    <trigger priority="10330">
+      <pattern>(%w) takes (*).$</pattern>
+      <value>#if (@Dicers.@DiceCounter = %lower(%1)) {
+  #send p' %^BOLD%^%^RED%^%proper(@Dicers.@DiceCounter) took %proper(%2)%^RESET%^
+  report_up
+}</value>
+    </trigger>
+    <alias name="report_up">
+      <value>#if ((@DiceCounter-1) &gt; @PeopleToDice)
+  {
+    DiceCounter = @DiceCounter - 1
+  }
+#if ((@DiceCounter-1) &lt; @PeopleToDice)
+  {
+    DiceCounter = @DiceCounter + 1 
+  }
+    
+#if (@PeopleToDice &gt; 0)
+{        
+  #send p' %^BOLD%^%^YELLOW%^%proper(@Dicers.@DiceCounter) is up.%^RESET%^
+  #send beep @Dicers.@DiceCounter
+  #send tell @Dicers.@DiceCounter %^BOLD%^YELLOW%^You are up to dice!%^RESET%^
+  PeopleToDice = @PeopleToDice - 1
+}
+
+#if (@DiceCounter = @PeopleToDice)
+  {
+    DiceCounter = @DiceCounter - 1
+  }</value>
+    </alias>
+    <trigger priority="10390">
+      <pattern>Taken.$</pattern>
+      <value>#if (@Dicers.@DiceCounter = %lower("Proxima")) {
+  report_up
+}</value>
+    </trigger>
+  </class>
+</cmud>
+

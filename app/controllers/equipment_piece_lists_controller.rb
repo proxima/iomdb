@@ -147,6 +147,20 @@ class EquipmentPieceListsController < ApplicationController
             eple.save
           end
         end
+ 
+        if !@equipment_piece_list.gab.empty?
+          @piece_to_costs = EquipmentPiece.find_by_gab_list(@equipment_piece_list.gab)
+          @piece_to_costs.each_pair do |k,v|
+            @pieces << k
+          end
+
+          for piece in @pieces
+            eple = EquipmentPieceListEntry.new
+            eple.equipment_piece_id = piece.id
+            eple.equipment_piece_list_id = @equipment_piece_list.id
+            eple.save
+          end
+        end
 
         base_message = 'Equipment piece list was successfully created.<br><br>'
         not_found_message = "The following items didn't match an item in iomdb.  Please mudmail this list to Proxima:<br>"
