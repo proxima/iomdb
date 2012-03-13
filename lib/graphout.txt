@@ -28,12 +28,6 @@ end
 
 f.write("digraph RGL__DirectedAdjacencyGraph {\n")
 
-Jesrael [
-    URL = "http://iomdb.soulkast.com/equipment_monsters/5473",
-    label = Jesrael
-]
-
-
 g.vertices.each do |v|
   f.write("\"#{v.name}\"")
   f.write(" [\n")
