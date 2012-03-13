@@ -1,0 +1,54 @@
+f = File.open('graph.dot', 'w')
+
+require 'rgl/adjacency'
+g = RGL::DirectedAdjacencyGraph.new
+
+app.host! 'iomdb.soulkast.com'
+
+require 'rgl/rdot'
+EquipmentMobStrategy.find(:all).each do |strat1|
+  EquipmentMobStrategy.find(:all).each do |strat2|
+    if strat2.can_follow(strat1)
+      if(strat1.equipment_monster.equipment_pieces.size > 0 and strat1.equipment_monster.equipment_pieces[0].tp_value >= 5 and strat2.equipment_monster.equipment_pieces.size > 0 and strat2.equipment_monster.equipment_pieces[0].tp_value >= 5) 
+        n1 = RGL::DOT::Node.new({'URL' => app.url_for(:controller => 'equipment_monsters', 
+                                                      :action => strat1.equipment_monster.id.to_s),
+                                 'label' => strat1.equipment_monster.name,
+                                 'name' => strat1.equipment_monster.name})
+
+        n2 = RGL::DOT::Node.new({'URL' => app.url_for(:controller => 'equipment_monsters',
+                                                      :action => strat2.equipment_monster.id.to_s),
+                                 'label' => strat2.equipment_monster.name,
+                                 'name' => strat2.equipment_monster.name})
+
+        g.add_edge(n1, n2)
+      end
+    end
+  end
+end
+
+f.write("digraph RGL__DirectedAdjacencyGraph {\n")
+
+Jesrael [
+    URL = "http://iomdb.soulkast.com/equipment_monsters/5473",
+    label = Jesrael
+]
+
+
+g.vertices.each do |v|
+  f.write("\"#{v.name}\"")
+  f.write(" [\n")
+  f.write("     URL = \"#{v.options['URL']}\",\n")
+  f.write("     label = \"#{v.options['label']}\",\n")
+  f.write("]\n")
+end
+
+g.edges.each do |e|
+  f.write("\"#{e[0].name}\" -> \"#{e[1].name}\"\n")
+end
+
+f.write("}")
+f.close
+
+#Command: dot -T cmapx -o graph.map -T gif -o graph.gif graph.dot
+
+

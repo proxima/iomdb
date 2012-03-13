@@ -1,4 +1,4 @@
-@lines = IO.readlines("/var/www/dev/cmlee/IoM/lib/kalzzet.txt")
+@lines = IO.readlines("kalzzet.txt")
 
 last_color = ''
 last_line = 0
