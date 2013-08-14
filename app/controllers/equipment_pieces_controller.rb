@@ -34,6 +34,7 @@ class EquipmentPiecesController < ApplicationController
                                                             :except => [ :created_at, :updated_at ],
                                                             :skip_types => true,
                                                             :skip_instruct => true ) }
+      format.text # index.txt.erb
       format.js # index.js.erb
     end
   end

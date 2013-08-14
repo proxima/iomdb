@@ -31,8 +31,9 @@ class AdminUser < ActiveRecord::Base
     new_pass = AdminUser.random_string(10)
     self.password = self.password_confirmation = new_pass
     self.save
+    self.save!
     puts "PW: #{new_pass}"
-    Notifications.deliver_forgot_password(self.email, self.login, new_pass)
+#    Notifications.deliver_forgot_password(self.email, self.login, new_pass)
   end
 
 protected

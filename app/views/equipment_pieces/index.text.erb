@@ -1,0 +1,3 @@
+<% for piece in @equipment_pieces %>
+  <% ret = "#{piece.name} - #{slot_line(piece)} - #{simple_stat_line(piece)} (#{piece.tp_value} tps) [#{piece.equipment_monster.name}]" %><%= ret %>
+<% end %>
