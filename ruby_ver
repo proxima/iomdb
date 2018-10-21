@@ -1,1 +1,13 @@
 ruby-1.8.7-p371
+
+#iomdb
+<VirtualHost *:80>
+        ServerName      iomdb.botchris.com
+        ServerAdmin     f4milyp4nts@gmail.com
+
+        RewriteEngine On
+        RewriteCond %{HTTP_HOST} ^iomdb\.botchris\.com$ [NC]
+        RewriteRule ^(.*)$ http://localhost:3000$1 [L,P]
+
+</VirtualHost>
+
