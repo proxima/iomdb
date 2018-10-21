@@ -23,8 +23,7 @@ class EquipmentPiece < ActiveRecord::Base
   end
 
   def self.find_by_gab_list(gab_list)
-    rg = Regexp.new(/^ \d*   \d*   ([a-zA-Z '\-()]*)([0-9,]*)\s*\w*/)
-
+    rg = Regexp.new(/^\s*\d*\s*\d*\s*([a-zA-Z '\-()]*)([0-9,]*)\s*\w*/)
     ret = {}
 
     for line in gab_list
@@ -52,3 +51,4 @@ class EquipmentPiece < ActiveRecord::Base
   end
 
 end
+

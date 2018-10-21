@@ -50,7 +50,7 @@ Rails::Initializer.run do |config|
   # no regular words or you'll be exposed to dictionary attacks.
   config.action_controller.session = {
     :session_key => '_IoM_session',
-    :secret      => '0532e00a8124c4a1c68c6da1606ddea99a6ad16b391f0c958cc3c85789d7280d620bfcc81b8372cba80dc9bccff071e8fbc9f22d14cab56b2cbd2ac1c950963d'
+    :secret      => '6ff065d4142ffeb65a250bfb386c5b'
   }
 
   # Use the database for sessions instead of the cookie-based default,
